@@ -100,6 +100,103 @@
         </div>
     </section>
 
+    <section class="feature-section">
+        <div class="feature-bg-image"></div>
+        
+        <div class="feature-overlay"></div>
+
+        <div class="container">
+            <div class="feature-content">
+                <img src="assets/images/logo/logo_main.png" alt="SLECIC Logo" class="feature-logo">
+                
+                <h2>Backing the People Behind<br> Sri Lanka’s Global Trade</h2>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                </p>
+                
+                <a href="#" class="btn-pay-now">Pay Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Recent News</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image"><img src="assets/images/news/n2.png" alt="News"></div>
+                    <div class="news-content">
+                        <div class="news-info">
+                            <span class="news-date">21st Jul 2025</span>
+                            <h3>Local Government Bodies Commence Term</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#" class="news-arrow">&gt;</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image"><img src="assets/images/news/n3.png" alt="News"></div>
+                    <div class="news-content">
+                        <div class="news-info">
+                            <span class="news-date">23rd Jul 2025</span>
+                            <h3>Independent Leadership</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#" class="news-arrow">&gt;</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image"><img src="assets/images/news/n5.png" alt="News"></div>
+                    <div class="news-content">
+                        <div class="news-info">
+                            <span class="news-date">23rd Jul 2025</span>
+                            <h3>Corruption Arrests</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#" class="news-arrow">&gt;</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image"><img src="assets/images/news/n4.png" alt="News"></div>
+                    <div class="news-content">
+                        <div class="news-info">
+                            <span class="news-date">21st Jul 2025</span>
+                            <h3>Local Government Bodies</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#" class="news-arrow">&gt;</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image"><img src="assets/images/news/n1.png" alt="News"></div>
+                    <div class="news-content">
+                        <div class="news-info">
+                            <span class="news-date">23rd Jul 2025</span>
+                            <h3>Independent Leadership</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#" class="news-arrow">&gt;</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image"><img src="assets/images/news/n6.png" alt="News"></div>
+                    <div class="news-content">
+                        <div class="news-info">
+                            <span class="news-date">23rd Jul 2025</span>
+                            <h3>Corruption Arrests</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#" class="news-arrow">&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <?php include 'includes/footer.php'; ?>
 
 </body>

@@ -309,3 +309,281 @@
         text-align: center; /* Center title on mobile */
     }
 }
+
+/* --- Feature Section --- */
+.feature-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    min-height: 600px; /* Ensures section is tall enough */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    margin-top: 60px;
+}
+
+/* Background Image Positioning */
+.feature-bg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/index1.png'); /* Make sure to save your image as this name */
+    background-size: cover;
+    background-position: center right; /* Focus on the people on the right side */
+    z-index: -2;
+}
+
+/* Gradient Overlay (Matches the white fade in your design) */
+.feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    /* Solid white on left (40%), fading to transparent on right */
+    background: linear-gradient(90deg, #ffffff 30%, rgba(255, 255, 255, 0.705) 20%, rgba(255,255,255,0) 100%);
+    z-index: -1;
+}
+
+/* Content Styling */
+.feature-content {
+    max-width: 650px; /* Limits text width */
+    position: relative;
+    z-index: 1;
+}
+
+.feature-logo {
+    height: 60px; /* Adjust size based on your logo file */
+    width: auto;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.feature-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.feature-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+/* Pay Now Button */
+.btn-pay-now {
+    display: inline-block;
+    background-color: #580000; /* Dark Maroon Color */
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pay-now:hover {
+    background-color: #3e0000;
+}
+
+/* --- Responsive Fixes --- */
+@media (max-width: 992px) {
+    .feature-overlay {
+        /* On tablets/mobile, make background more solid so text is readable */
+        background: linear-gradient(90deg, #ffffff 60%, rgba(255,255,255,0.5) 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-section {
+        padding: 60px 0;
+        min-height: auto;
+    }
+    
+    .feature-bg-image {
+        opacity: 0.3; /* Fade image more on mobile */
+    }
+    
+    .feature-content h2 {
+        font-size: 28px;
+    }
+    
+    .feature-overlay {
+        background: rgba(255,255,255,0.9); /* Solid white overlay on mobile */
+    }
+}
+
+/* =========================================
+   RECENT NEWS SECTION
+   ========================================= */
+   .news-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.news-content {
+    background-color: var(--hero-maroon);
+    color: #fff;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.news-info {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.news-date {
+    font-size: 11px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.news-content h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.news-content p {
+    font-size: 11px;
+    opacity: 0.7;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-arrow {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+@media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .news-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 992px) {
+    .feature-overlay { background: linear-gradient(90deg, #ffffff 60%, rgba(255,255,255,0.5) 100%); }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 60px 0;
+        text-align: center;
+    }
+    
+    .hero-video { 
+        opacity: 0.3; 
+    } /* Optional: fade video on mobile */
+    .hero-overlay { 
+        background: rgba(255,255,255,0.9);
+     }
+    
+    .text-wrapper { 
+        margin: 0 auto; 
+    }
+    .hero-logos { 
+        justify-content: center; margin-top: 30px; 
+    }
+    
+    .hero-content h1 { 
+        font-size: 2.5rem; 
+    }
+    .hero-content h1 .highlight { 
+        font-size: 2.8rem; 
+    }
+    
+    .about-card { 
+        padding: 40px 20px; 
+    }
+    .about-card h2 { 
+        font-size: 24px; 
+    }
+    
+    .services-grid { 
+        grid-template-columns: 1fr; gap: 40px;
+     }
+    .section-title { 
+        text-align: center; font-size: 28px; 
+    }
+    .service-card { 
+        text-align: center; align-items: center; 
+    }
+    
+    .feature-section { 
+        text-align: center; padding: 60px 0; 
+    }
+    .feature-bg-image { 
+        opacity: 0.15; 
+    }
+    .feature-overlay { 
+        background: rgba(255,255,255,0.85); 
+    }
+    .feature-content { 
+        margin: 0 auto; 
+    }
+    .feature-logo { 
+        margin: 0 auto 20px auto; 
+    }
+    .feature-content h2 { 
+        font-size: 28px; 
+    }
+    
+    .news-grid { 
+        grid-template-columns: 1fr; max-width: 400px; margin: 0 auto;
+     }
+    .news-image img {
+         height: 200px; 
+        }
+}
