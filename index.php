@@ -36,17 +36,65 @@
 
                 <div class="hero-logos">
                     <div class="logo-card">
-                        <img src="assets/images/logo-ecic.png" alt="ECIC Logo">
+                        <img src="assets/images/logo/h1.png" alt="ECIC Logo">
                     </div>
                     <div class="logo-card">
-                        <img src="assets/images/logo-iciec.png" alt="ICIEC Logo">
+                        <img src="assets/images/logo/h2.png" alt="ICIEC Logo">
                     </div>
                     <div class="logo-card">
-                        <img src="assets/images/logo-slecic.png" alt="SLECIC Logo">
+                        <img src="assets/images/logo/h3.png" alt="SLECIC Logo">
                     </div>
                     <div class="logo-card">
-                        <img src="assets/images/logo-lci.png" alt="LCI Logo">
+                        <img src="assets/images/logo/h4.png" alt="LCI Logo">
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+    <div class="container">
+        <div class="about-card">
+            <span class="subtitle">About Us</span>
+            <h2>Welcome Sri Lankan Export Credit Insurance Corporations</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="assets/images/service/s1.png" alt="Export Credit Insurance">
+                    <h3>Export Credit Insurance</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn-read-more">Read more</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/images/service/s2.png" alt="Pre-Shipment Credit Guarantee">
+                    <h3>Pre-Shipment Credit Guarantee</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn-read-more">Read more</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/images/service/s3.png" alt="Post-Shipment Credit Guarantee">
+                    <h3>Post-Shipment Credit Guarantee</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn-read-more">Read more</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/images/service/s4.png" alt="Export Performance Guarantee">
+                    <h3>Export Performance Guarantee</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn-read-more">Read more</a>
                 </div>
             </div>
         </div>
