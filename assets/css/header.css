@@ -1,0 +1,126 @@
+/* --- CSS Reset for Full Width --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* --- Component Variables --- */
+:root {
+    --header-bg-color: #4a0202; /* Deep Maroon matching the image */
+    --header-text-color: #ffffff;
+    --header-accent-color: #c49a18; /* Gold/Mustard for button & logo accents */
+    --header-font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --header-height: 80px;
+}
+
+/* --- Main Header Container --- */
+.slecic-header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    font-family: var(--header-font-stack);
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px; /* Adjust side spacing as needed */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+/* --- Logo Section --- */
+.header-branding .brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 12px;
+}
+
+.header-branding .brand-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* --- Navigation Menu --- */
+.header-nav .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px; /* Spacing between links */
+}
+
+.header-nav .nav-link {
+    text-decoration: none;
+    color: #e0e0e0; /* Slightly off-white for normal state */
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.header-nav .nav-link:hover {
+    color: var(--header-text-color);
+}
+
+/* Active State (Home) styling */
+.header-nav .nav-link.current {
+    color: var(--header-text-color);
+}
+
+.header-nav .nav-link.current::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 25px; /* Width of the underline */
+    height: 2px;
+    background-color: var(--header-text-color);
+}
+
+/* --- CTA Button (Client Area) --- */
+.btn-client-area {
+    background-color: var(--header-accent-color);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 25px; /* Pill shape */
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    white-space: nowrap;
+}
+
+.btn-client-area:hover {
+    background-color: #d4a81e; /* Slightly lighter gold on hover */
+}
+
+.btn-client-area:active {
+    transform: scale(0.98);
+}
+
+/* --- Basic Responsiveness --- */
+@media (max-width: 1024px) {
+    .slecic-header {
+        padding: 0 20px;
+    }
+    
+    .header-nav {
+        display: none; /* Hide nav on mobile/tablet for now */
+        /* You would typically add a hamburger menu toggle here */
+    }
+}
