@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<?php include "includes/header.php"; ?>
-<?php include "includes/footer.php"; ?>
-=======
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,4 +10,3 @@
         <?php include 'includes/header.php'; ?>
     </body>
 </html>
->>>>>>> 3a366d274bf6a08f153e07ee0566771758d0f489
