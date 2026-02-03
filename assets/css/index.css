@@ -29,7 +29,10 @@
     object-fit: cover; 
     z-index: 0;
     display: block;
+    
 }
+
+
 
 /* --- Gradient Overlay --- */
 /* This creates the white fade effect so text is readable */

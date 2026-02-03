@@ -23,8 +23,14 @@ html, body {
 
 /* --- Main Header Container --- */
 .slecic-header {
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
+    /* Start with a dark transparent gradient over the hero section */
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.75) 10%,
+        rgba(0, 0, 0, 0.45) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    color: #ffffff;
     font-family: var(--header-font-stack);
     height: var(--header-height);
     display: flex;
@@ -35,8 +41,17 @@ html, body {
     width: 100%;
     max-width: 100%;
     margin: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;
+    position: fixed; /* Keep header on top while scrolling */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Background + subtle shadow after scrolling */
+.slecic-header.scrolled {
+    background-color: var(--header-bg-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* --- Logo Section --- */
@@ -65,7 +80,7 @@ html, body {
 
 .header-nav .nav-link {
     text-decoration: none;
-    color: #e0e0e0; /* Slightly off-white for normal state */
+    color: #ffffff; /* Black when header is transparent */
     font-size: 13px;
     font-weight: 500;
     padding-bottom: 4px;
@@ -74,12 +89,12 @@ html, body {
 }
 
 .header-nav .nav-link:hover {
-    color: var(--header-text-color);
+    color: #dda919;
 }
 
 /* Active State (Home) styling */
 .header-nav .nav-link.current {
-    color: var(--header-text-color);
+    color: #caa21d;
 }
 
 .header-nav .nav-link.current::after {
@@ -90,6 +105,17 @@ html, body {
     width: 25px; /* Width of the underline */
     height: 2px;
     background-color: var(--header-text-color);
+}
+
+/* When header has background, switch text & links to white for contrast */
+.slecic-header.scrolled,
+.slecic-header.scrolled .header-nav .nav-link,
+.slecic-header.scrolled .header-nav .nav-link.current {
+    color: var(--header-text-color);
+}
+
+.slecic-header.scrolled .header-nav .nav-link:hover {
+    color: #ffffff;
 }
 
 /* --- CTA Button (Client Area) --- */

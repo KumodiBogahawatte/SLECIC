@@ -12,7 +12,7 @@
     <section class="hero-section">
         
         <video autoplay muted loop playsinline class="hero-video">
-            <source src="assets/video/hero2.mp4" type="video/mp4">
+            <source src="assets/video/hero3.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -241,6 +241,28 @@
     </section>
 
     <?php include 'includes/footer.php'; ?>
+
+    <!-- Header scroll behavior -->
+    <script>
+        (function () {
+            const header = document.querySelector('.slecic-header');
+            if (!header) return;
+
+            const SCROLL_TRIGGER = 50; // px from top to start background
+
+            function onScroll() {
+                if (window.scrollY > SCROLL_TRIGGER) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+
+            // Run once on load and then on scroll
+            window.addEventListener('scroll', onScroll);
+            window.addEventListener('load', onScroll);
+        })();
+    </script>
 
 </body>
 </html>
