@@ -1,0 +1,89 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+    --hero-maroon: #580000; /* Dark Red/Maroon */
+    --hero-gold: #c49a18;   /* Button Gold */
+    --hero-text: #222222;   /* Dark Text */
+    --hero-height: 100vh;
+    --header-bg-color: #4a0202; /* Deep Maroon matching the image */
+    --header-text-color: #ffffff;
+    --header-accent-color: #c49a18; /* Gold/Mustard for button & logo accents */
+    --header-font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --header-height: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+/* 1. Page Hero (Smaller than Home Hero) */
+.page-hero {
+  /* 1. The Background Image with a Purple Overlay */
+  background:
+    linear-gradient(rgba(85, 60, 5, 0.849), rgba(158, 150, 117, 0.288)),
+    url("/assets/images/news/n1.png");
+
+  /* 2. Image Positioning */
+  background-size: cover; /* Ensures image covers the whole area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+
+  /* 3. Layout & Sizing */
+  height: 60vh; /* Adjust height: 60% of the viewport height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Optional: Style the text inside */
+.page-hero h1 {
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  color: #e0e0e0;
+}
+
+.page-hero .breadcrumb {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.page-hero .breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-hero .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.page-hero .breadcrumb span {
+  margin: 0 6px;
+}
