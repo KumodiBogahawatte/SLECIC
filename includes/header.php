@@ -30,7 +30,7 @@
             <li class="nav-item-dropdown">
                 <a href="#" class="nav-link">Our Services <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-link">Credit Insurance</a></li>
+                    <li><a href="CreditInsurance.php" class="dropdown-link">Credit Insurance</a></li>
                     <li><a href="#" class="dropdown-link">Credit Guarantee</a></li>
                     <li><a href="#" class="dropdown-link">Apara</a></li>
                     <li><a href="#" class="dropdown-link">Buyer Information</a></li>
@@ -55,3 +55,25 @@
         <a href="#" class="btn-client-area">Client Area</a>
     </div>
 </header>
+
+<!-- Header scroll behavior -->
+<script>
+        (function () {
+            const header = document.querySelector('.slecic-header');
+            if (!header) return;
+
+            const SCROLL_TRIGGER = 50; // px from top to start background
+
+            function onScroll() {
+                if (window.scrollY > SCROLL_TRIGGER) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+
+            // Run once on load and then on scroll
+            window.addEventListener('scroll', onScroll);
+            window.addEventListener('load', onScroll);
+        })();
+    </script>
