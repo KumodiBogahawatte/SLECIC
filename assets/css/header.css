@@ -23,8 +23,14 @@ html, body {
 
 /* --- Main Header Container --- */
 .slecic-header {
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
+    /* Start with a dark transparent gradient over the hero section */
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.75) 10%,
+        rgba(0, 0, 0, 0.45) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    color: #ffffff;
     font-family: var(--header-font-stack);
     height: var(--header-height);
     display: flex;
@@ -35,8 +41,17 @@ html, body {
     width: 100%;
     max-width: 100%;
     margin: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;
+    position: fixed; /* Keep header on top while scrolling */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Background + subtle shadow after scrolling */
+.slecic-header.scrolled {
+    background-color: var(--header-bg-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* --- Logo Section --- */
@@ -65,21 +80,86 @@ html, body {
 
 .header-nav .nav-link {
     text-decoration: none;
-    color: #e0e0e0; /* Slightly off-white for normal state */
-    font-size: 13px;
+    color: #ffffff; /* Black when header is transparent */
+    font-size: 14px;
     font-weight: 500;
     padding-bottom: 4px;
     transition: color 0.2s ease;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-nav .nav-link i {
+    font-size: 10px;
+    transition: transform 0.3s ease;
 }
 
 .header-nav .nav-link:hover {
-    color: var(--header-text-color);
+    color: #dda919;
+}
+
+/* --- Dropdown Menu --- */
+.nav-item-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--header-bg-color);
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    min-width: 220px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 1001;
+    margin-top: 8px;
+}
+
+.nav-item-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-item-dropdown:hover .nav-link i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--header-accent-color);
+    padding-left: 25px;
+    border-left-color: var(--header-accent-color);
 }
 
 /* Active State (Home) styling */
 .header-nav .nav-link.current {
-    color: var(--header-text-color);
+    color: #caa21d;
 }
 
 .header-nav .nav-link.current::after {
@@ -90,6 +170,22 @@ html, body {
     width: 25px; /* Width of the underline */
     height: 2px;
     background-color: var(--header-text-color);
+}
+
+/* When header has background, switch text & links to white for contrast */
+.slecic-header.scrolled,
+.slecic-header.scrolled .header-nav .nav-link,
+.slecic-header.scrolled .header-nav .nav-link.current {
+    color: var(--header-text-color);
+}
+
+.slecic-header.scrolled .header-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Ensure dropdown menu background matches scrolled header */
+.slecic-header.scrolled .dropdown-menu {
+    background-color: var(--header-bg-color);
 }
 
 /* --- CTA Button (Client Area) --- */
