@@ -33,8 +33,8 @@
                 <ul class="dropdown-menu">
                     <li><a href="CreditInsurance.php" class="dropdown-link">Credit Insurance</a></li>
                     <li><a href="creditGurantee.php" class="dropdown-link">Credit Guarantee</a></li>
-                    <li><a href="#" class="dropdown-link">Apara</a></li>
-                    <li><a href="#" class="dropdown-link">Buyer Information</a></li>
+                    <li><a href="apara.php" class="dropdown-link">Apara</a></li>
+                    <li><a href="buyer-info.php" class="dropdown-link">Buyer Information</a></li>
                     <li><a href="#" class="dropdown-link">Export Performance Guarantee</a></li>
                 </ul>
             </li>
