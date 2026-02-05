@@ -38,7 +38,7 @@ h4 {
   /* 1. The Background Image with a Purple Overlay */
   background:
     linear-gradient(rgba(85, 60, 5, 0.849), rgba(158, 150, 117, 0.288)),
-    url("/assets/images/news/n1.png");
+    url("../images/news/n1.png");
 
   /* 2. Image Positioning */
   background-size: cover; /* Ensures image covers the whole area */
