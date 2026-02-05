@@ -32,7 +32,7 @@
                 <a href="#" class="nav-link">Our Services <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="CreditInsurance.php" class="dropdown-link">Credit Insurance</a></li>
-                    <li><a href="#" class="dropdown-link">Credit Guarantee</a></li>
+                    <li><a href="creditGurantee.php" class="dropdown-link">Credit Guarantee</a></li>
                     <li><a href="#" class="dropdown-link">Apara</a></li>
                     <li><a href="#" class="dropdown-link">Buyer Information</a></li>
                     <li><a href="#" class="dropdown-link">Export Performance Guarantee</a></li>
