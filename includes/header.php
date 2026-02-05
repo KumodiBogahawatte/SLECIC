@@ -16,9 +16,9 @@
 
     <nav class="header-nav">
         <ul class="nav-list">
-            <li><a href="#" class="nav-link current">Home</a></li>
+            <li><a href="index" class="nav-link current">Home</a></li>
             <li class="nav-item-dropdown">
-                <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                <a href="about" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="#" class="dropdown-link">Who we are</a></li>
                     <li><a href="#" class="dropdown-link">Our role</a></li>
