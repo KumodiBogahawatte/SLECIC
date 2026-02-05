@@ -2,7 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500&display=swap");
 
 :root {
-    --hero-maroon: #580000; /* Dark Red/Maroon */
+    --primary-color: #5B0000;
+    --secondary-color:#C18E11;
+    --bg-color-light:#c5a028;
+    --bg-color-dark:#2D0000;
+    --bg-light: #f9f9f9;
+
+
+    --hero-maroon: #201111; /* Dark Red/Maroon */
     --hero-gold: #c49a18;   /* Button Gold */
     --hero-text: #222222;   /* Dark Text */
     --hero-height: 100vh;
@@ -35,9 +42,9 @@ h4 {
 
 /* 1. Page Hero (Smaller than Home Hero) */
 .page-hero {
-  /* 1. The Background Image with a Purple Overlay */
+  /* 1. The Background Image with a Maroon/Gold Overlay */
   background:
-    linear-gradient(rgba(85, 60, 5, 0.849), rgba(158, 150, 117, 0.288)),
+    linear-gradient(135deg, rgba(91, 0, 0, 0.336) 0%, rgba(45, 0, 0, 0.342) 50%, rgba(196, 154, 24, 0.3) 100%),
     url("../images/news/n1.png");
 
   /* 2. Image Positioning */

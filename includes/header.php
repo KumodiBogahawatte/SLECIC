@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/footer.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 <header class="slecic-header">
     <div class="header-branding">
@@ -18,9 +19,9 @@
         <ul class="nav-list">
             <li><a href="index" class="nav-link current">Home</a></li>
             <li class="nav-item-dropdown">
-                <a href="about" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-link">Who we are</a></li>
+                    <li><a href="who-we-are" class="dropdown-link">Who we are</a></li>
                     <li><a href="#" class="dropdown-link">Our role</a></li>
                     <li><a href="#" class="dropdown-link">Leadership</a></li>
                     <li><a href="#" class="dropdown-link">Customer Testimonials</a></li>
