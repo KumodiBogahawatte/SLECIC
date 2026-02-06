@@ -21,9 +21,9 @@
             <li class="nav-item-dropdown">
                 <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="who-we-are" class="dropdown-link">Who we are</a></li>
-                    <li><a href="#" class="dropdown-link">Our role</a></li>
-                    <li><a href="#" class="dropdown-link">Leadership</a></li>
+                    <li><a href="Who-we-are" class="dropdown-link">Who we are</a></li>
+                    <li><a href="Our-role" class="dropdown-link">Our role</a></li>
+                    <li><a href="Leadership" class="dropdown-link">Leadership</a></li>
                     <li><a href="#" class="dropdown-link">Customer Testimonials</a></li>
                     <li><a href="#" class="dropdown-link">Career Opportunities</a></li>
                 </ul>

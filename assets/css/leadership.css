@@ -1,0 +1,573 @@
+/**
+ * Leadership Page Styles
+ * Professional stylesheet maintaining original design with improved code quality
+ * 
+ * @version 1.0.0
+ */
+
+/* ==========================================================================
+   LEADERSHIP SECTION - MAIN LAYOUT
+   ========================================================================== */
+
+.leadership-section {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+
+.leadership-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.management-section {
+    background-color: #fff;
+}
+
+/* ==========================================================================
+   SECTION HEADERS
+   ========================================================================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.header-line {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--bg-color-light));
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* ==========================================================================
+   VIEW DETAILS LINK
+   ========================================================================== */
+
+.view-details {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.view-details:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+/* ==========================================================================
+   ASPECT RATIO CONTAINER (379x476 IMAGE RATIO)
+   ========================================================================== */
+
+.aspect-ratio-container {
+    position: relative;
+    width: 100%;
+    padding-top: 125.6%; /* 476/379 * 100% */
+    overflow: hidden;
+}
+
+.aspect-ratio-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* ==========================================================================
+   FEATURED LEADER CARD (CHAIRMAN)
+   ========================================================================== */
+
+.leader-card.featured {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(91, 0, 0, 0.15);
+    overflow: hidden;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.leader-card.featured:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(91, 0, 0, 0.25);
+}
+
+.leader-image {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-color), var(--bg-color-dark));
+}
+
+.leader-image .aspect-ratio-container {
+    height: 350px;
+}
+
+.position-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background: rgba(193, 142, 17, 0.95);
+    color: white;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.leader-info {
+    padding: 40px;
+    position: relative;
+}
+
+.leader-info h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.credentials {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   DIRECTORS GRID
+   ========================================================================== */
+
+.directors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.director-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--secondary-color);
+    cursor: pointer;
+    position: relative;
+    max-width: 320px;
+}
+
+.director-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 35px rgba(91, 0, 0, 0.15);
+    border-top-color: var(--primary-color);
+}
+
+.director-image {
+    background: linear-gradient(135deg, rgba(91, 0, 0, 0.1), rgba(193, 142, 17, 0.1));
+}
+
+.director-info {
+    padding: 20px;
+    position: relative;
+}
+
+.director-info h4 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.director-position {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   MANAGEMENT TEAM SECTION
+   ========================================================================== */
+
+.management-subsection {
+    margin-bottom: 60px;
+}
+
+.subsection-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.subsection-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+}
+
+/* ==========================================================================
+   MANAGERS GRID (USES SAME STYLING AS DIRECTORS)
+   ========================================================================== */
+
+.managers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.managers-grid .director-card {
+    grid-template-columns: 1fr;
+    border-left: none;
+    border-top: 4px solid var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    background: white;
+}
+
+.managers-grid .director-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 35px rgba(91, 0, 0, 0.15);
+    border-top-color: var(--primary-color);
+}
+
+.managers-grid .director-image {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(91, 0, 0, 0.1), rgba(193, 142, 17, 0.1));
+}
+
+.managers-grid .director-info {
+    padding: 25px;
+}
+
+.managers-grid .director-info h4 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.managers-grid .director-position {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   MODAL STYLES
+   ========================================================================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+.modal-content {
+    background-color: white;
+    margin: 3% auto;
+    padding: 0;
+    border-radius: 15px;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    animation: slideDown 0.4s ease;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    background: var(--secondary-color);
+    transform: rotate(90deg);
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--bg-color-dark));
+    padding: 50px 40px 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-image {
+    width: 379px;
+    height: 476px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-title {
+    flex: 1;
+}
+
+.modal-title h2 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.modal-position {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.modal-credentials {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.modal-description {
+    padding: 40px;
+    background: white;
+}
+
+.modal-description p {
+    color: #555;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.modal-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1100px) {
+    .leader-card.featured {
+        grid-template-columns: 280px 1fr;
+    }
+    
+    .leader-image .aspect-ratio-container {
+        height: 350px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .leader-card.featured {
+        grid-template-columns: 1fr;
+    }
+    
+    .leader-image .aspect-ratio-container {
+        height: 400px;
+    }
+
+    .modal-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modal-image {
+        width: 300px;
+        height: 378px; /* Maintain 379:476 ratio */
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .leader-info {
+        padding: 30px 20px;
+    }
+
+    .leader-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .subsection-title {
+        font-size: 1.6rem;
+    }
+
+    .directors-grid,
+    .managers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .director-card {
+        margin-bottom: 25px;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .modal-header {
+        padding: 40px 25px 30px;
+    }
+
+    .modal-image {
+        width: 250px;
+        height: 315px; /* Maintain 379:476 ratio */
+    }
+
+    .modal-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .modal-description {
+        padding: 30px 25px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 576px) {
+    .directors-grid,
+    .managers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .leader-image .aspect-ratio-container {
+        height: 350px;
+    }
+    
+    .leader-info {
+        padding: 25px 15px;
+    }
+    
+    .director-info {
+        padding: 20px 15px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+    .leadership-section {
+        padding: 50px 0;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .leader-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .director-info h4 {
+        font-size: 1.3rem;
+    }
+
+    .modal-header {
+        padding: 35px 20px 25px;
+    }
+
+    .modal-image {
+        width: 200px;
+        height: 252px; /* Maintain 379:476 ratio */
+    }
+
+    .modal-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-description {
+        padding: 25px 20px;
+    }
+
+    .modal-description p {
+        font-size: 1rem;
+    }
+
+    .close-modal {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        right: 15px;
+        top: 15px;
+    }
+}

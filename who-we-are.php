@@ -2,7 +2,7 @@
     include 'includes/header.php'; 
 ?>
 
-<link rel="stylesheet" href="assets/css/about.css">
+<link rel="stylesheet" href="assets/css/who-we-are.css">
 
 <section class="page-hero">
     <div class="overlay"></div>

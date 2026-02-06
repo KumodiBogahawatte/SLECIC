@@ -1,0 +1,595 @@
+/* Our Role Page Styles */
+
+/* Section Subtitle */
+.section-subtitle {
+    color: var(--hero-gold, #c49a18);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Section Title */
+.section-title {
+    color: var(--hero-maroon, #5B0000);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Gold Divider */
+.gold-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--hero-gold, #c49a18);
+    margin-bottom: 25px;
+}
+
+.gold-divider.center {
+    margin: 0 auto 40px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Role Intro Section */
+.role-intro {
+    padding: 80px 8%;
+    background: #fff;
+}
+
+.role-intro .container {
+    max-width: 100%;
+}
+
+.role-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.role-intro-content .intro-text {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.role-intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 60px 8%;
+    margin-top: 60px;
+    background: var(--primary-color, #5B0000);
+}
+
+.stats-section .container {
+    max-width: 100%;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+    color: var(--hero-gold, #c49a18);
+}
+
+.stat-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.stat-item h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+
+/* Berne Union Section */
+.berne-section {
+    padding: 60px 8%;
+    margin-top: 60px;
+    background: var(--hero-gold, #c49a18);
+}
+
+.berne-section .container {
+    max-width: 100%;
+}
+
+.berne-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.berne-content h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.berne-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Credit Section */
+.credit-section {
+    padding: 80px 8%;
+    background: #fff;
+}
+
+.credit-section .container {
+    max-width: 100%;
+}
+
+.credit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.credit-content .quote-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--hero-gold, #c49a18);
+    margin-bottom: 20px;
+}
+
+.credit-content .quote-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.credit-content h2 {
+    color: var(--hero-maroon, #5B0000);
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.credit-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.credit-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Cash Flow Section */
+.cashflow-section {
+    padding: 60px 8%;
+    background: #f9f9f9;
+}
+
+.cashflow-section .container {
+    max-width: 100%;
+}
+
+.cashflow-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cashflow-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.cashflow-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Risks Section */
+.risks-section {
+    padding: 80px 8%;
+    background: #fff;
+}
+
+.risks-section .container {
+    max-width: 100%;
+}
+
+.risks-section .section-title {
+    text-align: center;
+}
+
+.risks-section .gold-divider.center {
+    margin: 0 auto 50px;
+}
+
+/* Risk Tabs */
+.risk-tabs {
+    width: 100%;
+}
+
+.risk-tab-buttons {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 0;
+    background: #f0f0f0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    border: 2px solid var(--primary-color, #5B0000);
+    border-bottom: none;
+}
+
+.risk-tab-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 40px;
+    background: transparent;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    position: relative;
+}
+
+.risk-tab-btn:last-child {
+    border-right: none;
+}
+
+.risk-tab-btn span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.risk-tab-btn:hover {
+    background: rgba(91, 0, 0, 0.05);
+}
+
+.risk-tab-btn:hover span {
+    color: var(--primary-color, #5B0000);
+}
+
+.risk-tab-btn.active {
+    background: var(--primary-color, #5B0000);
+}
+
+.risk-tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--hero-gold, #c49a18);
+}
+
+.risk-tab-btn.active span {
+    color: #fff;
+}
+
+.risk-tab-btn .risk-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.risk-tab-btn .risk-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.risk-tab-btn .risk-icon.warning {
+    background: rgba(240, 173, 78, 0.2);
+    color: #f0ad4e;
+}
+
+.risk-tab-btn .risk-icon.danger {
+    background: rgba(217, 83, 79, 0.2);
+    color: #ff6b6b;
+}
+
+.risk-tab-btn .risk-icon.alert {
+    background: rgba(196, 154, 24, 0.2);
+    color: var(--hero-gold, #c49a18);
+}
+
+.risk-tab-btn.active .risk-icon {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.risk-tab-btn.active .risk-icon.warning,
+.risk-tab-btn.active .risk-icon.danger,
+.risk-tab-btn.active .risk-icon.alert {
+    color: var(--hero-gold, #c49a18);
+}
+
+/* Risk Tab Content */
+.risk-tab-content {
+    background: #fff;
+    border: 2px solid var(--primary-color, #5B0000);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    padding: 50px 60px;
+    text-align: left;
+    min-height: 200px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.risk-panel {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.risk-panel.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.risk-panel h3 {
+    color: var(--primary-color, #5B0000);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.risk-panel h3::before {
+    content: '';
+    width: 5px;
+    height: 28px;
+    background: var(--hero-gold, #c49a18);
+    border-radius: 3px;
+}
+
+.risk-panel p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    max-width: 900px;
+}
+
+/* Myth Section */
+.myth-section {
+    padding: 80px 8%;
+    background: #f9f9f9;
+}
+
+.myth-section .container {
+    max-width: 100%;
+}
+
+.myth-card {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+    background: linear-gradient(135deg, #fefefe, #f9f9f9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.192);
+    border-left: 5px solid var(--hero-gold, #c49a18);
+}
+
+.myth-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    color: var(--hero-gold, #c49a18);
+}
+
+.myth-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.myth-content h3 {
+    color: var(--hero-maroon, #5B0000);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.myth-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.myth-highlight {
+    background: rgba(91, 0, 0, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.myth-highlight p {
+    margin-bottom: 10px;
+}
+
+.myth-truth {
+    color: var(--hero-maroon, #5B0000) !important;
+    font-weight: 600;
+    font-size: 1.1rem !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .credit-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .credit-image {
+        order: -1;
+    }
+    
+    .risks-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .role-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .role-intro-image {
+        order: -1;
+    }
+    
+    .cashflow-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .role-intro {
+        padding: 60px 5%;
+    }
+    
+    .role-intro .intro-text {
+        font-size: 1rem;
+    }
+    
+    .stats-section,
+    .berne-section,
+    .credit-section,
+    .cashflow-section,
+    .risks-section,
+    .myth-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .stat-item h3 {
+        font-size: 1.5rem;
+    }
+    
+    .berne-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .credit-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cashflow-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cashflow-icon-box {
+        margin: 0 auto;
+    }
+    
+    .myth-card {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .myth-icon {
+        margin: 0 auto;
+    }
+    
+    .myth-content {
+        text-align: center;
+    }
+    
+    .myth-content h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .risk-card {
+        padding: 30px 20px;
+    }
+    
+    .myth-highlight {
+        padding: 15px;
+    }
+}
