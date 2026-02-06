@@ -113,14 +113,14 @@
 
 /* 1. Top Content Styles */
 .risk-main-title {
-    color: #003366;
+    color: #a89d3a;
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 40px;
     margin-top: 20px;
     border-bottom: 2px solid #eee;
     padding-bottom: 15px;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     text-align: center;
 }
 

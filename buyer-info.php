@@ -23,7 +23,7 @@
 
         <div class="risk-grid">
             <div class="risk-image-wrapper">
-                <img src="assets/images/buyer.png" alt="Seller's Risk Logo">
+                <img src="assets/images/credit.jpg" alt="Seller's Risk Logo">
             </div>
 
             <div class="risk-content-wrapper">

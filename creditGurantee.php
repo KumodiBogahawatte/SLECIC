@@ -95,11 +95,18 @@
     </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
-
-<script>
+<?php include 'includes/footer.php'; ?><script>
     document.addEventListener("DOMContentLoaded", function() {
         const accordions = document.querySelectorAll(".accordion-header");
+
+        // Open first accordion by default
+        if (accordions.length > 0) {
+            const firstAccordion = accordions[0];
+            const firstPanel = firstAccordion.nextElementSibling;
+            firstAccordion.classList.add("active");
+            firstPanel.classList.add("open");
+            firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+        }
 
         accordions.forEach(acc => {
             acc.addEventListener("click", function() {
@@ -110,6 +117,7 @@
                 const panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
+                    panel.classList.remove("open");
                 } else {
                     // Optional: Close other panels automatically
                     // document.querySelectorAll(".accordion-content").forEach(p => p.style.maxHeight = null);
@@ -117,8 +125,10 @@
                     // this.classList.add("active"); // Re-add active to clicked one
                     
                     panel.style.maxHeight = panel.scrollHeight + "px";
+                    panel.classList.add("open");
                 }
             });
         });
     });
 </script>
+
