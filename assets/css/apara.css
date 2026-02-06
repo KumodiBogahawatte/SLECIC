@@ -67,6 +67,7 @@
   border-radius: 10px;
   /* Optional: Rounded corners */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
 
 .apara-image-wrapper.video-container iframe {

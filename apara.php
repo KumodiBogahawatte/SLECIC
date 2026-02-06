@@ -19,7 +19,7 @@
 <section class="apara-section">
     <div class="container">
         
-        <h2 class="apara-main-title">Apara</h2>
+        <!-- <h2 class="apara-main-title">Apara</h2> -->
 
         <div class="apara-grid">
             <div class="apara-image-wrapper video-container">
