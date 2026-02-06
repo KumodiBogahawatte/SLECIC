@@ -33,16 +33,16 @@
                 <ul class="dropdown-menu">
                     <li><a href="CreditInsurance.php" class="dropdown-link">Credit Insurance</a></li>
                     <li><a href="creditGurantee.php" class="dropdown-link">Credit Guarantee</a></li>
-                    <li><a href="#" class="dropdown-link">Apara</a></li>
-                    <li><a href="#" class="dropdown-link">Buyer Information</a></li>
-                    <li><a href="#" class="dropdown-link">Export Performance Guarantee</a></li>
+                    <li><a href="apara.php" class="dropdown-link">Apara</a></li>
+                    <li><a href="buyer-info.php" class="dropdown-link">Buyer Information</a></li>
+                    <li><a href="epg.php" class="dropdown-link">Export Performance Guarantee</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav-link">News</a></li>
             <li class="nav-item-dropdown">
                 <a href="#" class="nav-link">Publications <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-link">Annual Reports and Acts</a></li>
+                    <li><a href="annual-reports.php" class="dropdown-link">Annual Reports and Acts</a></li>
                     <li><a href="#" class="dropdown-link">Market Bulletins</a></li>
                     <li><a href="#" class="dropdown-link">video</a></li>
                 </ul>

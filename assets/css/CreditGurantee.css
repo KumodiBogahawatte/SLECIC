@@ -44,7 +44,7 @@
 
 /* Main Title */
 .page-hero h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3.5rem;
     font-weight: 700;
     color: #ffffff;
@@ -112,19 +112,19 @@
 
 /* --- Combined Risk Section --- */
 .risk-section {
-    padding: 80px 0;
+    padding: 50px 0;
     background-color: #ffffff;
 }
 
 /* 1. Top Content Styles */
 .risk-main-title {
-    color: #003366;
+    color: #7a6e25;
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 40px;
     border-bottom: 2px solid #eee;
     padding-bottom: 15px;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     text-align: center;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .risk-subtitle {
-    color: #0056b3;
+    color: #8d7f2d;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.4;
@@ -272,6 +272,11 @@
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     background-color: #fff;
+}
+
+/* Open accordion by default */
+.accordion-content.open {
+    max-height: 5000px; /* Large enough value to show all content */
 }
 
 .content-inner {
