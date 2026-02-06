@@ -43,7 +43,7 @@
                 <a href="#" class="nav-link">Publications <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="annual-reports.php" class="dropdown-link">Annual Reports and Acts</a></li>
-                    <li><a href="#" class="dropdown-link">Market Bulletins</a></li>
+                    <li><a href="market-bullets.php" class="dropdown-link">Market Bulletins</a></li>
                     <li><a href="#" class="dropdown-link">video</a></li>
                 </ul>
             </li>
