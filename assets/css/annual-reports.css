@@ -22,11 +22,11 @@
    .page-hero {
        position: relative;
        width: 100%;
-       min-height: 300px;
+       min-height: 350px;
        display: flex;
        align-items: center;
        justify-content: center;
-       background-image: url('../images/inner-slider.jpg'); /* Verify Image Path */
+       background-image: url('../images/pulication.png'); /* Verify Image Path */
        background-size: cover;
        background-position: center;
        background-color: #4a0202;
