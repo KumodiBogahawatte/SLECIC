@@ -1,18 +1,9 @@
-<?php 
-/**
- * Leadership Page
- * Displays Board of Directors and Management Team
- * 
- * @package SLECIC
- * @version 1.0.0
- */
-
-include 'includes/header.php'; 
+<?php
+include 'includes/header.php';
 ?>
 
 <link rel="stylesheet" href="assets/css/leadership.css">
 
-<!-- Page Hero Section -->
 <section class="page-hero">
     <div class="overlay"></div>
     <div class="container">
@@ -30,397 +21,319 @@ include 'includes/header.php';
     <div class="container">
         <div class="section-header">
             <h2>Board of Directors</h2>
-            <div class="header-line"></div>
         </div>
 
-        <!-- Chairman & Managing Director -->
-        <div class="leader-card featured" onclick="openModal('modal-cmd')">
-            <div class="leader-image">
-                <div class="aspect-ratio-container">
-                    <img src="assets/images/leaders/New_CMD.jpg" 
-                         alt="Prof (Dr.) A. Aruna Shanthaarchchi" 
-                         onerror="this.src='assets/images/leaders/default-avatar.jpg'">
+        <!-- Chairman - Centered Single Row -->
+        <div class="centered-row">
+            <div class="center-leader chairman">
+                <div class="member-image">
+                    <img src="assets/images/leaders/New_CMD.jpg" alt="Prof (Dr.) A. Aruna Shanthaarchchi" loading="eager"
+                        onerror="this.src='assets/images/leaders/default.jpg'">
                 </div>
-                <div class="position-badge">Chairman & Managing Director</div>
-            </div>
-            <div class="leader-info">
-                <h3>Prof (Dr.) A. Aruna Shanthaarchchi</h3>
-                <p class="credentials">B.A, PGD, MSc, MSSc, PhD</p>
-                <div class="view-details">View Details →</div>
+                <div class="member-info">
+                    <h3 class="member-name">Prof (Dr.) A. Aruna Shanthaarchchi</h3>
+                    <p class="member-title">B.A, PGD, MSc, MSSc, PhD</p>
+                    <p class="member-role">Chairman & Managing Director</p>
+                    <button class="btn-view-profile" data-leader="0" data-type="board">
+                        View Profile
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- Other Directors -->
-        <div class="directors-grid">
-            <!-- Director 1 -->
-            <div class="director-card" onclick="openModal('modal-director1')">
-                <div class="director-image">
-                    <div class="aspect-ratio-container">
-                        <img src="assets/images/leaders/Kuloja.jpg" 
-                             alt="Ms. M.K.G. Peiris" 
-                             onerror="this.src='assets/images/leaders/default-avatar.jpg'">
+        <!-- Other 4 Board Directors in One Row -->
+        <div class="directors-row">
+            <?php
+            $boardMembers = [
+                [
+                    'name' => 'Ms. M.K.G. Peiris',
+                    'title' => 'Director<br> Department of Development Finance, Ministry of Finance',
+                    'image' => 'assets/images/leaders/Kuloja.jpg'
+                ],
+                [
+                    'name' => 'Mr. Asiri Wickramarachchi',
+                    'title' => 'Chief Officer<br>General Insurance, Sri Lanka Insurance Corporation General Ltd',
+                    'image' => 'assets/images/leaders/Asiri.jpg'
+                ],
+                [
+                    'name' => 'Ms. S.M. Rajapaksha',
+                    'title' => 'Chief Internal Auditor (Planning)<br> Ministry of Trade',
+                    'image' => 'assets/images/leaders/Rajapaksha.jpg'
+                ],
+                [
+                    'name' => 'Mr. W.S. Prasanna',
+                    'title' => 'Director<br> Dept. of Foreign Exchange, Central Bank of Sri Lanka',
+                    'image' => 'assets/images/leaders/default-men.jpeg'
+                ]
+            ];
+            foreach ($boardMembers as $index => $member):
+            ?>
+                <div class="director-card">
+                    <div class="member-image">
+                        <img src="<?php echo $member['image']; ?>" alt="<?php echo $member['name']; ?>" loading="lazy"
+                            onerror="this.src='assets/images/leaders/default.jpg'">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                        <p class="member-title"><?php echo $member['title']; ?></p>
+                        <?php if (isset($member['qualifications'])): ?>
+                            <p class="member-role"><?php echo $member['qualifications']; ?></p>
+                        <?php endif; ?>
+                        <button class="btn-view-profile" data-leader="<?php echo $index + 1; ?>" data-type="board">
+                            View Profile
+                        </button>
                     </div>
                 </div>
-                <div class="director-info">
-                    <h4>Ms. M.K.G. Peiris</h4>
-                    <p class="director-position">Director, Department of Development Finance, Ministry of Finance</p>
-                    <div class="view-details">View Details →</div>
-                </div>
-            </div>
-
-            <!-- Director 2 -->
-            <div class="director-card" onclick="openModal('modal-director2')">
-                <div class="director-image">
-                    <div class="aspect-ratio-container">
-                        <img src="assets/images/leaders/Asiri.jpg" 
-                             alt="Mr. Asiri Wickramarachchi" 
-                             onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-                    </div>
-                </div>
-                <div class="director-info">
-                    <h4>Mr. Asiri Wickramarachchi</h4>
-                    <p class="director-position">Chief Officer - General Insurance, Sri Lanka Insurance Corporation General Ltd</p>
-                    <div class="view-details">View Details →</div>
-                </div>
-            </div>
-
-            <!-- Director 3 -->
-            <div class="director-card" onclick="openModal('modal-director3')">
-                <div class="director-image">
-                    <div class="aspect-ratio-container">
-                        <img src="assets/images/leaders/Rajapaksha.jpg" 
-                             alt="Ms. S.M. Rajapaksha" 
-                             onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-                    </div>
-                </div>
-                <div class="director-info">
-                    <h4>Ms. S.M. Rajapaksha</h4>
-                    <p class="director-position">Chief Internal Auditor (Planning), Ministry of Trade</p>
-                    <div class="view-details">View Details →</div>
-                </div>
-            </div>
-
-            <!-- Director 4 -->
-            <div class="director-card" onclick="openModal('modal-director4')">
-                <div class="director-image">
-                    <div class="aspect-ratio-container">
-                        <img src="assets/images/leaders/" 
-                             alt="Mr. W.S. Prasanna" 
-                             onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-                    </div>
-                </div>
-                <div class="director-info">
-                    <h4>Mr. W.S. Prasanna</h4>
-                    <p class="director-position">Director - Dept. of Foreign Exchange, Central Bank of Sri Lanka</p>
-                    <div class="view-details">View Details →</div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
 
 <!-- Management Team Section -->
-<section class="leadership-section management-section">
+<section class="leadership-section bg-light">
     <div class="container">
         <div class="section-header">
             <h2>Management Team</h2>
-            <div class="header-line"></div>
         </div>
 
-        <!-- Deputy General Manager -->
-        <div class="management-subsection">
-            <h3 class="subsection-title">Deputy General Manager</h3>
-            <div class="directors-grid">
-                <div class="director-card" onclick="openModal('modal-mohan')">
-                    <div class="director-image">
-                        <div class="aspect-ratio-container">
-                            <img src="assets/images/leaders/New_Mohan.jpg" 
-                                 alt="Mr. Mohan Silva" 
-                                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-                        </div>
-                    </div>
-                    <div class="director-info">
-                        <h4>Mr. Mohan Silva</h4>
-                        <p class="director-position">Deputy General Manager - Operations</p>
-                        <div class="view-details">View Details →</div>
-                    </div>
+        <!-- Deputy GM - Centered Single Row -->
+        <div class="centered-row">
+            <div class="center-leader dgm">
+                <div class="member-image">
+                    <img src="assets/images/leaders/New_Mohan.jpg" alt="Mr. Mohan Silva" loading="lazy"
+                        onerror="this.src='assets/images/leaders/default.jpg'">
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Mr. Mohan Silva</h3>
+                    <p class="member-title">B.Sc. (Hons), MBA (PIM, Sri. J), AACS, DipM MCIM (UK)</p>
+                    <p class="member-role">Deputy General Manager <br>Operations</p>
+                    <button class="btn-view-profile" data-leader="0" data-type="management">
+                        View Profile
+                    </button>
                 </div>
             </div>
         </div>
 
-        <!-- Assistant General Managers -->
-        <div class="management-subsection">
-            <h3 class="subsection-title">Assistant General Managers</h3>
-            <div class="directors-grid">
-                <!-- AGM 1 - Finance -->
-                <div class="director-card" onclick="openModal('modal-raveen')">
-                    <div class="director-image">
-                        <div class="aspect-ratio-container">
-                            <img src="assets/images/leaders/New_Raveen.jpg" 
-                                 alt="Mr. Raveen Ovitigala" 
-                                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-                        </div>
+        <!-- Assistant General Managers in One Row -->
+        <div class="agm-row">
+            <?php
+            $agmMembers = [
+                [
+                    'name' => 'Mr. Raveen Ovitigala',
+                    'title' => 'Assistant General Manager<br> Finance',
+                    'image' => 'assets/images/leaders/New_Raveen.jpg',
+                    'qualifications' => 'MBS, B.Com(Spe), ACMA, SAT, APFA, ACPM'
+                ],
+                [
+                    'name' => 'Ms. Shama Selvaratnam',
+                    'title' => 'Assistant General Manager<br> Marketing',
+                    'image' => 'assets/images/leaders/New_Shama.jpg',
+                    'qualifications' => 'B.A, MCIM, Dip Dig M (UK)'
+                ],
+                [
+                    'name' => 'Mr. Manjula Wickramasinghe',
+                    'title' => 'Assistant General Manager<br> Claims & Recoveries',
+                    'image' => 'assets/images/leaders/New_Manjula.jpg',
+                    'qualifications' => 'LLM, PGD, LLB, IHDA(IDhat)-UK'
+                ]
+            ];
+            foreach ($agmMembers as $index => $member):
+            ?>
+                <div class="agm-card">
+                    <div class="member-image">
+                        <img src="<?php echo $member['image']; ?>" alt="<?php echo $member['name']; ?>" loading="lazy"
+                            onerror="this.src='assets/images/leaders/default.jpg'">
                     </div>
-                    <div class="director-info">
-                        <h4>Mr. Raveen Ovitigala</h4>
-                        <p class="director-position">Assistant General Manager - Finance</p>
-                        <div class="view-details">View Details →</div>
-                    </div>
-                </div>
-
-                <!-- AGM 2 - Marketing -->
-                <div class="director-card" onclick="openModal('modal-shama')">
-                    <div class="director-image">
-                        <div class="aspect-ratio-container">
-                            <img src="assets/images/leaders/New_Shama.jpg" 
-                                 alt="Ms. Shama Selvaratnam" 
-                                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-                        </div>
-                    </div>
-                    <div class="director-info">
-                        <h4>Ms. Shama Selvaratnam</h4>
-                        <p class="director-position">Assistant General Manager - Marketing</p>
-                        <div class="view-details">View Details →</div>
-                    </div>
-                </div>
-
-                <!-- AGM 3 - Claims & Recoveries -->
-                <div class="director-card" onclick="openModal('modal-manjula')">
-                    <div class="director-image">
-                        <div class="aspect-ratio-container">
-                            <img src="assets/images/leaders/New_Manjula.jpg" 
-                                 alt="Mr. Manjula Wickramasinghe" 
-                                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-                        </div>
-                    </div>
-                    <div class="director-info">
-                        <h4>Mr. Manjula Wickramasinghe</h4>
-                        <p class="director-position">Assistant General Manager - Claims & Recoveries</p>
-                        <div class="view-details">View Details →</div>
+                    <div class="member-info">
+                        <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                        <?php if (isset($member['qualifications'])): ?>
+                            <p class="member-title"><?php echo $member['qualifications']; ?></p>
+                        <?php endif; ?>
+                        <p class="member-role"><?php echo $member['title']; ?></p>
+                        <button class="btn-view-profile" data-leader="<?php echo $index + 1; ?>" data-type="management">
+                            View Profile
+                        </button>
                     </div>
                 </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
 
-<!-- Modal Structure -->
-<div id="leaderModal" class="modal">
+<!-- Profile Modal -->
+<div class="profile-modal" id="profileModal" role="dialog" aria-modal="true" aria-labelledby="modalName" aria-hidden="true">
+    <div class="modal-overlay" aria-hidden="true"></div>
     <div class="modal-content">
-        <span class="close-modal" onclick="closeModal()">&times;</span>
-        <div class="modal-body" id="modalBody"></div>
-    </div>
-</div>
-
-<!-- Hidden Modal Content -->
-<div style="display: none;">
-    <!-- CMD Modal -->
-    <div id="modal-cmd" class="modal-data">
         <div class="modal-header">
-            <img src="assets/images/leaders/New_CMD.jpg" 
-                 alt="Prof (Dr.) A. Aruna Shanthaarchchi" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Prof (Dr.) A. Aruna Shanthaarchchi</h2>
-                <p class="modal-position">Chairman & Managing Director</p>
-                <p class="modal-credentials">B.A, PGD, MSc, MSSc, PhD</p>
+            <h3 id="modalName"></h3>
+            <button class="modal-close" id="closeModal" aria-label="Close profile modal" type="button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-profile">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="" loading="lazy">
+                </div>
+                <div class="modal-details">
+                    <p class="modal-title" id="modalTitle"></p>
+                    <div class="modal-description" id="modalDescription"></div>
+                </div>
             </div>
-        </div>
-        <div class="modal-description">
-            <p>Prof. (Dr) Aruna Shanthaarchchi is an economist and researcher with almost 30 years of professional experience on development projects with clients ranging from the WB and ADB to the Central Environmental Authority, Ministry of Finance, Road Development Authority, and Mahaweli Authority of Sri Lanka. He focuses area include project evaluation with economic and financial analysis, economic social and environmental impact assessment, & is knowledgeable of the institutional and development issues. He is a PhD holder in Business economics and MSc and MPhil holder in natural resource management.</p>
-        </div>
-    </div>
-
-    <!-- Director 1 Modal -->
-    <div id="modal-director1" class="modal-data">
-        <div class="modal-header">
-            <img src="assets/images/leaders/Kuloja.jpg" 
-                 alt="Ms. M.K.G. Peiris" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Ms. M.K.G. Peiris</h2>
-                <p class="modal-position">Director, Department of Development Finance, Ministry of Finance</p>
-            </div>
-        </div>
-        <div class="modal-description">
-            <p>Ms. Kuloja Gamindi Peiris is an officer of the Sri Lanka Planning Service and currently serves as a Director of the Department of Development Finance at the Ministry of Finance in Sri Lanka. She has been working in the public service for 15 years, starting as an Assistant Director at the Western Provincial Council in 2009. Over the years, she has worked in the Department of External Resources and the Department of Development Finance of the General Treasury. In addition, she has served and contributed in policy related development matters of the country and also represented the General Treasury as a Board Director in statutory institutions.</p>
-            <p>Ms. Kuloja Peiris holds two master's degrees: a Master's in Public and Economic Policies from the University of Tsukuba, Japan and a Master's in Economics from the University of Kelaniya. She is a graduate of the University of Colombo and earned a BA (Hons) degree in economics. Further, she has undergone training and gained experience in countries such as Australia, Japan, China, Singapore, and South Korea.</p>
-        </div>
-    </div>
-
-    <!-- Director 2 Modal -->
-    <div id="modal-director2" class="modal-data">
-        <div class="modal-header">
-            <img src="assets/images/leaders/Asiri.jpg" 
-                 alt="Mr. Asiri Wickramarachchi" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Mr. Asiri Wickramarachchi</h2>
-                <p class="modal-position">Chief Officer - General Insurance, Sri Lanka Insurance Corporation General Ltd</p>
-            </div>
-        </div>
-        <div class="modal-description">
-            <p>Mr. Asiri Wickramarachchi is a highly qualified and experienced professional in the insurance industry, with over 18 years of diverse experience across both multinational and local insurance companies. His expertise spans key technical areas, including Underwriting, Claims, and Reinsurance, empowering him to drive strategic advancements within the sector.</p>
-            <p>In 2011, Asiri earned the Associateship (ACII) and "Chartered Insurer" status from the Chartered Insurance Institute (CII), UK. He is recognised as the youngest individual from Sri Lanka to achieve this prestigious qualification. His exceptional achievement was further celebrated when he received the "Most Outstanding Student Award" at the 2012 Insurance Congress in Colombo, an honour presented to the highest-performing ACII-qualified individual for the year 2011.</p>
-            <p>Building on this strong foundation, Asiri later attained the Fellowship (FCII) qualification from the Chartered Insurance Institute - UK, the highest level of professional recognition in the field of insurance. Before assuming his current role as Chief Officer - General Insurance at Sri Lanka Insurance General Ltd., Asiri served as Chief Operating Officer - Technical at Continental Insurance Lanka Ltd., where he spearheaded various operational and technical functions to enhance profitability and operational efficiency.</p>
-        </div>
-    </div>
-
-    <!-- Director 3 Modal -->
-    <div id="modal-director3" class="modal-data">
-        <div class="modal-header">
-            <img src="assets/images/leaders/Rajapaksha.jpg" 
-                 alt="Ms. S.M. Rajapaksha" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Ms. S.M. Rajapaksha</h2>
-                <p class="modal-position">Chief Internal Auditor (Planning), Ministry of Trade</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Director 4 Modal -->
-    <div id="modal-director4" class="modal-data">
-        <div class="modal-header">
-            <img src="assets/images/leaders/" 
-                 alt="Mr. W.S. Prasanna" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Mr. W.S. Prasanna</h2>
-                <p class="modal-position">Director - Dept. of Foreign Exchange, Central Bank of Sri Lanka</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Mohan Modal -->
-    <div id="modal-mohan" class="modal-data">
-        <div class="modal-header">
-            <img src="assets/images/leaders/New_Mohan.jpg" 
-                 alt="Mr. Mohan Silva" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Mr. Mohan Silva</h2>
-                <p class="modal-position">Deputy General Manager - Operations</p>
-                <p class="modal-credentials">B.Sc. (Hons), MBA (PIM, Sri. J), AACS, DipM MCIM (UK)</p>
-            </div>
-        </div>
-        <div class="modal-description">
-            <p>Mr. Mohan Silva represents senior management of SLECIC possessing of over 22 years of senior managerial experience at various spheres of SLECIC's main service delivery areas ranging from Marketing, Buyer and Country Underwriting, Information Systems & Statistics, Claims & Recoveries. He had the opportunity of accumulating numerous international training exposures in Export Credit Insurance with his tenure at SLECIC of over 28 years. He is a Masters Degree Holder in Business Administration, B.Sc. in Mathematics and Statistics, Associate Member of Australian Computer Society and Member of Chartered Institute of Marketing (UK).</p>
-        </div>
-    </div>
-
-    <!-- Raveen Modal -->
-    <div id="modal-raveen" class="modal-data">
-        <div class="modal-header">
-            <img src="assets/images/leaders/New_Raveen.jpg" 
-                 alt="Mr. Raveen Ovitigala" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Mr. Raveen Ovitigala</h2>
-                <p class="modal-position">Assistant General Manager - Finance</p>
-                <p class="modal-credentials">MBS, B.Com(Spe), ACMA, SAT, APFA, ACPM</p>
-            </div>
-        </div>
-        <div class="modal-description">
-            <p>Mr. Ravin has experience of Accounting, Finance and Auditing almost 20 years. Worked as Deputy Director Finance, Coconut Development Authority more than 10 years. Worked in Sri Lanka Transport Board, as an Accountant and Regional Finance Manager. He performed his duties as an Acting Internal Auditor in Smallholder Tea and Rubber Revitalization Project and GOSL almost 6 years. Master Holder in Business Studies and Degree Holder in Commerce & member of CMA SL & Senior Member of AAT SL and Member of PFA of SL.</p>
-        </div>
-    </div>
-
-    <!-- Shama Modal -->
-    <div id="modal-shama" class="modal-data">
-        <div class="modal-header">
-            <img src="assets/images/leaders/New_Shama.jpg" 
-                 alt="Ms. Shama Selvaratnam" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Ms. Shama Selvaratnam</h2>
-                <p class="modal-position">Assistant General Manager - Marketing</p>
-                <p class="modal-credentials">B.A, MCIM, Dip Dig M (UK)</p>
-            </div>
-        </div>
-        <div class="modal-description">
-            <p>A Senior Professional Marketer in the Finance field, possessing a wide skill set in all aspects of Marketing, Credit Risk Evaluation, Strategy Planning and Implementation, whilst working in Senior Managerial positions in the Working Capital Industry, for over 17 years.</p>
-        </div>
-    </div>
-
-    <!-- Manjula Modal -->
-    <div id="modal-manjula" class="modal-data">
-        <div class="modal-header">
-            <img src="assets/images/leaders/New_Manjula.jpg" 
-                 alt="Mr. Manjula Wickramasinghe" 
-                 class="modal-image" 
-                 onerror="this.src='assets/images/leaders/default-avatar.jpg'">
-            <div class="modal-title">
-                <h2>Mr. Manjula Wickramasinghe</h2>
-                <p class="modal-position">Assistant General Manager - Claims & Recoveries</p>
-                <p class="modal-credentials">LLM, PGD, LLB, IHDA(IDhat)-UK</p>
-            </div>
-        </div>
-        <div class="modal-description">
-            <p>Mr. Manjula Wickramasinghe has over 20 years of experience in the finance and insurance sectors, having worked at leading institutions from 2002 to 2022. My career spans roles at Ceylinco Insurance, AIG Insurance, Asian Alliance Insurance, Janashakthi Insurance, Citizens Development Business Finance, Softlogic Finance, Vallibel Finance, and Allianz Insurance. During this time, I gained extensive expertise in general insurance underwriting, sales, marketing, customer relations, credit and lending recoveries, and business development.</p>
         </div>
     </div>
 </div>
-
-<script>
-/**
- * Leadership Page Modal Functionality
- * Handles opening, closing, and interaction with leader profile modals
- */
-
-/**
- * Open modal with leader details
- * @param {string} modalId - ID of the modal content to display
- */
-function openModal(modalId) {
-    const modal = document.getElementById('leaderModal');
-    const modalBody = document.getElementById('modalBody');
-    const modalData = document.getElementById(modalId);
-    
-    if (modalData && modal && modalBody) {
-        modalBody.innerHTML = modalData.innerHTML;
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    }
-}
-
-/**
- * Close the modal and restore page scroll
- */
-function closeModal() {
-    const modal = document.getElementById('leaderModal');
-    if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-}
-
-/**
- * Close modal when clicking outside the modal content
- */
-window.onclick = function(event) {
-    const modal = document.getElementById('leaderModal');
-    if (event.target === modal) {
-        closeModal();
-    }
-}
-
-/**
- * Close modal when pressing Escape key
- */
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        closeModal();
-    }
-});
-</script>
 
 <?php include 'includes/footer.php'; ?>
+
+<script>
+    // Leadership data
+    const leadershipData = {
+        board: [{
+                name: 'Prof. (Dr.) A. Aruna Shanthaarchchi',
+                title: 'Chairman & Managing Director',
+                image: 'assets/images/leaders/New_CMD.jpg',
+                description: 'Prof. (Dr.) Aruna Shanthaarchchi is an economist and researcher with nearly 30 years of professional experience in development projects. His clientele includes the World Bank (WB), Asian Development Bank (ADB), Central Environmental Authority, Ministry of Finance, Road Development Authority, and the Mahaweli Authority of Sri Lanka. His areas of expertise include project evaluation with economic and financial analysis, economic, social, and environmental impact assessments, and institutional and development issues. He holds a PhD in Business Economics and MSc and MPhil degrees in Natural Resource Management.'
+            },
+            {
+                name: 'Ms. M.K.G. Peiris',
+                title: 'Director, Department of Development Finance, Ministry of Finance',
+                image: 'assets/images/leaders/Kuloja.jpg',
+                description: 'Ms. Kuloja Gamindi Peiris is an officer of the Sri Lanka Planning Service and currently serves as Director of the Department of Development Finance at the Ministry of Finance. She has over 15 years of public sector experience, beginning her career as an Assistant Director at the Western Provincial Council in 2009. She has served in the Department of External Resources and the Department of Development Finance of the General Treasury and has contributed to national policy-related development initiatives. She has also represented the General Treasury as a Board Director in several statutory institutions.<br><br>Ms. Kuloja Peiris holds two master\'s degrees: a Master’s in Public and Economic Policies from the University of Tsukuba, Japan and a Master’s in Economics from the University of Kelaniya. She is a graduate of the University of Colombo and earned a BA (Hons) degree in economics. Further, she has undergone training and gained experience in countries such as Australia, Japan, China, Singapore, and South Korea.'
+            },
+            {
+                name: 'Mr. Asiri Wickramarachchi',
+                title: 'Chief Officer - General Insurance, Sri Lanka Insurance Corporation General Ltd',
+                image: 'assets/images/leaders/Asiri.jpg',
+                description: 'Mr. Asiri Wickramarachchi is a highly qualified insurance professional with over 18 years of experience in both multinational and local insurance companies. His expertise covers underwriting, claims, and reinsurance, enabling him to drive strategic and operational excellence.<br><br>In 2011, he obtained the Associateship (ACII) and Chartered Insurer status from the Chartered Insurance Institute (CII), UK, becoming the youngest Sri Lankan to achieve this qualification. He received the “Most Outstanding Student Award” at the 2012 Insurance Congress in Colombo.<br><br>Building on this strong foundation, Asiri later attained the Fellowship (FCII) qualification from the Chartered Insurance Institute - UK, the highest level of professional recognition in the field of insurance. Before assuming his current role as Chief Officer - General Insurance at Sri Lanka Insurance General Ltd., Asiri served as Chief Operating Officer - Technical at Continental Insurance Lanka Ltd., where he spearheaded various operational and technical functions to enhance profitability and operational efficiency.'
+            },
+            {
+                name: 'Ms. S.M. Rajapaksha',
+                title: 'Chief Internal Auditor (Planning), Ministry of Trade',
+                image: 'assets/images/leaders/Rajapaksha.jpg',
+                description: 'Ms. S.M. Rajapaksha serves as Chief Internal Auditor (Planning) at the Ministry of Trade, bringing extensive experience in public sector audit and financial oversight.'
+            },
+            {
+                name: 'Mr. W.S. Prasanna',
+                title: 'Director – Department of Foreign Exchange, Central Bank of Sri Lanka',
+                image: 'assets/images/leaders/default-men.jpeg',
+                description: 'A senior financial sector professional specializing in foreign exchange management at the Central Bank of Sri Lanka.'
+            }
+        ],
+
+        management: [{
+                name: 'Mr. Mohan Silva',
+                title: 'Deputy General Manager – Operations',
+                image: 'assets/images/leaders/New_Mohan.jpg',
+                description: 'Mr. Mohan Silva is a senior management professional at SLECIC with over 28 years of service and more than 22 years of senior managerial experience. His expertise spans Marketing, Buyer and Country Underwriting, Information Systems & Statistics, and Claims & Recoveries. He has participated in numerous international training programs in Export Credit Insurance. He holds a Master’s degree in Business Administration, a BSc in Mathematics and Statistics, and is an Associate Member of the Australian Computer Society and a Member of the Chartered Institute of Marketing (UK).'
+            },
+            {
+                name: 'Mr. Raveen Ovitigala',
+                title: 'Assistant General Manager – Finance',
+                image: 'assets/images/leaders/New_Raveen.jpg',
+                description: 'Mr. Raveen Ovitigala has nearly 20 years of experience in accounting, finance, and auditing. He previously served as Deputy Director – Finance at the Coconut Development Authority for over 10 years and has held positions at the Sri Lanka Transport Board as Accountant and Regional Finance Manager. He also functioned as Acting Internal Auditor for the Smallholder Tea and Rubber Revitalization Project and the Government of Sri Lanka. He holds a Master’s degree in Business Studies, a degree in Commerce, and is a Member of CMA Sri Lanka, Senior Member of AAT Sri Lanka, and Member of the Public Finance Accountants of Sri Lanka.'
+            },
+            {
+                name: 'Ms. Shama Selvaratnam',
+                title: 'Assistant General Manager – Marketing',
+                image: 'assets/images/leaders/New_Shama.jpg',
+                description: 'Ms. Shama Selvaratnam is a senior marketing professional in the finance sector with over 17 years of experience. Her expertise includes marketing strategy, credit risk evaluation, planning, and implementation, gained through leadership roles within the working capital and financial services industries.'
+            },
+            {
+                name: 'Mr. Manjula Wickramasinghe',
+                title: 'Assistant General Manager – Claims & Recoveries',
+                image: 'assets/images/leaders/New_Manjula.jpg',
+                description: 'Mr. Manjula Wickramasinghe brings over 20 years of experience in the finance and insurance sectors. He has served at leading institutions including Ceylinco Insurance, AIG Insurance, Asian Alliance Insurance, Janashakthi Insurance, Citizens Development Business Finance, Softlogic Finance, Vallibel Finance, and Allianz Insurance. His expertise includes general insurance underwriting, sales, marketing, customer relations, credit and lending recoveries, and business development.'
+            }
+        ]
+
+    };
+
+    // Modal functionality
+    const modal = document.getElementById('profileModal');
+    const closeModal = document.getElementById('closeModal');
+    const modalName = document.getElementById('modalName');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalImage = document.getElementById('modalImage');
+    const modalDescription = document.getElementById('modalDescription');
+
+    // Open modal when View Profile is clicked
+    document.querySelectorAll('.btn-view-profile').forEach(button => {
+        button.addEventListener('click', function() {
+            const leaderIndex = parseInt(this.getAttribute('data-leader'));
+            const type = this.getAttribute('data-type');
+            openModal(leaderIndex, type);
+        });
+    });
+
+    function openModal(index, type) {
+        const leader = leadershipData[type][index];
+
+        modalName.textContent = leader.name;
+        // Show qualifications if available
+        let qualification = '';
+        if (type === 'board') {
+            // Add qualifications for board if available
+            if (leader.name === 'Prof. (Dr.) A. Aruna Shanthaarchchi') qualification = 'B.A, PGD, MSc, MSSc, PhD';
+            if (leader.name === 'Ms. M.K.G. Peiris') qualification = 'BA (Hons), MA (Econ), MPEP';
+            if (leader.name === 'Mr. Asiri Wickramarachchi') qualification = 'ACII, FCII (UK)';
+        } else if (type === 'management') {
+            if (leader.name === 'Mr. Mohan Silva') qualification = 'B.Sc. (Hons), MBA (PIM, Sri. J), AACS, DipM MCIM (UK)';
+            if (leader.name === 'Mr. Raveen Ovitigala') qualification = 'MBS, B.Com(Spe), ACMA, SAT, APFA, ACPM';
+            if (leader.name === 'Ms. Shama Selvaratnam') qualification = 'B.A, MCIM, Dip Dig M (UK)';
+            if (leader.name === 'Mr. Manjula Wickramasinghe') qualification = 'LLM, PGD, LLB, IHDA(IDhat)-UK';
+        }
+        if (qualification) {
+            modalName.innerHTML += '<br><span style="display:block;font-size:0.7rem;font-weight:400;color:var(--bg-color-light);margin-top:2px;">' + qualification + '</span>';
+        }
+        modalTitle.textContent = leader.title;
+        modalImage.src = leader.image;
+        modalImage.alt = leader.name;
+        modalDescription.innerHTML = leader.description;
+
+        // Fallback image
+        modalImage.onerror = function() {
+            this.src = 'assets/images/leaders/default.jpg';
+        };
+
+        modal.style.display = 'block';
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        
+        // Focus the close button for accessibility
+        closeModal.focus();
+    }
+
+    // Close modal function
+    function closeProfileModal() {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close modal
+    closeModal.addEventListener('click', closeProfileModal);
+    modal.querySelector('.modal-overlay').addEventListener('click', closeProfileModal);
+
+    // Close with ESC key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            closeProfileModal();
+        }
+    });
+
+    // Trap focus within modal when open
+    modal.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab' && modal.style.display === 'block') {
+            const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+            
+            if (e.shiftKey && document.activeElement === firstElement) {
+                e.preventDefault();
+                lastElement.focus();
+            } else if (!e.shiftKey && document.activeElement === lastElement) {
+                e.preventDefault();
+                firstElement.focus();
+            }
+        }
+    });
+</script>

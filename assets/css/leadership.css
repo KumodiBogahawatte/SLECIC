@@ -1,32 +1,34 @@
-/**
- * Leadership Page Styles
- * Professional stylesheet maintaining original design with improved code quality
- * 
- * @version 1.0.0
- */
+/* Leadership Page Styles - Professional Edition */
+:root {
+    --primary-color: #5B0000;
+    --secondary-color: #C18E11;
+    --bg-color-light: #f8f5ec;
+    --bg-color-dark: #2D0000;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --border-radius: 8px;
+    --transition: all 0.2s ease;
+}
 
-/* ==========================================================================
-   LEADERSHIP SECTION - MAIN LAYOUT
-   ========================================================================== */
-
+/* Leadership Section */
 .leadership-section {
-    padding: 80px 0;
-    background-color: var(--bg-light);
+    padding: 80px 8%;
+    position: relative;
 }
 
-.leadership-section .container {
-    max-width: 1200px;
+.container{
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
-.management-section {
-    background-color: #fff;
+.leadership-section.bg-light {
+    background-color: var(--bg-light);
+    padding-top: 5px;
 }
-
-/* ==========================================================================
-   SECTION HEADERS
-   ========================================================================== */
 
 .section-header {
     text-align: center;
@@ -34,540 +36,529 @@
 }
 
 .section-header h2 {
-    font-size: 2.8rem;
+    font-size: 2.25rem;
     color: var(--primary-color);
     margin-bottom: 15px;
-}
-
-.header-line {
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--secondary-color), var(--bg-color-light));
-    margin: 0 auto;
-    border-radius: 2px;
-}
-
-/* ==========================================================================
-   VIEW DETAILS LINK
-   ========================================================================== */
-
-.view-details {
-    color: var(--secondary-color);
     font-weight: 600;
-    font-size: 0.95rem;
-    margin-top: 15px;
+    position: relative;
     display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.view-details:hover {
-    color: var(--primary-color);
-    transform: translateX(5px);
-}
-
-/* ==========================================================================
-   ASPECT RATIO CONTAINER (379x476 IMAGE RATIO)
-   ========================================================================== */
-
-.aspect-ratio-container {
-    position: relative;
-    width: 100%;
-    padding-top: 125.6%; /* 476/379 * 100% */
-    overflow: hidden;
-}
-
-.aspect-ratio-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-}
-
-/* ==========================================================================
-   FEATURED LEADER CARD (CHAIRMAN)
-   ========================================================================== */
-
-.leader-card.featured {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(91, 0, 0, 0.15);
-    overflow: hidden;
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-.leader-card.featured:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 50px rgba(91, 0, 0, 0.25);
-}
-
-.leader-image {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, var(--primary-color), var(--bg-color-dark));
-}
-
-.leader-image .aspect-ratio-container {
-    height: 350px;
-}
-
-.position-badge {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    background: rgba(193, 142, 17, 0.95);
-    color: white;
-    padding: 12px 20px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-align: center;
-    backdrop-filter: blur(10px);
-}
-
-.leader-info {
-    padding: 40px;
-    position: relative;
-}
-
-.leader-info h3 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.credentials {
-    color: var(--secondary-color);
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-/* ==========================================================================
-   DIRECTORS GRID
-   ========================================================================== */
-
-.directors-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.director-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    border-top: 4px solid var(--secondary-color);
-    cursor: pointer;
-    position: relative;
-    max-width: 320px;
-}
-
-.director-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 35px rgba(91, 0, 0, 0.15);
-    border-top-color: var(--primary-color);
-}
-
-.director-image {
-    background: linear-gradient(135deg, rgba(91, 0, 0, 0.1), rgba(193, 142, 17, 0.1));
-}
-
-.director-info {
-    padding: 20px;
-    position: relative;
-}
-
-.director-info h4 {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.director-position {
-    color: var(--secondary-color);
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-/* ==========================================================================
-   MANAGEMENT TEAM SECTION
-   ========================================================================== */
-
-.management-subsection {
-    margin-bottom: 60px;
-}
-
-.subsection-title {
-    font-size: 2rem;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
     padding-bottom: 15px;
 }
 
-.subsection-title::after {
+.section-header h2::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
+    width: 60px;
+    height: 2px;
     background: var(--secondary-color);
 }
 
-/* ==========================================================================
-   MANAGERS GRID (USES SAME STYLING AS DIRECTORS)
-   ========================================================================== */
-
-.managers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+/* Centered Row for Chairman and Deputy GM */
+.centered-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
-.managers-grid .director-card {
-    grid-template-columns: 1fr;
-    border-left: none;
-    border-top: 4px solid var(--secondary-color);
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    background: white;
-}
-
-.managers-grid .director-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 35px rgba(91, 0, 0, 0.15);
-    border-top-color: var(--primary-color);
-}
-
-.managers-grid .director-image {
+.center-leader {
     width: 100%;
-    background: linear-gradient(135deg, rgba(91, 0, 0, 0.1), rgba(193, 142, 17, 0.1));
+    max-width: 450px;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.managers-grid .director-info {
-    padding: 25px;
+.center-leader:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
 
-.managers-grid .director-info h4 {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.managers-grid .director-position {
-    color: var(--secondary-color);
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-/* ==========================================================================
-   MODAL STYLES
-   ========================================================================== */
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-    animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-    from { 
-        opacity: 0; 
-    }
-    to { 
-        opacity: 1; 
-    }
-}
-
-.modal-content {
-    background-color: white;
-    margin: 3% auto;
-    padding: 0;
-    border-radius: 15px;
-    max-width: 900px;
-    width: 90%;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    animation: slideDown 0.4s ease;
-    position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.close-modal {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    color: white;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 10;
-    width: 45px;
-    height: 45px;
-    background: var(--primary-color);
+.center-leader .member-image {
+    height: 150px;
+    width: 150px;
+    margin: 30px auto 20px auto;
     border-radius: 50%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-    line-height: 1;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--white);
 }
 
-.close-modal:hover {
-    background: var(--secondary-color);
-    transform: rotate(90deg);
-}
-
-.modal-body {
-    padding: 0;
-}
-
-.modal-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--bg-color-dark));
-    padding: 50px 40px 40px;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    border-radius: 15px 15px 0 0;
-}
-
-.modal-image {
-    width: 379px;
-    height: 476px;
+.center-leader .member-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 12px;
-    border: 5px solid var(--secondary-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: var(--transition);
 }
 
-.modal-title {
-    flex: 1;
+.center-leader:hover .member-image img {
+    transform: scale(1.03);
 }
 
-.modal-title h2 {
-    color: white;
-    font-size: 2.2rem;
-    margin-bottom: 12px;
+.center-leader .member-info {
+    padding: 0 30px 30px;
 }
 
-.modal-position {
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-    font-weight: 600;
+.center-leader .member-name {
+    font-size: 1.375rem;
+    color: var(--primary-color);
     margin-bottom: 8px;
+    font-weight: 600;
 }
 
-.modal-credentials {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1rem;
+.center-leader .member-title {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.center-leader .member-role {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Directors Row (4 Board Directors) */
+.directors-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.director-card {
+    flex: 0 0 calc(25% - 25px);
+    max-width: calc(25% - 25px);
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.director-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.director-card .member-image {
+    height: 120px;
+    width: 120px;
+    margin: 25px auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--white);
+}
+
+.director-card .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.director-card:hover .member-image img {
+    transform: scale(1.03);
+}
+
+.director-card .member-info {
+    padding: 0 20px 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.director-card .member-name {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.director-card .member-title {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    flex-grow: 1;
     font-weight: 500;
 }
 
+/* AGM Row (3 Assistant GMs) */
+.agm-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.agm-card {
+    flex: 0 0 calc(33.333% - 25px);
+    max-width: calc(33.333% - 25px);
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.agm-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.agm-card .member-image {
+    height: 120px;
+    width: 120px;
+    margin: 25px auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--white);
+}
+
+.agm-card .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.agm-card:hover .member-image img {
+    transform: scale(1.03);
+}
+
+.agm-card .member-info {
+    padding: 0 20px 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.agm-card .member-name {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.agm-card .member-title {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.agm-card .member-role {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+/* View Profile Button */
+.btn-view-profile {
+    background: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-block;
+    width: auto;
+    min-width: 140px;
+    margin-top: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-view-profile:hover {
+    background: var(--primary-color);
+}
+
+.btn-view-profile:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Modal Styles */
+.profile-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: relative;
+    background: var(--white);
+    width: 90%;
+    max-width: 800px;
+    max-height: 85vh;
+    margin: 7.5vh auto;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.25s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--white);
+    line-height: 1.3;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    line-height: 1;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-close:focus {
+    outline: 2px solid var(--white);
+}
+
+.modal-body {
+    padding: 30px;
+    overflow-y: auto;
+    max-height: calc(85vh - 80px);
+}
+
+.modal-profile {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.modal-image {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-details {
+    flex: 1;
+}
+
+.modal-title {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .modal-description {
-    padding: 40px;
-    background: white;
+    color: var(--text-dark);
+    line-height: 1.7;
+    font-size: 0.95rem;
 }
 
-.modal-description p {
-    color: #555;
-    line-height: 1.9;
-    font-size: 1.05rem;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.modal-description p:last-child {
-    margin-bottom: 0;
-}
-
-/* ==========================================================================
-   RESPONSIVE DESIGN
-   ========================================================================== */
-
-/* Large Tablets and Small Desktops */
-@media (max-width: 1100px) {
-    .leader-card.featured {
-        grid-template-columns: 280px 1fr;
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .director-card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
     
-    .leader-image .aspect-ratio-container {
-        height: 350px;
+    .agm-card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
 }
 
-/* Tablets */
 @media (max-width: 992px) {
-    .leader-card.featured {
-        grid-template-columns: 1fr;
+    .leadership-section {
+        padding: 60px 4%;
     }
     
-    .leader-image .aspect-ratio-container {
-        height: 400px;
+    .section-header h2 {
+        font-size: 1.875rem;
     }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .centered-row {
+        margin-bottom: 50px;
+    }
+    
+    .center-leader {
+        max-width: 400px;
+    }
+    
+    .center-leader .member-image {
+        height: 140px;
+        width: 140px;
+    }
+}
 
-    .modal-header {
+@media (max-width: 768px) {
+    .leadership-section {
+        padding: 50px 4%;
+    }
+    
+    .section-header {
+        margin-bottom: 35px;
+    }
+    
+    .centered-row {
+        margin-bottom: 40px;
+    }
+    
+    .center-leader {
+        max-width: 360px;
+    }
+    
+    .center-leader .member-image {
+        height: 130px;
+        width: 130px;
+    }
+    
+    .director-card,
+    .agm-card {
+        flex: 0 0 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    
+    .modal-profile {
         flex-direction: column;
         text-align: center;
     }
-
+    
     .modal-image {
-        width: 300px;
-        height: 378px; /* Maintain 379:476 ratio */
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
     }
 }
 
-/* Mobile Landscape */
-@media (max-width: 768px) {
-    .section-header h2 {
-        font-size: 2.2rem;
-    }
-
-    .leader-info {
-        padding: 30px 20px;
-    }
-
-    .leader-info h3 {
-        font-size: 1.6rem;
-    }
-
-    .subsection-title {
-        font-size: 1.6rem;
-    }
-
-    .directors-grid,
-    .managers-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
-
-    .director-card {
-        margin-bottom: 25px;
-    }
-
-    .modal-content {
-        width: 95%;
-        margin: 5% auto;
-    }
-
-    .modal-header {
-        padding: 40px 25px 30px;
-    }
-
-    .modal-image {
-        width: 250px;
-        height: 315px; /* Maintain 379:476 ratio */
-    }
-
-    .modal-title h2 {
-        font-size: 1.8rem;
-    }
-
-    .modal-description {
-        padding: 30px 25px;
-    }
-}
-
-/* Mobile Portrait */
 @media (max-width: 576px) {
-    .directors-grid,
-    .managers-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .leader-image .aspect-ratio-container {
-        height: 350px;
-    }
-    
-    .leader-info {
-        padding: 25px 15px;
-    }
-    
-    .director-info {
-        padding: 20px 15px;
-    }
-}
-
-/* Extra Small Mobile */
-@media (max-width: 480px) {
     .leadership-section {
-        padding: 50px 0;
+        padding: 40px 4%;
     }
-
+    
     .section-header h2 {
-        font-size: 1.8rem;
-    }
-
-    .leader-info h3 {
-        font-size: 1.4rem;
-    }
-
-    .director-info h4 {
-        font-size: 1.3rem;
-    }
-
-    .modal-header {
-        padding: 35px 20px 25px;
-    }
-
-    .modal-image {
-        width: 200px;
-        height: 252px; /* Maintain 379:476 ratio */
-    }
-
-    .modal-title h2 {
         font-size: 1.5rem;
     }
-
-    .modal-description {
-        padding: 25px 20px;
+    
+    .center-leader .member-image {
+        height: 120px;
+        width: 120px;
     }
-
-    .modal-description p {
-        font-size: 1rem;
+    
+    .modal-content {
+        width: 95%;
+        margin: 5vh auto;
     }
-
-    .close-modal {
-        width: 40px;
-        height: 40px;
-        font-size: 30px;
-        right: 15px;
-        top: 15px;
+    
+    .modal-header,
+    .modal-body {
+        padding: 20px;
     }
+}
+
+/* Focus styles */
+*:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
 }
