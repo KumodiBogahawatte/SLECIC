@@ -70,6 +70,25 @@
     </div>
 </footer>
 
+<!-- Floating Quick Access Buttons -->
+<div class="quick-access-buttons">
+    <a href="faq" class="quick-btn">
+        <span>FAQ</span>
+    </a>
+    <a href="glossary" class="quick-btn">
+        <span>Glossary</span>
+    </a>
+    <a href="download" class="quick-btn">
+        <span>Downloads</span>
+    </a>
+    <a href="sitemap" class="quick-btn">
+        <span>Site Map</span>
+    </a>
+    <a href="https://apara.slecic.lk/" class="quick-btn">
+        <span>APARA System</span>
+    </a>
+</div>
+
 <!-- Back to Top Button -->
 <button id="backToTop" class="back-to-top" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
@@ -95,4 +114,17 @@ backToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+// Highlight active quick access button
+(function() {
+    const currentPath = window.location.pathname.toLowerCase();
+    const quickBtns = document.querySelectorAll('.quick-btn');
+    
+    quickBtns.forEach(btn => {
+        const href = btn.getAttribute('href').toLowerCase();
+        if (currentPath.includes(href) || currentPath.includes(href.replace('.php', ''))) {
+            btn.classList.add('active');
+        }
+    });
+})();
 </script>
