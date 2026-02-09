@@ -295,3 +295,119 @@ footer {
   }
 }
 
+/* === Floating Quick Access Buttons === */
+.quick-access-buttons {
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  z-index: 1200;
+}
+
+.quick-btn {
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  height: 100px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.quick-btn:first-child {
+  border-radius: 0 8px 0 0;
+}
+
+.quick-btn:last-child {
+  border-radius: 0 0 8px 0;
+  border-bottom: none;
+}
+
+.quick-btn span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.quick-btn:hover {
+  background: var(--primary-color);
+}
+
+.quick-btn.active {
+  background: var(--primary-color);
+}
+
+.quick-btn.apara-btn {
+  background: var(--primary-color);
+  height: 90px;
+}
+
+.quick-btn.apara-btn:hover {
+  background: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .quick-access-buttons {
+    bottom: 20px;
+    transform: none;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 0;
+  }
+
+  .quick-btn {
+    height: 35px;
+    width: auto;
+    padding: 8px 12px;
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .quick-btn:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .quick-btn:last-child {
+    border-radius: 0 8px 8px 0;
+    border-right: none;
+  }
+
+  .quick-btn span {
+    transform: none;
+    font-size: 0.7rem;
+  }
+
+  .quick-btn:hover {
+    width: auto;
+    height: 40px;
+  }
+
+  .quick-btn.apara-btn {
+    height: 35px;
+  }
+
+  .quick-btn.apara-btn:hover {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .quick-access-buttons {
+    display: none;
+  }
+}
