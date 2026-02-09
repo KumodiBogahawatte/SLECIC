@@ -2,7 +2,6 @@
     include 'includes/header.php';
 ?>
 
-<link rel="stylesheet" href="assets/css/annual-reports.css">
 <link rel="stylesheet" href="assets/css/market-bullets.css">
 
 <section class="page-hero">
