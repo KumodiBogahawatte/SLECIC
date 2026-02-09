@@ -3,8 +3,6 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/header.css">
-<link rel="stylesheet" href="assets/css/index.css">
-<link rel="stylesheet" href="assets/css/footer.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -24,8 +22,8 @@
                     <li><a href="Who-we-are" class="dropdown-link">Who we are</a></li>
                     <li><a href="Our-role" class="dropdown-link">Our role</a></li>
                     <li><a href="Leadership" class="dropdown-link">Leadership</a></li>
-                    <li><a href="#" class="dropdown-link">Customer Testimonials</a></li>
-                    <li><a href="#" class="dropdown-link">Career Opportunities</a></li>
+                    <li><a href="Customer-testimonials" class="dropdown-link">Customer Testimonials</a></li>
+                    <li><a href="career-Opportunities" class="dropdown-link">Career Opportunities</a></li>
                 </ul>
             </li>
             <li class="nav-item-dropdown">
