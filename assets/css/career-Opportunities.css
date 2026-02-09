@@ -1,0 +1,119 @@
+/* Career Opportunities Page Styles */
+:root {
+    --primary-color: #5B0000;
+    --secondary-color: #C18E11;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --border-radius: 8px;
+}
+
+/* Careers Section */
+.careers-section {
+    padding: 80px 8%;
+    background: var(--bg-light);
+    min-height: 40vh;
+}
+
+.careers-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* No Vacancies Message */
+.no-vacancies {
+    text-align: center;
+    padding: 60px 40px;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.no-vacancies-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: var(--bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-vacancies-icon i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.no-vacancies h2 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.no-vacancies p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.no-vacancies .contact-note {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.no-vacancies .contact-note a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.no-vacancies .contact-note a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .careers-section {
+        padding: 60px 4%;
+    }
+
+    .no-vacancies {
+        padding: 40px 25px;
+    }
+
+    .no-vacancies h2 {
+        font-size: 1.5rem;
+    }
+
+    .no-vacancies-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .no-vacancies-icon i {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .careers-section {
+        padding: 40px 4%;
+    }
+
+    .no-vacancies {
+        padding: 30px 20px;
+    }
+
+    .no-vacancies h2 {
+        font-size: 1.35rem;
+    }
+
+    .no-vacancies p {
+        font-size: 0.95rem;
+    }
+}
