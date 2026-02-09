@@ -1,0 +1,217 @@
+/* ========================================= */
+/* === FAQ PAGE STYLES === */
+/* ========================================= */
+
+:root {
+    --primary-color: #5B0000;
+    --secondary-color: #C18E11;
+    --gold-accent: #C18E11;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --text-dark: #333333;
+    --text-light: #555555;
+}
+
+.faq-section {
+    padding: 80px 8%;
+    background: #fff;
+}
+
+.faq-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.faq-section .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-section .section-subtitle {
+    font-family: 'Playfair Display', serif;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.faq-section .section-header h2 {
+    font-size: 2.25rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.faq-section .section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.faq-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 2px 8px rgba(193, 142, 17, 0.15);
+}
+
+.faq-question {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 20px 25px;
+    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    outline: none;
+    font-family: inherit;
+}
+
+.faq-question:hover {
+    color: var(--secondary-color);
+}
+
+.faq-question span {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.faq-question i {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-question {
+    background: var(--bg-light);
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background: var(--bg-light);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 20px 25px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.faq-answer p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer ul {
+    margin: 10px 0 10px 20px;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.faq-answer ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.faq-answer ul li:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.faq-answer a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive FAQ */
+@media (max-width: 991px) {
+    .faq-section {
+        padding: 60px 5%;
+    }
+
+    .faq-section .section-header h2 {
+        font-size: 1.875rem;
+    }
+  
+    .faq-question {
+        font-size: 1rem;
+        padding: 18px 20px;
+    }
+  
+    .faq-answer p,
+    .faq-answer ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-section {
+        padding: 40px 4%;
+    }
+
+    .faq-section .section-header h2 {
+        font-size: 1.5rem;
+    }
+  
+    .faq-question {
+        font-size: 0.95rem;
+        padding: 15px 18px;
+    }
+  
+    .faq-item.active .faq-answer {
+        padding: 15px 18px;
+    }
+  
+    .faq-answer p,
+    .faq-answer ul {
+        font-size: 0.85rem;
+    }
+}
+
+/* Focus styles */
+.faq-question:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: -2px;
+}
