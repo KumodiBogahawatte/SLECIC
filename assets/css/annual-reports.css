@@ -1,12 +1,10 @@
-/* =========================================
-   1. FONTS & GENERAL STYLES
-   ========================================= */
+
    @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
    
    .pub-section {
        padding: 60px 0;
-       background-color: #f8f9fa; /* Clean light background */
+       background-color: #f8f9fa;
        font-family: 'Segoe UI', sans-serif;
    }
    
@@ -16,15 +14,11 @@
        padding: 0 15px;
    }
    
-   /* Helper for spacing */
    .mt-large {
        margin-top: 80px;
    }
    
-   
-   /* =========================================
-      2. HERO SECTION
-      ========================================= */
+
    .page-hero {
        position: relative;
        width: 100%;
@@ -73,10 +67,6 @@
        opacity: 0.9;
    }
    
-   
-   /* =========================================
-      3. SEARCH BAR STYLES (MATCHING REFERENCE)
-      ========================================= */
    .search-bar-wrapper {
        background: #fff;
        padding: 15px;
@@ -88,14 +78,14 @@
    
    .search-form {
        display: flex;
-       gap: 15px; /* Space between elements */
+       gap: 15px;
        align-items: center;
        flex-wrap: wrap;
    }
    
    /* Input Field Area */
    .search-input-group {
-       flex: 1; /* Takes up available space */
+       flex: 1;
        min-width: 250px;
    }
    
@@ -114,9 +104,8 @@
        border-color: #580000;
    }
    
-   /* Year Dropdown Area */
    .year-select-group {
-       width: 200px; /* Fixed width for dropdown */
+       width: 200px;
    }
    
    .year-select-group select {
@@ -135,9 +124,8 @@
        border-color: #580000;
    }
    
-   /* Search Button Style */
    .btn-search {
-       background-color: #580000; /* SLECIC Brand Red */
+       background-color: #580000;
        color: #fff;
        border: none;
        padding: 12px 30px;
@@ -153,10 +141,7 @@
        background-color: #7a0000;
    }
    
-   
-   /* =========================================
-      4. SECTION HEADERS
-      ========================================= */
+
    .section-header {
        margin-bottom: 30px;
    }
@@ -172,14 +157,11 @@
    .title-line {
        width: 60px;
        height: 4px;
-       background-color: #d1b24a; /* Gold line */
+       background-color: #d1b24a;
        border-radius: 2px;
    }
    
    
-   /* =========================================
-      5. CARD GRID SYSTEM
-      ========================================= */
    .doc-grid {
        display: grid;
        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -187,9 +169,6 @@
    }
    
    
-   /* =========================================
-      6. DOCUMENT CARD STYLING
-      ========================================= */
    .doc-card {
        background: #fff;
        border-radius: 12px;
@@ -206,7 +185,6 @@
        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
    }
    
-   /* Card Image Area */
    .card-image {
        height: 200px;
        background-color: #e9ecef;
@@ -232,7 +210,7 @@
        transition: transform 0.4s;
        max-width: 100%;
        max-height: 100%;
-       display: none; /* Hidden initially, shown when PDF renders */
+       display: none;
    }
    
    .card-image canvas.rendered {
@@ -257,7 +235,6 @@
        display: flex;
    }
    
-   /* Card Body Area */
    .card-body {
        padding: 20px;
        text-align: center;
@@ -276,7 +253,7 @@
        word-wrap: break-word;
        overflow-wrap: break-word;
        hyphens: auto;
-       min-height: 2.8em; /* Ensures consistent height for multi-line titles */
+       min-height: 2.8em;
    }
    
    .doc-date {
@@ -285,7 +262,6 @@
        margin-bottom: 20px;
    }
    
-   /* Card Buttons (View & Download) */
    .card-buttons {
        display: flex;
        gap: 10px;
@@ -303,7 +279,6 @@
        text-align: center;
    }
    
-   /* View Button (Solid) */
    .btn-view {
        background-color: #580000;
        color: #fff;
@@ -316,7 +291,6 @@
        color: #fff;
    }
    
-   /* Download Button (Outline) */
    .btn-download {
        background-color: transparent;
        color: #555;
@@ -330,11 +304,8 @@
    }
    
    
-   /* =========================================
-      7. SPECIAL STYLES FOR ACTS
-      ========================================= */
    .act-image-bg {
-       background-color: #eaf4ff; /* Light Blue Background */
+       background-color: #eaf4ff;
        display: flex;
        align-items: center;
        justify-content: center;
@@ -347,10 +318,9 @@
    
    .act-icon {
        font-size: 60px;
-       color: #003366; /* Corporate Blue */
+       color: #003366;
    }
    
-   /* Act card with PDF canvas */
    .act-card .card-image {
        position: relative;
    }
@@ -367,9 +337,7 @@
        z-index: 0;
    }
    
-   /* =========================================
-      8. RESPONSIVE DESIGN
-      ========================================= */
+
    @media (max-width: 768px) {
        .search-form {
            flex-direction: column;
