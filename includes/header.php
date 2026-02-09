@@ -45,7 +45,7 @@
                     <li><a href="video.php" class="dropdown-link">video</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li><a href="contact" class="nav-link">Contact Us</a></li>
         </ul>
     </nav>
 
