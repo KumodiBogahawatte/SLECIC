@@ -23,7 +23,7 @@
             <h4>Contact Us</h4>
             <div class="contact-item">
                 <i class="fas fa-map-marker-alt"></i>
-                <div>No 42 Nawam Mawatha,<br>Colombo 02</div>
+                <div>Level 4, <br> NDB-EDB Tower,<br> No 42,<br> Nawam Mawatha,<br>Colombo 02</div>
             </div>
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
@@ -61,10 +61,10 @@
         <div class="footer-bottom-inner">
             <div class="copyright">© 2026 All Rights Reserved By SLTDS</div>
             <ul class="footer-bottom-links">
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms of Use</a></li>
-                <li><a href="#legal">Legal</a></li>
-                <li><a href="#sitemap">Site Map</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="glossary">Glossary</a></li>
+                <li><a href="download">Download</a></li>
+                <li><a href="sitemap">Site Map</a></li>
             </ul>
         </div>
     </div>

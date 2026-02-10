@@ -50,8 +50,22 @@ html, body {
 
 /* Background + subtle shadow after scrolling */
 .slecic-header.scrolled {
-    background-color: var(--header-bg-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    background: var(--primary-color) !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    /* Remove any gradient, just solid white */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); */
+}
+
+.slecic-header.scrolled .header-nav .nav-link {
+    color: var(--header-text-color) !important;
+}
+
+.slecic-header.scrolled .header-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.slecic-header.scrolled .header-nav .nav-link.current {
+    color: var(--secondary-color) !important;
 }
 
 /* --- Logo Section --- */

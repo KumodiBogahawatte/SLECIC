@@ -324,7 +324,7 @@ footer {
   cursor: pointer;
   transition: all 0.2s ease;
   outline: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.842);
 }
 
 .quick-btn:first-child {
@@ -351,63 +351,6 @@ footer {
   background: var(--primary-color);
 }
 
-.quick-btn.apara-btn {
-  background: var(--primary-color);
-  height: 90px;
-}
 
-.quick-btn.apara-btn:hover {
-  background: var(--secondary-color);
-}
 
-@media (max-width: 768px) {
-  .quick-access-buttons {
-    bottom: 20px;
-    transform: none;
-    flex-direction: row;
-    left: 50%;
-    transform: translateX(-50%);
-    gap: 0;
-  }
 
-  .quick-btn {
-    height: 35px;
-    width: auto;
-    padding: 8px 12px;
-    border-bottom: none;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .quick-btn:first-child {
-    border-radius: 8px 0 0 8px;
-  }
-
-  .quick-btn:last-child {
-    border-radius: 0 8px 8px 0;
-    border-right: none;
-  }
-
-  .quick-btn span {
-    transform: none;
-    font-size: 0.7rem;
-  }
-
-  .quick-btn:hover {
-    width: auto;
-    height: 40px;
-  }
-
-  .quick-btn.apara-btn {
-    height: 35px;
-  }
-
-  .quick-btn.apara-btn:hover {
-    height: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .quick-access-buttons {
-    display: none;
-  }
-}
