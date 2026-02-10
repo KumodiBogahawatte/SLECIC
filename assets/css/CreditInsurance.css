@@ -2,18 +2,20 @@
 .page-hero {
     position: relative;
     width: 100%;
-    min-height: 400px;
-    height: 70vh;
+    min-height: 350px;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-image: url('../images/port.jpeg');
+    background-image: url('../images/service2.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Parallax effect */
-    background-color: #4a0202; /* Fallback color if image doesn't load */
+    background-attachment: fixed;
+    /* Parallax effect */
+    background-color: #4a0202;
+    /* Fallback color if image doesn't load */
     /* Match About page: hero starts at top, header overlays it */
     margin-top: 0;
     padding-top: var(--header-height, 80px);
@@ -27,17 +29,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.61); /* Darker overlay for better text contrast on image */
+    background: rgba(0, 0, 0, 0.61);
+    /* Darker overlay for better text contrast on image */
     z-index: 1;
 }
 
 /* Container for content */
+.container {
+  max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .page-hero .container {
     position: relative;
     z-index: 2;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
     width: 100%;
     text-align: center;
 }
@@ -71,11 +80,13 @@
 }
 
 .page-hero .breadcrumb a:hover {
-    color: #c49a18; /* Gold color on hover */
+    color: #c49a18;
+    /* Gold color on hover */
 }
 
 .page-hero .breadcrumb span {
-    color: #d1b24a; /* Gold color for current page */
+    color: #d1b24a;
+    /* Gold color for current page */
     font-weight: 500;
 }
 
@@ -84,13 +95,14 @@
     .page-hero {
         min-height: 300px;
         height: 40vh;
-        background-attachment: scroll; /* Disable parallax on mobile for better performance */
+        background-attachment: scroll;
+        /* Disable parallax on mobile for better performance */
     }
-    
+
     .page-hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .page-hero .breadcrumb {
         font-size: 12px;
         flex-wrap: wrap;
@@ -102,7 +114,7 @@
         min-height: 250px;
         height: 35vh;
     }
-    
+
     .page-hero h1 {
         font-size: 2rem;
     }
@@ -112,7 +124,7 @@
 
 /* --- Combined Risk Section --- */
 .risk-section {
-    padding: 50px 0;
+    padding: 80px 8%;
     background-color: #ffffff;
 }
 
@@ -132,7 +144,8 @@
     display: flex;
     gap: 40px;
     align-items: flex-start;
-    margin-bottom: 60px; /* Space between top text and accordion below */
+    margin-bottom: 60px;
+    /* Space between top text and accordion below */
 }
 
 .risk-image-wrapper {
@@ -143,7 +156,7 @@
     width: 100%;
     height: auto;
     display: block;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
 }
 
@@ -173,9 +186,11 @@
 }
 
 .accordion-wrapper {
-    max-width: 100%; /* Take full width of container */
+    max-width: 100%;
+    /* Take full width of container */
     background: #fff;
-    border: 1px solid #e0e0e0; /* Subtle border */
+    border: 1px solid #e0e0e0;
+    /* Subtle border */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
@@ -276,7 +291,8 @@
 
 /* Open accordion by default */
 .accordion-content.open {
-    max-height: 5000px; /* Large enough value to show all content */
+    max-height: 5000px;
+    /* Large enough value to show all content */
 }
 
 .content-inner {
@@ -484,7 +500,8 @@
 }
 
 /* List Styles inside Accordion */
-.country-list, .detail-list {
+.country-list,
+.detail-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -493,7 +510,8 @@
     gap: 10px;
 }
 
-.country-list li, .detail-list li {
+.country-list li,
+.detail-list li {
     padding-left: 20px;
     position: relative;
     font-size: 15px;
@@ -532,6 +550,7 @@
     .risk-grid {
         flex-direction: column;
     }
+
     .risk-image-wrapper {
         max-width: 300px;
         margin-bottom: 25px;
@@ -539,7 +558,9 @@
 }
 
 @media (max-width: 600px) {
-    .country-list, .detail-list {
+
+    .country-list,
+    .detail-list {
         grid-template-columns: 1fr;
     }
 }
