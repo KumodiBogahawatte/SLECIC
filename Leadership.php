@@ -190,25 +190,25 @@ include 'includes/header.php';
         board: [{
                 name: 'Prof. (Dr.) A. Aruna Shanthaarchchi',
                 title: 'Chairman & Managing Director',
-                image: 'assets/images/leaders/set 180/3.png',
+                image: 'assets/images/leaders/set 180/3.png.jpg',
                 description: 'Prof. (Dr.) Aruna Shanthaarchchi is an economist and researcher with nearly 30 years of professional experience in development projects. His clientele includes the World Bank (WB), Asian Development Bank (ADB), Central Environmental Authority, Ministry of Finance, Road Development Authority, and the Mahaweli Authority of Sri Lanka. His areas of expertise include project evaluation with economic and financial analysis, economic, social, and environmental impact assessments, and institutional and development issues. He holds a PhD in Business Economics and MSc and MPhil degrees in Natural Resource Management.'
             },
             {
                 name: 'Ms. M.K.G. Peiris',
                 title: 'Director, Department of Development Finance, Ministry of Finance',
-                image: 'assets/images/leaders/set 180/2.png',
+                image: 'assets/images/leaders/set 180/2.png.jpg',
                 description: 'Ms. Kuloja Gamindi Peiris is an officer of the Sri Lanka Planning Service and currently serves as Director of the Department of Development Finance at the Ministry of Finance. She has over 15 years of public sector experience, beginning her career as an Assistant Director at the Western Provincial Council in 2009. She has served in the Department of External Resources and the Department of Development Finance of the General Treasury and has contributed to national policy-related development initiatives. She has also represented the General Treasury as a Board Director in several statutory institutions.<br><br>Ms. Kuloja Peiris holds two master\'s degrees: a Master’s in Public and Economic Policies from the University of Tsukuba, Japan and a Master’s in Economics from the University of Kelaniya. She is a graduate of the University of Colombo and earned a BA (Hons) degree in economics. Further, she has undergone training and gained experience in countries such as Australia, Japan, China, Singapore, and South Korea.'
             },
             {
                 name: 'Mr. Asiri Wickramarachchi',
                 title: 'Chief Officer - General Insurance, Sri Lanka Insurance Corporation General Ltd',
-                image: 'assets/images/leaders/set 180/1.png',
+                image: 'assets/images/leaders/set 180/1.png.jpg',
                 description: 'Mr. Asiri Wickramarachchi is a highly qualified insurance professional with over 18 years of experience in both multinational and local insurance companies. His expertise covers underwriting, claims, and reinsurance, enabling him to drive strategic and operational excellence.<br><br>In 2011, he obtained the Associateship (ACII) and Chartered Insurer status from the Chartered Insurance Institute (CII), UK, becoming the youngest Sri Lankan to achieve this qualification. He received the “Most Outstanding Student Award” at the 2012 Insurance Congress in Colombo.<br><br>Building on this strong foundation, Asiri later attained the Fellowship (FCII) qualification from the Chartered Insurance Institute - UK, the highest level of professional recognition in the field of insurance. Before assuming his current role as Chief Officer - General Insurance at Sri Lanka Insurance General Ltd., Asiri served as Chief Operating Officer - Technical at Continental Insurance Lanka Ltd., where he spearheaded various operational and technical functions to enhance profitability and operational efficiency.'
             },
             {
                 name: 'Ms. S.M. Rajapaksha',
                 title: 'Chief Internal Auditor (Planning), Ministry of Trade',
-                image: 'assets/images/leaders/set 180/8.png',
+                image: 'assets/images/leaders/set 180/8.png.jpg',
                 description: 'Ms. S.M. Rajapaksha serves as Chief Internal Auditor (Planning) at the Ministry of Trade, bringing extensive experience in public sector audit and financial oversight.'
             },
             {
@@ -222,25 +222,25 @@ include 'includes/header.php';
         management: [{
                 name: 'Mr. Mohan Silva',
                 title: 'Deputy General Manager – Operations',
-                image: 'assets/images/leaders/set 180/5.png',
+                image: 'assets/images/leaders/set 180/5.png.jpg',
                 description: 'Mr. Mohan Silva is a senior management professional at SLECIC with over 28 years of service and more than 22 years of senior managerial experience. His expertise spans Marketing, Buyer and Country Underwriting, Information Systems & Statistics, and Claims & Recoveries. He has participated in numerous international training programs in Export Credit Insurance. He holds a Master’s degree in Business Administration, a BSc in Mathematics and Statistics, and is an Associate Member of the Australian Computer Society and a Member of the Chartered Institute of Marketing (UK).'
             },
             {
                 name: 'Mr. Raveen Ovitigala',
                 title: 'Assistant General Manager – Finance',
-                image: 'assets/images/leaders/set 180/6.png',
+                image: 'assets/images/leaders/set 180/6.png.jpg',
                 description: 'Mr. Raveen Ovitigala has nearly 20 years of experience in accounting, finance, and auditing. He previously served as Deputy Director – Finance at the Coconut Development Authority for over 10 years and has held positions at the Sri Lanka Transport Board as Accountant and Regional Finance Manager. He also functioned as Acting Internal Auditor for the Smallholder Tea and Rubber Revitalization Project and the Government of Sri Lanka. He holds a Master’s degree in Business Studies, a degree in Commerce, and is a Member of CMA Sri Lanka, Senior Member of AAT Sri Lanka, and Member of the Public Finance Accountants of Sri Lanka.'
             },
             {
                 name: 'Ms. Shama Selvaratnam',
                 title: 'Assistant General Manager – Marketing',
-                image: 'assets/images/leaders/set 180/7.png',
+                image: 'assets/images/leaders/set 180/7.png.jpg',
                 description: 'Ms. Shama Selvaratnam is a senior marketing professional in the finance sector with over 17 years of experience. Her expertise includes marketing strategy, credit risk evaluation, planning, and implementation, gained through leadership roles within the working capital and financial services industries.'
             },
             {
                 name: 'Mr. Manjula Wickramasinghe',
                 title: 'Assistant General Manager – Claims & Recoveries',
-                image: 'assets/images/leaders/set 180/4.png',
+                image: 'assets/images/leaders/set 180/4.png.jpg',
                 description: 'Mr. Manjula Wickramasinghe brings over 20 years of experience in the finance and insurance sectors. He has served at leading institutions including Ceylinco Insurance, AIG Insurance, Asian Alliance Insurance, Janashakthi Insurance, Citizens Development Business Finance, Softlogic Finance, Vallibel Finance, and Allianz Insurance. His expertise includes general insurance underwriting, sales, marketing, customer relations, credit and lending recoveries, and business development.'
             }
         ]

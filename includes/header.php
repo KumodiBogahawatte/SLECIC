@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <!-- Add GLightbox CSS in your header or here -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 <header class="slecic-header">
@@ -48,7 +49,7 @@
                     <li><a href="epg.php" class="dropdown-link">Export Performance Guarantee</a></li>
                 </ul>
             </li>
-            <li><a href="news" class="nav-link">News  & Events</a></li>
+            <li><a href="news" class="nav-link">News & Events</a></li>
             <li class="nav-item-dropdown">
                 <a href="#" class="nav-link dropdown-trigger">Publications <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
@@ -68,161 +69,166 @@
 
 <!-- Header scroll behavior and mobile menu -->
 <script>
-        (function () {
-            const header = document.querySelector('.slecic-header');
-            if (!header) return;
+    (function() {
+        const header = document.querySelector('.slecic-header');
+        if (!header) return;
 
-            const SCROLL_TRIGGER = 50; // px from top to start background
+        const SCROLL_TRIGGER = 50; // px from top to start background
 
-            function onScroll() {
-                if (window.scrollY > SCROLL_TRIGGER) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
+        function onScroll() {
+            if (window.scrollY > SCROLL_TRIGGER) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
+        }
 
-            // Run once on load and then on scroll
-            window.addEventListener('scroll', onScroll);
-            window.addEventListener('load', onScroll);
-        })();
+        // Run once on load and then on scroll
+        window.addEventListener('scroll', onScroll);
+        window.addEventListener('load', onScroll);
+    })();
 
-        // Mobile Menu Toggle Functionality
-        (function() {
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
-            const mobileNav = document.querySelector('.header-nav');
-            const mobileOverlay = document.querySelector('.mobile-menu-overlay');
-            const body = document.body;
-            
-            if (!mobileToggle || !mobileNav) return;
+    // Mobile Menu Toggle Functionality
+    (function() {
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.header-nav');
+        const mobileOverlay = document.querySelector('.mobile-menu-overlay');
+        const body = document.body;
 
-            // Toggle menu function
-            function toggleMenu() {
-                const isActive = mobileNav.classList.contains('active');
-                
-                if (isActive) {
-                    closeMenu();
-                } else {
-                    openMenu();
-                }
+        if (!mobileToggle || !mobileNav) return;
+
+        // Toggle menu function
+        function toggleMenu() {
+            const isActive = mobileNav.classList.contains('active');
+
+            if (isActive) {
+                closeMenu();
+            } else {
+                openMenu();
             }
+        }
 
-            function openMenu() {
-                mobileNav.classList.add('active');
-                mobileToggle.classList.add('active');
-                mobileToggle.setAttribute('aria-expanded', 'true');
-                if (mobileOverlay) {
-                    mobileOverlay.classList.add('active');
-                }
-                body.style.overflow = 'hidden'; // Prevent body scroll
-            }
-
-            function closeMenu() {
-                mobileNav.classList.remove('active');
-                mobileToggle.classList.remove('active');
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                if (mobileOverlay) {
-                    mobileOverlay.classList.remove('active');
-                }
-                body.style.overflow = ''; // Restore body scroll
-                
-                // Close all dropdowns when closing menu
-                const activeDropdowns = document.querySelectorAll('.nav-item-dropdown.active');
-                activeDropdowns.forEach(dropdown => {
-                    dropdown.classList.remove('active');
-                });
-            }
-
-            // Toggle button click
-            mobileToggle.addEventListener('click', function(e) {
-                e.stopPropagation();
-                toggleMenu();
-            });
-
-            // Overlay click to close
+        function openMenu() {
+            mobileNav.classList.add('active');
+            mobileToggle.classList.add('active');
+            mobileToggle.setAttribute('aria-expanded', 'true');
             if (mobileOverlay) {
-                mobileOverlay.addEventListener('click', closeMenu);
+                mobileOverlay.classList.add('active');
             }
+            body.style.overflow = 'hidden'; // Prevent body scroll
+        }
 
-            // Close menu when clicking on a nav link (except dropdown triggers)
-            const navLinks = document.querySelectorAll('.header-nav .nav-link:not(.dropdown-trigger)');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth <= 768) {
-                        closeMenu();
-                    }
-                });
+        function closeMenu() {
+            mobileNav.classList.remove('active');
+            mobileToggle.classList.remove('active');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            if (mobileOverlay) {
+                mobileOverlay.classList.remove('active');
+            }
+            body.style.overflow = ''; // Restore body scroll
+
+            // Close all dropdowns when closing menu
+            const activeDropdowns = document.querySelectorAll('.nav-item-dropdown.active');
+            activeDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
             });
+        }
 
-            // Close menu when clicking on dropdown links
-            const dropdownLinks = document.querySelectorAll('.dropdown-link');
-            dropdownLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth <= 768) {
-                        closeMenu();
-                    }
-                });
-            });
+        // Toggle button click
+        mobileToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleMenu();
+        });
 
-            // Close menu on window resize if it becomes desktop size
-            let resizeTimer;
-            window.addEventListener('resize', function() {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(function() {
-                    if (window.innerWidth > 768) {
-                        closeMenu();
-                    }
-                }, 250);
-            });
+        // Overlay click to close
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', closeMenu);
+        }
 
-            // Mobile Dropdown Toggle Functionality
-            const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
-            
-            dropdownTriggers.forEach(trigger => {
-                trigger.addEventListener('click', function(e) {
-                    // Only handle click on mobile - desktop uses CSS hover
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        const dropdownItem = this.closest('.nav-item-dropdown');
-                        const isActive = dropdownItem.classList.contains('active');
-                        
-                        // Close all other dropdowns
-                        document.querySelectorAll('.nav-item-dropdown.active').forEach(item => {
-                            if (item !== dropdownItem) {
-                                item.classList.remove('active');
-                            }
-                        });
-                        
-                        // Toggle current dropdown
-                        if (isActive) {
-                            dropdownItem.classList.remove('active');
-                        } else {
-                            dropdownItem.classList.add('active');
-                        }
-                    }
-                    // On desktop (>768px), don't prevent default - let CSS hover handle it
-                });
-            });
-
-            // Close dropdowns when clicking outside on mobile
-            document.addEventListener('click', function(e) {
+        // Close menu when clicking on a nav link (except dropdown triggers)
+        const navLinks = document.querySelectorAll('.header-nav .nav-link:not(.dropdown-trigger)');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
                 if (window.innerWidth <= 768) {
-                    const clickedDropdown = e.target.closest('.nav-item-dropdown');
-                    if (!clickedDropdown) {
-                        document.querySelectorAll('.nav-item-dropdown.active').forEach(item => {
-                            item.classList.remove('active');
-                        });
-                    }
-                }
-            });
-
-            // Handle ESC key to close menu
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
                     closeMenu();
                 }
             });
-        })();
-    </script>
+        });
+
+        // Close menu when clicking on dropdown links
+        const dropdownLinks = document.querySelectorAll('.dropdown-link');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    closeMenu();
+                }
+            });
+        });
+
+        // Close menu on window resize if it becomes desktop size
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                if (window.innerWidth > 768) {
+                    closeMenu();
+                }
+            }, 250);
+        });
+
+        // Mobile Dropdown Toggle Functionality
+        const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
+
+        dropdownTriggers.forEach(trigger => {
+            trigger.addEventListener('click', function(e) {
+                // Only handle click on mobile - desktop uses CSS hover
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const dropdownItem = this.closest('.nav-item-dropdown');
+                    const isActive = dropdownItem.classList.contains('active');
+
+                    // Close all other dropdowns
+                    document.querySelectorAll('.nav-item-dropdown.active').forEach(item => {
+                        if (item !== dropdownItem) {
+                            item.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle current dropdown
+                    if (isActive) {
+                        dropdownItem.classList.remove('active');
+                    } else {
+                        dropdownItem.classList.add('active');
+                    }
+                }
+                // On desktop (>768px), don't prevent default - let CSS hover handle it
+            });
+        });
+
+        // Close dropdowns when clicking outside on mobile
+        document.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                const clickedDropdown = e.target.closest('.nav-item-dropdown');
+                if (!clickedDropdown) {
+                    document.querySelectorAll('.nav-item-dropdown.active').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                }
+            }
+        });
+
+        // Handle ESC key to close menu
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+    })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
