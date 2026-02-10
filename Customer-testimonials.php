@@ -17,7 +17,7 @@ include 'includes/header.php';
 </section>
 
 <!-- Testimonials Section -->
-<section class="testimonials-section">
+<section class="testimonials-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="section-header">
             <h2>What Our Clients Say</h2>

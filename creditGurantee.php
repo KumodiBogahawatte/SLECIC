@@ -20,6 +20,7 @@
     <div class="container">
         
         <h2 class="risk-main-title">Credit Guarantee</h2>
+        <div class="title-line"></div>
 
         <div class="risk-grid">
             <div class="risk-image-wrapper">

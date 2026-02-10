@@ -201,14 +201,14 @@ html, body {
     left: 0;
     width: 25px; /* Width of the underline */
     height: 2px;
-    background-color: var(--header-text-color);
+    background-color: #caa21d;
 }
 
 /* When header has background, switch text & links to white for contrast */
 .slecic-header.scrolled,
 .slecic-header.scrolled .header-nav .nav-link,
 .slecic-header.scrolled .header-nav .nav-link.current {
-    color: var(--header-text-color);
+    color: #caa21d;
 }
 
 .slecic-header.scrolled .header-nav .nav-link:hover {

@@ -1,5 +1,5 @@
-<?php 
-    include 'includes/header.php'; 
+<?php
+include 'includes/header.php';
 ?>
 
 <link rel="stylesheet" href="assets/css/buyer.css">
@@ -18,9 +18,9 @@
 
 <section class="risk-section">
     <div class="container">
-        
-        <h2 class="risk-main-title">Buyer Information</h2>
 
+        <h2 class="risk-main-title">Buyer Information</h2>
+        <div class="title-line"></div>
         <div class="risk-grid">
             <div class="risk-image-wrapper">
                 <img src="assets/images/credit.jpg" alt="Seller's Risk Logo">
@@ -31,7 +31,7 @@
                 SLECIC credit guarantees are available to banks as real credit supplementation
                 </h3> -->
                 <p>
-                  We provide speedy and accurate information to bankers and other financial institutes to evaluate overseas buyers in order to extend financial facilities to exporters
+                    We provide speedy and accurate information to bankers and other financial institutes to evaluate overseas buyers in order to extend financial facilities to exporters
                 </p>
             </div>
         </div>

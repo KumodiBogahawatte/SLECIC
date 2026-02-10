@@ -147,7 +147,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    const ITEMS_PER_PAGE = 6;
+    const ITEMS_PER_PAGE = 8;
     const grid = document.getElementById('videoGrid');
     const cards = Array.from(grid.querySelectorAll('.video-card'));
     const paginationContainer = document.getElementById('videoPagination');
@@ -189,11 +189,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function buildPagination() {
-        if (totalPages <= 1) {
-            paginationContainer.style.display = 'none';
-            return;
-        }
-
         const frag = document.createDocumentFragment();
 
         const prev = document.createElement('button');

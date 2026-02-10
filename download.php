@@ -17,7 +17,7 @@ include 'includes/header.php';
 </section>
 
 <section class="download-section">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1200">
         <!-- Folder View -->
         <div id="download-folder-view" class="download-folders" style="display:flex;">
             <div class="download-folder-item reveal" data-folder="export_credit_insurance">

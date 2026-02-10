@@ -5,35 +5,23 @@
 .page-hero {
     position: relative;
     width: 100%;
-    min-height: 400px;
-    height: 50vh;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    background-image: url('../images/inner-slider.jpg');
+    background-image: url('../images/pulication.png');
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* Parallax effect */
+    background-position: center;
     background-color: #4a0202;
-    /* Fallback color if image doesn't load */
-    /* Match About page: hero starts at top, header overlays it */
-    margin-top: 0;
-    padding-top: var(--header-height, 80px);
+    padding-top: 80px;
     box-sizing: border-box;
 }
 
 /* Overlay for better text readability */
 .page-hero .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    /* Darker overlay for better text contrast on image */
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -58,10 +46,9 @@
 /* Main Title */
 .page-hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 15px;
     line-height: 1.2;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }

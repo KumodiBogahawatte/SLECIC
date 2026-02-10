@@ -1,5 +1,5 @@
-<?php 
-    include 'includes/header.php'; 
+<?php
+include 'includes/header.php';
 ?>
 
 <link rel="stylesheet" href="assets/css/CreditInsurance.css">
@@ -18,9 +18,9 @@
 
 <section class="risk-section">
     <div class="container">
-        
-        <h2 class="risk-main-title">Credit Insurance (Seller's Risk)</h2>
 
+        <h2 class="risk-main-title">Credit Insurance (Seller's Risk)</h2>
+        <div class="title-line"></div>
         <div class="risk-grid">
             <div class="risk-image-wrapper">
                 <img src="assets/images/cr_insurance.jpg" alt="Seller's Risk Logo">
@@ -31,17 +31,17 @@
                     SLECIC Export credit insurance policy gives you peace of mind and confidence to grow your business
                 </h3>
                 <p>
-                SLECIC provides customized export credit insurance policies for small, medium and large companies in all industries. Export credit insurance from SLECIC can help you to trade with confidence in overseas markets. Our Export credit insurance Scheme (Seller's Risk Policy) provides protection to exporters against commercial risk such as Non-receipt delayed-receipt of payments, insolvency, non acceptance (repudiation of contract) due to Commercial & Political risks associated with dispatching goods or rending services to their foreign buyers.
+                    SLECIC provides customized export credit insurance policies for small, medium and large companies in all industries. Export credit insurance from SLECIC can help you to trade with confidence in overseas markets. Our Export credit insurance Scheme (Seller's Risk Policy) provides protection to exporters against commercial risk such as Non-receipt delayed-receipt of payments, insolvency, non acceptance (repudiation of contract) due to Commercial & Political risks associated with dispatching goods or rending services to their foreign buyers.
                 </p>
                 <p>
-                Our insurance policies provide the exporters the option of insuring a portion of their debtors or their entire portfolio of debtors. Our policies give the choice of insuring shipments to a selected group of countries. The flexibility of our insurance policies grants the much needed convenience to our clients. Our underwriting staff provides in-depth credit analysis to provide early warning of potential credit risks before they become a loss.
+                    Our insurance policies provide the exporters the option of insuring a portion of their debtors or their entire portfolio of debtors. Our policies give the choice of insuring shipments to a selected group of countries. The flexibility of our insurance policies grants the much needed convenience to our clients. Our underwriting staff provides in-depth credit analysis to provide early warning of potential credit risks before they become a loss.
                 </p>
             </div>
         </div>
 
         <div class="risk-accordion-area">
             <div class="accordion-wrapper">
-                
+
                 <div class="accordion-item">
                     <button class="accordion-header">
                         Benefits of Credit Insurance
@@ -50,24 +50,24 @@
                     <div class="accordion-content">
                         <div class="content-inner">
                             <p><strong>Financial Protection:</strong> The most obvious benefit is financial protection. Credit insurance covers the unpaid debt of insolvent companies, therefore protecting a company's cash flow.</p>
-                            
+
                             <p><strong>Credit Information Services:</strong> The value of credit insurance goes beyond simple payment of claims. We offer credit information services that act as a credit management department for a company, providing information on trading partners. With this information, companies can decide whether or not to trade with a company and whether to offer credit. This invaluable service provides up-to-date financial information on companies worldwide.</p>
-                            
+
                             <p>Credit insurance helps prevent bad debt in the first place by providing an early credit warning system to identify whether customers are experiencing financial problems. This not only prevents bad debt but enables a company to avoid buyers that may become insolvent and reduces the risk of delayed payment.</p>
-                            
+
                             <p>Credit insurance is becoming a much more sophisticated product due to a wider variety of reasons beyond simple cash flow protection. These include:</p>
-                            
+
                             <div class="benefits-list">
                                 <h4>1. Balance Sheet Protection</h4>
                                 <p>Many companies today are concerned with balance sheet protection. There is a concern about the possibility that a major incident could cause an impact on the balance sheet which would have to be explained to the parent company or shareholders. Credit insurance protects the company against catastrophic bad debt losses, ensuring its continuity and survival.</p>
-                                
+
                                 <h4>2. Better Credit Control</h4>
                                 <p>Many companies see credit control as an integrated management function and often part of risk management. The value of a credit insurance policy, where it has a credit limit service, is that it provides invaluable assistance to the credit manager of the company to make decisions on new markets, distribution routes, or new clients.</p>
-                                
+
                                 <h4>3. Increased Sales</h4>
                                 <p>Credit insurance can increase the volume of trade by enabling exporters to offer better credit terms and thereby acquire new businesses. When a company has credit insurance, it can offer open credit to a buyer rather than having to demand letters of credit or other secured terms.</p>
                             </div>
-                            
+
                             <p style="margin-top: 20px;"><strong>Collateral Security:</strong> SLECIC Insurance is considered as a good collateral security as the policy gives easy access to post shipment finance from banks.</p>
                         </div>
                     </div>
@@ -138,11 +138,11 @@
                     <div class="accordion-content">
                         <div class="content-inner">
                             <p>Under Seller's Risk Insurance Policy, We provide protection to exporters receipt unclear commercial and Non Commercial Risks associated with dispatching goods or rending services.</p>
-                            
+
                             <div class="risks-section">
                                 <h4>Commercial Risks (Buyer Risks)</h4>
                                 <p class="section-subtitle">Risks covered under Commercial risks</p>
-                                
+
                                 <ul class="risks-detail-list">
                                     <li>
                                         <strong>Protracted default</strong>
@@ -157,11 +157,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <div class="risks-section">
                                 <h4>Non Commercial Risks (Political Risks/ Country Risks)</h4>
                                 <p class="section-subtitle">Risks covered under Non Commercial risks</p>
-                                
+
                                 <ul class="risks-detail-list">
                                     <li>
                                         <p>Occurrence of hostilities, wars, insurrections, civil or political disturbances, terrorist actions, natural disasters in the buyer's country.</p>
@@ -265,7 +265,7 @@
                     // document.querySelectorAll(".accordion-content").forEach(p => p.style.maxHeight = null);
                     // document.querySelectorAll(".accordion-header").forEach(h => h.classList.remove("active"));
                     // this.classList.add("active"); // Re-add active to clicked one
-                    
+
                     panel.style.maxHeight = panel.scrollHeight + "px";
                     panel.classList.add("open");
                 }

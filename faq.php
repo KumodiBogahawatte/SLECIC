@@ -19,7 +19,7 @@ include 'includes/header.php';
 <section class="faq-section">
     <div class="container">
         
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
             <p class="section-subtitle">Help Center</p>
             <h2>Common Questions</h2>
         </div>
@@ -27,7 +27,7 @@ include 'includes/header.php';
         <div class="faq-container">
             
             <!-- FAQ Item 1 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>What is Credit Insurance?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -38,7 +38,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 2 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>I have a Seller’s Risk Insurance Policy plus a valid Credit Limit for the buyer to whom I am planning to send the shipment. Am I protected?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -49,7 +49,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 3 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>If the payment is not received on or before the due date what can I do?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -60,7 +60,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 4 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>When should I submit Overdue Notification?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -71,7 +71,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 5 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>When can I make a claim?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -89,7 +89,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 6 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>Is there anything I can do that would "spoil" a claim?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -100,7 +100,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 7 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>What is the level of indemnity?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -111,7 +111,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 8 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>If I incur a loss, how soon a claim will be paid?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -122,7 +122,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 9 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>Can exporters of services obtain credit risk cover under the Seller's Risk?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -133,7 +133,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 10 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>What are the main benefits of credit insurance?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -154,7 +154,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 11 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>Is Credit Insurance for large corporates only?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -165,7 +165,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 12 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>What are the terms of payment in international trade and how does it relate to the risks?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -189,7 +189,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 13 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>Why should I consider export credit insurance?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -201,7 +201,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 14 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>What is a Credit Limit?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -212,7 +212,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 15 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>How to get a Credit Limit?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -224,7 +224,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 16 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>What to do if a Credit Limit is insufficient?</span>
                     <i class="fas fa-chevron-down"></i>
@@ -235,7 +235,7 @@ include 'includes/header.php';
             </div>
 
             <!-- FAQ Item 17 -->
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
                 <button class="faq-question">
                     <span>How long is a Credit Limit valid?</span>
                     <i class="fas fa-chevron-down"></i>
