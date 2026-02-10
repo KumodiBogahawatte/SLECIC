@@ -36,7 +36,7 @@
 
 /* Container for content */
 .container {
-    max-width: 1200px;
+  max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -124,7 +124,7 @@
 
 /* --- Combined Risk Section --- */
 .risk-section {
-    padding: 60px 0;
+    padding: 80px 8%;
     background-color: #ffffff;
 }
 
