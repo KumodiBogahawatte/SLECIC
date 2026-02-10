@@ -61,8 +61,8 @@
 </section>
 
 <!-- Objectives Section -->
-<section class="objectives-section" data-aos="fade-up" data-aos-duration="1000">
-    <div class="container">
+<section class="objectives-section">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <h2>Our Main Objectives</h2>
         <div class="objectives-grid">
             <div class="objective-item" data-aos="flip-left" data-aos-duration="1000">
