@@ -60,6 +60,14 @@ html, body {
     color: var(--header-text-color) !important;
 }
 
+.slecic-header.scrolled .header-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.slecic-header.scrolled .header-nav .nav-link.current {
+    color: var(--secondary-color) !important;
+}
+
 /* --- Logo Section --- */
 .header-branding .brand-link {
     display: flex;
