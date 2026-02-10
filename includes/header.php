@@ -38,7 +38,7 @@
                     <li><a href="epg.php" class="dropdown-link">Export Performance Guarantee</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="nav-link">News</a></li>
+            <li><a href="news" class="nav-link">News  & Events</a></li>
             <li class="nav-item-dropdown">
                 <a href="#" class="nav-link">Publications <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
@@ -51,9 +51,9 @@
         </ul>
     </nav>
 
-    <div class="header-actions">
+    <!-- <div class="header-actions">
         <a href="#" class="btn-client-area">Client Area</a>
-    </div>
+    </div> -->
 </header>
 
 <!-- Header scroll behavior -->
