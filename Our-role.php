@@ -18,7 +18,7 @@
 
 <!-- Role Intro Section -->
 <section class="role-intro">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="role-intro-grid">
             <div class="role-intro-content">
                 <h4 class="section-subtitle">Role of</h4>
@@ -42,7 +42,7 @@
 <section class="stats-section">
     <div class="container">
         <div class="stats-grid">
-            <div class="stat-item">
+            <div class="stat-item" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="stat-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -51,7 +51,7 @@
                 <h3>Rs. 1.4 Billion</h3>
                 <p>Equity Base</p>
             </div>
-            <div class="stat-item">
+            <div class="stat-item" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="stat-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
@@ -60,7 +60,7 @@
                 <h3>Rs. 1 Billion</h3>
                 <p>Government Guarantee</p>
             </div>
-            <div class="stat-item">
+            <div class="stat-item" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="stat-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
@@ -69,7 +69,7 @@
                 <h3>79 Members</h3>
                 <p>Berne Union Worldwide</p>
             </div>
-            <div class="stat-item">
+            <div class="stat-item" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="stat-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
@@ -93,13 +93,13 @@
 </section>
 
 <!-- Credit Importance Section -->
-<section class="credit-section">
+<section class="credit-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="credit-grid reverse">
-            <div class="credit-image">
+            <div class="credit-image" data-aos="fade-right" data-aos-duration="1000">
                 <img src="assets/images/about/credit-business.jpg" alt="Business Credit">
             </div>
-            <div class="credit-content">
+            <div class="credit-content" data-aos="fade-left" data-aos-duration="1000">
                 <div class="quote-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
@@ -115,17 +115,17 @@
 </section>
 
 <!-- Cash Flow Section -->
-<section class="cashflow-section">
+<section class="cashflow-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="cashflow-grid">
-            <div class="cashflow-content">
+            <div class="cashflow-content" data-aos="fade-right" data-aos-duration="1000">
                 <h4 class="section-subtitle">Why It Matters</h4>
                 <h2 class="section-title">Cash Flow is Crucial</h2>
                 <div class="gold-divider"></div>
                 <p>Money goes out of a company when a purchase is made and money does not come back into the company until a sale is made or a service rendered. As a result a company will always look for a period of credit from its suppliers to assist to improve their cash flow.</p>
                 <p>Credit is therefore simply a necessary part of business. However the problem is when the payment does not come by the due date. If payments are late or never made, the company will suffer and also could go out of business.</p>
             </div>
-            <div class="cashflow-image">
+            <div class="cashflow-image" data-aos="fade-left" data-aos-duration="1000">
                 <img src="assets/images/about/cashflow.jpg" alt="Cash Flow">
             </div>
         </div>
@@ -133,7 +133,7 @@
 </section>
 
 <!-- Risk Highlight Cards -->
-<section class="risks-section">
+<section class="risks-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <h2 class="section-title">Understanding Business Risks</h2>
         <div class="gold-divider center"></div>
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- Myth Buster Section -->
 <section class="myth-section">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="myth-card">
             <div class="myth-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">

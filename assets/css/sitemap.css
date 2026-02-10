@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #5B0000;
+    --secondary-color: #C18E11;
+    --bg-color-light: #c5a028;
+    --bg-color-dark: #2D0000;
+    --bg-light: #f9f9f9;
+}
+
+/* Breadcrumb active */
+.breadcrumb .active {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Sitemap Section */
+.sitemap-section {
+    padding: 80px 8%;
+    background: var(--bg-light);
+}
+
+.sitemap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.sitemap-card {
+    background: #fff;
+    border-left: 5px solid var(--secondary-color);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.sitemap-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.sitemap-card h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.sitemap-card h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--secondary-color);
+}
+
+/* Links */
+.sitemap-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sitemap-card ul li {
+    margin-bottom: 10px;
+}
+
+.sitemap-card ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    padding-left: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.sitemap-card ul li a::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.sitemap-card ul li a:hover {
+    color: var(--primary-color);
+    padding-left: 20px;
+}

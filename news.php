@@ -18,7 +18,7 @@
     <div class="container">
         <div class="news-list">
             <!-- Example News Item -->
-            <div class="news-item">
+            <div class="news-item"  data-aos="fade-up" data-aos-duration="1000">
                 <div class="news-meta">
                     <span class="news-date">10 Feb 2026</span>
                     <span class="news-time">14:30</span>
@@ -31,13 +31,13 @@
                     </div>
                     <div class="news-heading">
                         <h2>A significant milestone in SLECIC’s journey</h2>
-                        <p class="news-excerpt">Brief description of the news item goes here. This provides a summary without needing to click read more.</p>
+                        <p class="news-excerpt">LOLC Finance PLC and Sri Lanka Export Credit Insurance Corporation (SLECIC) today marked a historic milestone with the signing of the APARA Agreement, the first such agreement in SLECIC's history with a Non-Banking Financial Institution (NBFI).</p>
                         <a class="news-readmore-link" href="news-details.php?id=1">Read More</a>
                     </div>
                 </div>
             </div>
 
-            <div class="news-item">
+            <div class="news-item"  data-aos="fade-up" data-aos-duration="1000">
                 <div class="news-meta">
                     <span class="news-date">05 Feb 2026</span>
                     <span class="news-time">10:20</span>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="news-heading">
                         <h2>SLECIC at the 27th Presidential Export Awards 2025</h2>
-                        <p class="news-excerpt">Brief description of the news item goes here. This provides a summary without needing to click read more.</p>
+                        <p class="news-excerpt">SLECIC is proud to have participated as a Silver Sponsor at the prestigious 27th Presidential Export Awards Ceremony, organized by the Sri Lanka Export Development Board (EDB) at BMICH on December 11, 2025.</p>
                         <a class="news-readmore-link" href="news-details.php?id=2">Read More</a>
                     </div>
                 </div>

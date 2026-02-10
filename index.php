@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="assets/css/index.css">
-
 <?php include 'includes/header.php'; ?>
-
+<link rel="stylesheet" href="assets/css/index.css">
 <section class="hero-section">
 
     <video autoplay muted loop playsinline class="hero-video">
@@ -13,10 +11,11 @@
 
     <div class="hero-content container">
         <div class="text-wrapper">
-            <h1>
-                Building Sri Lanka’s Exports<br>
-                <span class="highlight">With Confidence</span>
+            <h1 id="hero-typewriter">
+                <span class="type-line" id="type-line-1"></span><br>
+                <span class="type-line highlight" id="type-line-2"></span>
             </h1>
+
             <p class="hero-description">
                 Protecting global trade through credit insurance, guarantees, and trusted financial support.
             </p>
@@ -25,35 +24,33 @@
 
             <div class="hero-logos">
                 <div class="logo-card">
-                    <img src="assets/images/logo/h1.png" alt="ECIC Logo">
+                    <img src="assets/images/logo/1.png" alt="ECIC Logo">
                 </div>
                 <div class="logo-card">
-                    <img src="assets/images/logo/h2.png" alt="ICIEC Logo">
+                    <img src="assets/images/logo/2.png" alt="ICIEC Logo">
                 </div>
                 <div class="logo-card">
-                    <img src="assets/images/logo/h3.png" alt="SLECIC Logo">
+                    <img src="assets/images/logo/3.png" alt="SLECIC Logo">
                 </div>
                 <div class="logo-card">
-                    <img src="assets/images/logo/h4.png" alt="LCI Logo">
+                    <img src="assets/images/logo/4.png" alt="LCI Logo">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="about-section">
+<section class="about-section" data-aos="fade-up" data-aos-duration="1200">
     <div class="container">
         <div class="about-card">
-            <span class="subtitle">About Us</span>
-            <h2>Welcome Sri Lankan Export Credit Insurance Corporations</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+            <!-- <span class="subtitle">About Us</span> -->
+            <h2>Welcome to Sri Lanka Export Credit Insurance Corporation</h2>
+            <p>Sri Lanka Export Credit Insurance Corporation (SLECIC) is the leading provider of trade-related credit insurance solutions in Sri Lanka with more than three decades of robust presence. SLECIC is committed to provide attractive and innovative Export Credit Insurance and Guarantee support services for the development of exports of Sri Lanka.</p>
         </div>
     </div>
 </section>
 
-<section class="services-section">
+<section class="services-section" data-aos="fade-up" data-aos-duration="1200">
     <div class="container">
         <h2 class="section-title">Our Services</h2>
 
@@ -96,15 +93,15 @@
 
     <div class="container">
         <div class="feature-content">
-            <img src="assets/images/logo/logo_main.png" alt="SLECIC Logo" class="feature-logo">
+            <img src="assets/images/main-logo.png" alt="SLECIC Logo" class="feature-logo">
 
             <h2>Backing the People Behind<br> Sri Lanka’s Global Trade</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                We provide you flexible credit insurance solutions; which are tailored to fit to your size, sector and business ambitions
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                Nothing is static or sure.. Risks are imminent & inbuilt in Trade.. We diffuse them..
             </p>
 
             <a href="#" class="btn-pay-now">Pay Now</a>
@@ -112,7 +109,7 @@
     </div>
 </section>
 
-<section class="news-section">
+<section class="news-section" data-aos="fade-up" data-aos-duration="1200">
     <div class="container">
         <h2 class="section-title">Recent News</h2>
         <div class="news-grid">
@@ -186,7 +183,7 @@
     </div>
 </section>
 
-<section class="contact-section">
+<section class="contact-section" data-aos="fade-up" data-aos-duration="1200">
     <div class="container">
         <div class="contact-grid">
 
@@ -212,14 +209,14 @@
                     <button type="submit" class="btn-submit">Submit</button>
                 </form>
 
-                <p class="form-footer-text">
+                <!-- <p class="form-footer-text">
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
-                </p>
+                </p> -->
             </div>
 
             <div class="contact-map-wrapper">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.786448375978!2d79.84852757577598!3d6.916124793083466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594195724103%3A0xe5469490132338b9!2sSri%20Lanka%20Export%20Credit%20Insurance%20Corporation!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.05905029555!2d79.850627!3d6.918702!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594012ba8b6b%3A0x75f0a1629996235e!2sSri%20Lanka%20Export%20Credit%20Insurance%20Corporation!5e0!3m2!1sen!2sus!4v1770615950690!5m2!1sen!2sus"
                     width="100%"
                     height="100%"
                     style="border:0;"
@@ -235,8 +232,30 @@
 
 <?php include 'includes/footer.php'; ?>
 
-
-
-</body>
-
-</html>
+<script>
+// Simple typewriter effect using Anime.js for two lines
+function typeWriterAnime(target, text, delay = 0, speed = 45, callback) {
+    let obj = { count: 0 };
+    anime({
+        targets: obj,
+        count: text.length,
+        round: 1,
+        duration: text.length * speed,
+        delay: delay,
+        easing: 'linear',
+        update: function() {
+            document.getElementById(target).textContent = text.substring(0, obj.count);
+        },
+        complete: function() {
+            if (callback) callback();
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', function() {
+    typeWriterAnime('type-line-1', "Building Sri Lanka’s Exports", 0, 45, function() {
+        setTimeout(function() {
+            typeWriterAnime('type-line-2', "With Confidence", 0, 45);
+        }, 400);
+    });
+});
+</script>

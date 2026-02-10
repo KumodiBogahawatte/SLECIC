@@ -17,14 +17,14 @@ include 'includes/header.php';
 </section>
 
 <!-- Board of Directors Section -->
-<section class="leadership-section">
+<section class="leadership-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="section-header">
             <h2>Board of Directors</h2>
         </div>
 
         <!-- Chairman - Centered Single Row -->
-        <div class="centered-row">
+        <div class="centered-row" data-aos="fade-up" data-aos-duration="1300">
             <div class="center-leader chairman">
                 <div class="member-image">
                     <img src="assets/images/leaders/new set 150/3.png" alt="Prof (Dr.) A. Aruna Shanthaarchchi" loading="eager"
@@ -42,7 +42,7 @@ include 'includes/header.php';
         </div>
 
         <!-- Other 4 Board Directors in One Row -->
-        <div class="directors-row">
+        <div class="directors-row" data-aos="fade-up" data-aos-duration="1800">
             <?php
             $boardMembers = [
                 [
@@ -92,12 +92,12 @@ include 'includes/header.php';
 <!-- Management Team Section -->
 <section class="leadership-section bg-light">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
             <h2>Management Team</h2>
         </div>
 
         <!-- Deputy GM - Centered Single Row -->
-        <div class="centered-row">
+        <div class="centered-row" data-aos="fade-up" data-aos-duration="1300">
             <div class="center-leader dgm">
                 <div class="member-image">
                     <img src="assets/images/leaders/new set 150/5.png" alt="Mr. Mohan Silva" loading="lazy"
@@ -115,7 +115,7 @@ include 'includes/header.php';
         </div>
 
         <!-- Assistant General Managers in One Row -->
-        <div class="agm-row">
+        <div class="agm-row" data-aos="fade-up" data-aos-duration="1800">
             <?php
             $agmMembers = [
                 [

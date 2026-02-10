@@ -1,12 +1,17 @@
+<?php
+$current = basename($_SERVER['PHP_SELF']);
+?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>Sri Lanka Export Credit Insurance Corporation</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/header.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <!-- Add GLightbox CSS in your header or here -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Anime.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 <header class="slecic-header">
@@ -28,37 +33,37 @@
 
     <nav class="header-nav" id="mainNav">
         <ul class="nav-list">
-            <li><a href="index" class="nav-link current">Home</a></li>
+            <li><a href="index" class="nav-link<?php if ($current == 'index.php') echo ' current'; ?>">Home</a></li>
             <li class="nav-item-dropdown">
-                <a href="#" class="nav-link dropdown-trigger">About Us <i class="fas fa-chevron-down"></i></a>
+                <a href="#" class="nav-link dropdown-trigger<?php if (in_array($current, ['Who-we-are.php', 'Our-role.php', 'Leadership.php', 'Customer-testimonials.php', 'career-Opportunities.php'])) echo ' current'; ?>">About Us <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="Who-we-are" class="dropdown-link">Who we are</a></li>
-                    <li><a href="Our-role" class="dropdown-link">Our role</a></li>
-                    <li><a href="Leadership" class="dropdown-link">Leadership</a></li>
-                    <li><a href="Customer-testimonials" class="dropdown-link">Customer Testimonials</a></li>
-                    <li><a href="career-Opportunities" class="dropdown-link">Career Opportunities</a></li>
+                    <li><a href="Who-we-are" class="dropdown-link<?php if ($current == 'Who-we-are.php') echo ' current'; ?>">Who we are</a></li>
+                    <li><a href="Our-role" class="dropdown-link<?php if ($current == 'Our-role.php') echo ' current'; ?>">Our role</a></li>
+                    <li><a href="Leadership" class="dropdown-link<?php if ($current == 'Leadership.php') echo ' current'; ?>">Leadership</a></li>
+                    <li><a href="Customer-testimonials" class="dropdown-link<?php if ($current == 'Customer-testimonials.php') echo ' current'; ?>">Customer Testimonials</a></li>
+                    <li><a href="career-Opportunities" class="dropdown-link<?php if ($current == 'career-Opportunities.php') echo ' current'; ?>">Career Opportunities</a></li>
                 </ul>
             </li>
             <li class="nav-item-dropdown">
-                <a href="#" class="nav-link dropdown-trigger">Our Services <i class="fas fa-chevron-down"></i></a>
+                <a href="#" class="nav-link dropdown-trigger<?php if (in_array($current, ['CreditInsurance.php', 'creditGurantee.php', 'apara.php', 'buyer-info.php', 'epg.php'])) echo ' current'; ?>">Our Services <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="CreditInsurance.php" class="dropdown-link">Credit Insurance</a></li>
-                    <li><a href="creditGurantee.php" class="dropdown-link">Credit Guarantee</a></li>
-                    <li><a href="apara.php" class="dropdown-link">Apara</a></li>
-                    <li><a href="buyer-info.php" class="dropdown-link">Buyer Information</a></li>
-                    <li><a href="epg.php" class="dropdown-link">Export Performance Guarantee</a></li>
+                    <li><a href="CreditInsurance" class="dropdown-link<?php if ($current == 'CreditInsurance.php') echo ' current'; ?>">Credit Insurance</a></li>
+                    <li><a href="creditGurantee" class="dropdown-link<?php if ($current == 'creditGurantee.php') echo ' current'; ?>">Credit Guarantee</a></li>
+                    <li><a href="apara" class="dropdown-link<?php if ($current == 'apara.php') echo ' current'; ?>">Apara</a></li>
+                    <li><a href="buyer-info" class="dropdown-link<?php if ($current == 'buyer-info.php') echo ' current'; ?>">Buyer Information</a></li>
+                    <li><a href="epg" class="dropdown-link<?php if ($current == 'epg.php') echo ' current'; ?>">Export Performance Guarantee</a></li>
                 </ul>
             </li>
-            <li><a href="news" class="nav-link">News & Events</a></li>
+            <li><a href="news" class="nav-link<?php if ($current == 'news.php') echo ' current'; ?>">News & Events</a></li>
             <li class="nav-item-dropdown">
-                <a href="#" class="nav-link dropdown-trigger">Publications <i class="fas fa-chevron-down"></i></a>
+                <a href="#" class="nav-link dropdown-trigger<?php if (in_array($current, ['annual-reports.php', 'market-bullets.php', 'video.php'])) echo ' current'; ?>">Publications <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="annual-reports.php" class="dropdown-link">Annual Reports and Acts</a></li>
-                    <li><a href="market-bullets.php" class="dropdown-link">Market Bulletins</a></li>
-                    <li><a href="video.php" class="dropdown-link">video</a></li>
+                    <li><a href="annual-reports" class="dropdown-link<?php if ($current == 'annual-reports.php') echo ' current'; ?>">Annual Reports and Acts</a></li>
+                    <li><a href="market-bullets" class="dropdown-link<?php if ($current == 'market-bullets.php') echo ' current'; ?>">Market Bulletins</a></li>
+                    <li><a href="video" class="dropdown-link<?php if ($current == 'video.php') echo ' current'; ?>">video</a></li>
                 </ul>
             </li>
-            <li><a href="contact" class="nav-link">Contact Us</a></li>
+            <li><a href="contact" class="nav-link<?php if ($current == 'contact.php') echo ' current'; ?>">Contact Us</a></li>
         </ul>
     </nav>
 

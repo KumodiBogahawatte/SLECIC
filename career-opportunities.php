@@ -16,7 +16,7 @@ include 'includes/header.php';
     </div>
 </section>
 
-<section class="careers-section">
+<section class="careers-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="no-vacancies">
             <div class="no-vacancies-icon">

@@ -1,11 +1,16 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500&display=swap");
+@keyframes tracking-in-contract-bck{0%{letter-spacing:1em;transform:translateZ(400px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0);opacity:1}}
+.tracking-in-contract-bck{animation:tracking-in-contract-bck 1s cubic-bezier(.215,.61,.355,1.000) both}
+@keyframes focus-in-expand{0%{letter-spacing:0.5em;transform:scale(0.5);opacity:0}100%{letter-spacing:normal;transform:scale(1);opacity:1}}
+.focus-in-expand{animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both}
 
 :root {
     --primary-color: #5B0000;
     --secondary-color: #C18E11;
     --bg-color-light: #c5a028;
     --bg-color-dark: #2D0000;
+    --bg-color-maroon-light: #2d0000cb;
     --bg-light: #f9f9f9;
 
 
