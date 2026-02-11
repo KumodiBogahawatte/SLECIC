@@ -4,6 +4,17 @@ footer {
   padding: 40px 0 0;
 }
 
+/* Reduce gap above footer on mobile */
+@media (max-width: 768px) {
+  footer {
+    padding-top: 20px;
+  }
+
+  .footer-content {
+    margin-bottom: 10px;
+  }
+}
+
 .footer-content {
   max-width: 1400px;
   margin: 0 auto;
