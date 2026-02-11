@@ -1,8 +1,12 @@
 :root {
-  --hero-maroon: #580000; /* Dark Red/Maroon */
-  --hero-gold: #c49a18; /* Button Gold */
-  --hero-text: #222222; /* Dark Text */
-  --hero-height: 100vh; /* Takes up 85% of the screen height */
+  --hero-maroon: #580000;
+  /* Dark Red/Maroon */
+  --hero-gold: #c49a18;
+  /* Button Gold */
+  --hero-text: #222222;
+  /* Dark Text */
+  --hero-height: 100vh;
+  /* Takes up 85% of the screen height */
 }
 
 .hero-section {
@@ -14,7 +18,8 @@
   align-items: center;
   /* Ensure video/overlay stack predictably across browsers */
   isolation: isolate;
-  background: #000; /* fallback while video loads */
+  background: #000;
+  /* fallback while video loads */
 }
 
 .hero-video {
@@ -37,11 +42,9 @@
   width: 100%;
   height: 100%;
   /* Simple left-to-right white to transparent gradient for best video visibility */
-  background: linear-gradient(
-    90deg,
-    rgba(255,255,255,0.85) 0%,
-    rgba(255,255,255,0.0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.0) 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -59,7 +62,8 @@
 }
 
 .text-wrapper {
-  max-width: 700px; /* Limits text width so it doesn't overlap the video too much */
+  max-width: 700px;
+  /* Limits text width so it doesn't overlap the video too much */
 }
 
 /* Typography */
@@ -74,7 +78,8 @@
 .hero-content h1 .highlight {
   color: var(--hero-maroon);
   font-weight: 700;
-  display: block; /* Puts 'With Confidence' on a new line */
+  display: block;
+  /* Puts 'With Confidence' on a new line */
   font-size: 3.5rem;
 }
 
@@ -166,7 +171,8 @@
 } */
 
 .about-card {
-  background-color: #eddcd9; /* Pattern eka ain kala, dan me color eka witharai */
+  background-color: #eddcd9;
+  /* Pattern eka ain kala, dan me color eka witharai */
   border-radius: 15px;
   padding: 50px 80px;
   text-align: center;
@@ -188,7 +194,8 @@
 } */
 
 .about-card h2 {
-  color: var(--hero-maroon); /* Reusing the Maroon variable from Hero section */
+  color: var(--hero-maroon);
+  /* Reusing the Maroon variable from Hero section */
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 25px;
@@ -199,8 +206,10 @@
   color: #444;
   font-size: 16px;
   line-height: 1.6;
-  max-width: 900px; /* Prevent text from being too wide */
-  margin: 0 auto; /* Center the paragraph */
+  max-width: 900px;
+  /* Prevent text from being too wide */
+  margin: 0 auto;
+  /* Center the paragraph */
 }
 
 /* --- Responsive (Mobile) --- */
@@ -225,18 +234,22 @@
 }
 
 .section-title {
-  color: var(--hero-maroon); /* Using the Maroon color variable */
+  color: var(--hero-maroon);
+  /* Using the Maroon color variable */
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
-  text-align: left; /* Align header to left as per image */
+  text-align: left;
+  /* Align header to left as per image */
 }
 
 /* Grid Layout for 4 Columns */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 Equal columns */
-  gap: 30px; /* Space between cards */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 Equal columns */
+  gap: 30px;
+  /* Space between cards */
 }
 
 /* Service Card Styling */
@@ -260,14 +273,18 @@
 
 .service-card img {
   width: 100%;
-  height: 200px; /* Fixed height for uniform look */
-  object-fit: cover; /* Crop image to fit without distortion */
-  border-radius: 12px; /* Rounded corners for images */
+  height: 200px;
+  /* Fixed height for uniform look */
+  object-fit: cover;
+  /* Crop image to fit without distortion */
+  border-radius: 12px;
+  /* Rounded corners for images */
   margin-bottom: 20px;
 }
 
 .service-card h3 {
-  color: #1a1a3d; /* Dark Blue/Black color for titles */
+  color: #1a1a3d;
+  /* Dark Blue/Black color for titles */
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -279,42 +296,49 @@
   font-size: 13px;
   line-height: 1.6;
   margin-bottom: 25px;
-  flex-grow: 1; /* Pushes the button to the bottom if text varies */
+  flex-grow: 1;
+  /* Pushes the button to the bottom if text varies */
 }
 
 /* Read More Button */
 .btn-read-more {
   display: inline-block;
-  background-color: #580000; /* Dark Red color */
+  background-color: #580000;
+  /* Dark Red color */
   color: #fff;
   padding: 10px 24px;
   border-radius: 6px;
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
-  width: fit-content; /* Only takes necessary width */
+  width: fit-content;
+  /* Only takes necessary width */
   transition: background-color 0.3s ease;
 }
 
 .btn-read-more:hover {
-  background-color: #3e0000; /* Darker red on hover */
+  background-color: #3e0000;
+  /* Darker red on hover */
 }
 
 /* --- Responsive (Tablets & Mobile) --- */
 @media (max-width: 1024px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on tablets */
   }
 }
 
 @media (max-width: 600px) {
   .services-grid {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr;
+    /* 1 column on mobile */
   }
 
   .section-title {
     font-size: 28px;
-    text-align: center; /* Center title on mobile */
+    text-align: center;
+    /* Center title on mobile */
   }
 }
 
@@ -323,9 +347,11 @@
   position: relative;
   padding: 80px 8%;
   overflow: hidden;
-  min-height: 600px; /* Ensures section is tall enough */
+  min-height: 600px;
+  /* Ensures section is tall enough */
   display: flex;
-  align-items: center; /* Vertically center the text */
+  align-items: center;
+  /* Vertically center the text */
   margin-top: 0;
 }
 
@@ -336,9 +362,11 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/index1.png"); /* Make sure to save your image as this name */
+  background-image: url("../images/index1.png");
+  /* Make sure to save your image as this name */
   background-size: cover;
-  background-position: center right; /* Focus on the people on the right side */
+  background-position: center right;
+  /* Focus on the people on the right side */
   z-index: -2;
 }
 
@@ -350,24 +378,24 @@
   width: 100%;
   height: 100%;
   /* Solid white on left (40%), fading to transparent on right */
-  background: linear-gradient(
-    90deg,
-    rgba(110, 101, 101, 0.226) 10%,
-    rgba(110, 101, 101, 0.199) 50%,
-    rgba(31, 30, 30, 0.411) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(110, 101, 101, 0.226) 10%,
+      rgba(110, 101, 101, 0.199) 50%,
+      rgba(31, 30, 30, 0.411) 100%);
   z-index: -1;
 }
 
 /* Content Styling */
 .feature-content {
-  max-width: 650px; /* Limits text width */
+  max-width: 650px;
+  /* Limits text width */
   position: relative;
   z-index: 1;
 }
 
 .feature-logo {
-  height: 60px; /* Adjust size based on your logo file */
+  height: 60px;
+  /* Adjust size based on your logo file */
   width: auto;
   margin-bottom: 25px;
   display: block;
@@ -393,7 +421,8 @@
 /* Pay Now Button */
 .btn-pay-now {
   display: inline-block;
-  background-color: #580000; /* Dark Maroon Color */
+  background-color: #580000;
+  /* Dark Maroon Color */
   color: #fff;
   padding: 14px 40px;
   border-radius: 8px;
@@ -412,11 +441,9 @@
 @media (max-width: 992px) {
   .feature-overlay {
     /* On tablets/mobile, make background more solid so text is readable */
-    background: linear-gradient(
-      90deg,
-      #ffffff 60%,
-      rgba(255, 255, 255, 0.5) 100%
-    );
+    background: linear-gradient(90deg,
+        #ffffff 60%,
+        rgba(255, 255, 255, 0.5) 100%);
   }
 }
 
@@ -427,7 +454,8 @@
   }
 
   .feature-bg-image {
-    opacity: 0.3; /* Fade image more on mobile */
+    opacity: 0.3;
+    /* Fade image more on mobile */
   }
 
   .feature-content h2 {
@@ -435,7 +463,8 @@
   }
 
   .feature-overlay {
-    background: rgba(255, 255, 255, 0.9); /* Solid white overlay on mobile */
+    background: rgba(255, 255, 255, 0.9);
+    /* Solid white overlay on mobile */
   }
 }
 
@@ -527,6 +556,7 @@
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .news-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -534,11 +564,9 @@
 
 @media (max-width: 992px) {
   .feature-overlay {
-    background: linear-gradient(
-      90deg,
-      #ffffff 60%,
-      rgba(255, 255, 255, 0.5) 100%
-    );
+    background: linear-gradient(90deg,
+        #ffffff 60%,
+        rgba(255, 255, 255, 0.5) 100%);
   }
 }
 
@@ -551,15 +579,19 @@
   }
 
   .hero-video {
-    opacity: 0.3;
-  } /* Optional: fade video on mobile */
+    opacity: 1;
+    /* Showing video clearly on mobile */
+  }
+
   .hero-overlay {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.4);
+    /* Making overlay more transparent */
   }
 
   .text-wrapper {
     margin: 0 auto;
   }
+
   .hero-logos {
     display: none;
   }
@@ -567,6 +599,7 @@
   .hero-content h1 {
     font-size: 2.5rem;
   }
+
   .hero-content h1 .highlight {
     font-size: 2.8rem;
   }
@@ -574,6 +607,7 @@
   .about-card {
     padding: 40px 20px;
   }
+
   .about-card h2 {
     font-size: 24px;
   }
@@ -582,10 +616,12 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .section-title {
     text-align: center;
     font-size: 28px;
   }
+
   .service-card {
     text-align: center;
     align-items: center;
@@ -595,18 +631,23 @@
     text-align: center;
     padding: 60px 0;
   }
+
   .feature-bg-image {
     opacity: 0.15;
   }
+
   .feature-overlay {
     background: rgba(255, 255, 255, 0.85);
   }
+
   .feature-content {
     margin: 0 auto;
   }
+
   .feature-logo {
     margin: 0 auto 20px auto;
   }
+
   .feature-content h2 {
     font-size: 28px;
   }
@@ -616,6 +657,7 @@
     max-width: 400px;
     margin: 0 auto;
   }
+
   .news-image img {
     height: 200px;
   }
@@ -624,11 +666,14 @@
 /* --- Contact Section --- */
 .contact-section {
   padding: 30px 8%;
+
   @media (max-width: 991px) {
+
     .about-section,
     .services-section {
       padding: 20px 5%;
     }
+
     .feature-section,
     .news-section,
     .contact-section {
@@ -637,28 +682,34 @@
   }
 
   @media (max-width: 600px) {
+
     .about-section,
     .services-section {
       padding: 10px 4%;
     }
+
     .feature-section,
     .news-section,
     .contact-section {
       padding: 10px 4%;
     }
   }
+
   /* background-color: #ffffff; */
 }
 
 .contact-grid {
   display: flex;
-  gap: 50px; /* Space between Form and Map */
-  align-items: stretch; /* Both sides equal height */
+  gap: 50px;
+  /* Space between Form and Map */
+  align-items: stretch;
+  /* Both sides equal height */
 }
 
 /* Left Side: Form Styling */
 .contact-form-wrapper {
-  flex: 1; /* Takes 50% width */
+  flex: 1;
+  /* Takes 50% width */
 }
 
 .contact-intro {
@@ -679,7 +730,8 @@
   width: 100%;
   padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
+  /* Rounded corners */
   font-size: 14px;
   /* font-family: inherit; */
   outline: none;
@@ -688,17 +740,20 @@
 }
 
 .form-control:focus {
-  border-color: var(--hero-maroon); /* Highlight color on focus */
+  border-color: var(--hero-maroon);
+  /* Highlight color on focus */
 }
 
 .form-textarea {
-  resize: none; /* Prevent manual resizing */
+  resize: none;
+  /* Prevent manual resizing */
   margin-bottom: 20px;
 }
 
 /* Submit Button */
 .btn-submit {
-  background-color: #580000; /* Dark Maroon */
+  background-color: #580000;
+  /* Dark Maroon */
   color: #fff;
   padding: 12px 50px;
   border: none;
@@ -723,30 +778,36 @@
 
 /* Right Side: Map Styling */
 .contact-map-wrapper {
-  flex: 1; /* Takes 50% width */
-  min-height: 400px; /* Minimum height for map */
+  flex: 1;
+  /* Takes 50% width */
+  min-height: 400px;
+  /* Minimum height for map */
 }
 
 .contact-map-wrapper iframe {
-  border-radius: 20px; /* Large rounded corners for the map */
+  border-radius: 20px;
+  /* Large rounded corners for the map */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Responsive Updates (Add inside your existing media query or here) --- */
 @media (max-width: 992px) {
   .contact-grid {
-    flex-direction: column; /* Stack vertically on tablet/mobile */
+    flex-direction: column;
+    /* Stack vertically on tablet/mobile */
     gap: 40px;
   }
 
   .contact-map-wrapper {
-    height: 350px; /* Fixed height for map on mobile */
+    height: 350px;
+    /* Fixed height for map on mobile */
   }
 }
 
 @media (max-width: 600px) {
   .form-row {
-    flex-direction: column; /* Stack inputs vertically on small mobile */
+    flex-direction: column;
+    /* Stack inputs vertically on small mobile */
     gap: 15px;
   }
 }
