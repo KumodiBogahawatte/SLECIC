@@ -53,17 +53,17 @@
 
 /* Card */
 .sitemap-card {
-    background: #fff;
-    border-left: 5px solid var(--secondary-color);
+    /* background: #fff; */
+    /* border-left: 5px solid var(--secondary-color); */
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
     transition: all 0.3s ease;
 }
 
 .sitemap-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    /* transform: translateY(-6px); */
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); */
 }
 
 /* Headings */

@@ -25,6 +25,13 @@ include 'includes/header.php';
                 <ul>
                     <li><a href="index.php">Home</a></li>
                 </ul>
+                <br>
+                <h3>Publications</h3>
+                <ul>
+                    <li><a href="#">Annual Reports & Acts</a></li>
+                    <li><a href="#">Market Bulletins</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
             </div>
 
             <div class="sitemap-card">
@@ -55,23 +62,28 @@ include 'includes/header.php';
                     <li><a href="#">Latest News</a></li>
                     <li><a href="#">Events</a></li>
                 </ul>
+                <br>
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="contact.php">Contact Information</a></li>
+                </ul>
             </div>
 
-            <div class="sitemap-card">
+            <!-- <div class="sitemap-card">
                 <h3>Publications</h3>
                 <ul>
                     <li><a href="#">Annual Reports & Acts</a></li>
                     <li><a href="#">Market Bulletins</a></li>
                     <li><a href="#">Videos</a></li>
                 </ul>
-            </div>
+            </div> -->
 
-            <div class="sitemap-card">
+            <!-- <div class="sitemap-card">
                 <h3>Contact</h3>
                 <ul>
                     <li><a href="contact.php">Contact Information</a></li>
                 </ul>
-            </div>
+            </div> -->
 
         </div>
     </div>
