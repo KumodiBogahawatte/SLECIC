@@ -18,13 +18,13 @@
 </section>
 
 <section class="media-section">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="section-header">
             <h2 class="section-title">Latest Videos</h2>
             <div class="title-line"></div>
         </div>
 
-        <div class="video-grid" id="videoGrid">
+        <div class="video-grid" id="videoGrid" data-aos="fade-up" data-aos-duration="1300">
             
             <div class="video-card" data-title="SLECIC Corporate Journey 2024">
                 <div class="video-wrapper">

@@ -19,7 +19,7 @@
 </section>
 
 <section class="pub-section">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
 
         <div class="search-bar-wrapper">
             <form class="search-form" onsubmit="event.preventDefault();">

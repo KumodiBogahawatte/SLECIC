@@ -16,8 +16,8 @@ include 'includes/header.php';
     </div>
 </section>
 
-<section class="contact-section" data-aos="fade-up" data-aos-duration="1000">
-    <div class="container">
+<section class="contact-section">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="contact-grid">
 
             <!-- Left Side: Contact Info -->
