@@ -16,26 +16,26 @@
     </div>
 </section>
 
-<section class="epg-section">
+<section class="epg-section" data-aos="fade-up" data-aos-duration="1200">
     <div class="container">
         
         <!-- <h2 class="epg-main-title">Export Performance Guarantee</h2> -->
 
         <div class="epg-intro-box">
-            <h3 class="sub-title">SLECIC Reaches Out to Support Logistic Industry</h3>
+            <h3 class="section-header">SLECIC Reaches Out to Support Logistic Industry</h3>
             <p class="intro-text">
                 Sri Lanka Export Credit Insurance Corporation (SLECIC) extends its support to the Logistic Industry by introducing tailor-made products to the following business categories:
             </p>
             
             <div class="category-grid">
-                <div class="cat-card">Non-Vessel Operating Common Carriers (NVOCC)</div>
-                <div class="cat-card">Feeder Operators</div>
-                <div class="cat-card">Airline / Shipping Line Agents</div>
-                <div class="cat-card">Freight Forwarders</div>
+                <div class="cat-card" data-aos="flip-left" data-aos-duration="1000">Non-Vessel Operating Common Carriers (NVOCC)</div>
+                <div class="cat-card" data-aos="flip-left" data-aos-duration="1500">Feeder Operators</div>
+                <div class="cat-card" data-aos="flip-left" data-aos-duration="2000">Airline / Shipping Line Agents</div>
+                <div class="cat-card" data-aos="flip-left" data-aos-duration="2500">Freight Forwarders</div>
             </div>
         </div>
 
-        <div class="epg-content-block">
+        <div class="epg-content-block" data-aos="fade-up" data-aos-duration="1200">
             <h3 class="section-header">Secure Trade Financial Need for Logistic Industry</h3>
             <p>
                 Logistic Industry is the invisible backbone of the International trade, however they have been struggling to secure sufficient trade finance capital. Recognizing this critical need, SLECIC has introduced an innovative solution: the <strong>Export Performance Guarantee</strong> which provides much needed financial needs and thereby unlocking new growth avenues for Sri Lanka’s export sector.
@@ -48,17 +48,17 @@
         <div class="epg-benefits-wrapper">
             <h3 class="section-header">Benefits for the Trade</h3>
             <div class="benefits-grid">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="zoom-out-up" data-aos-duration="1000">
                     <div class="icon-box">01</div>
                     <h4>Reduction in Collateral</h4>
                     <p>No more blocking of capital as deposits for the collateral for bank guarantees.</p>
                 </div>
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="zoom-out-up" data-aos-duration="1000">
                     <div class="icon-box">02</div>
                     <h4>Mitigation of Risks for Banks</h4>
                     <p>SLECIC’s guarantee protects the banks in case their clients fail to meet their contractual obligations or due performance.</p>
                 </div>
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="zoom-out-up" data-aos-duration="1000">
                     <div class="icon-box">03</div>
                     <h4>Improved Credibility</h4>
                     <p>SLECIC’s guarantee assures terminal operators, Feeder Operators, and Shipping Line Agents’ ability to meet contractual obligations, making it easier to secure contracts.</p>
@@ -67,31 +67,41 @@
         </div>
 
         <div class="epg-footer-block">
-            <div class="quote-box">
+            <div class="quote-box" data-aos="fade-right" data-aos-duration="1500">
                 <blockquote>
                     "By adopting this new guarantee a large sum of deposited money would be released to the economy creating new investments opportunities which will in return pave the way to economic growth. Furthermore, it strengthens the financial needs of the freight forwarding industry as a whole, creating a more robust foundation for the entire Sri Lankan export landscape."
                 </blockquote>
                 <cite>— Mr. Senarath Devendra <br><span>(Former Chairman & Managing Director of SLECIC)</span></cite>
             </div>
 
-            <div class="contact-highlight">
+            <div class="contact-highlight" data-aos="fade-left" data-aos-duration="1500">
                 <p>For more information or to apply for the Export Performance Guarantee:</p>
-                <a href="tel:0112307519" class="contact-link">
-                    <span class="contact-icon" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="currentColor" class="contact-icon-svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 4.5c0 8.284 6.716 15 15 15h1.5A2.25 2.25 0 0 0 21 17.25v-1.386c0-.52-.355-.966-.852-1.09l-3.478-.87a1.125 1.125 0 0 0-1.173.417l-.97 1.293a1.125 1.125 0 0 1-1.21.38 12.035 12.035 0 0 1-7.143-7.143 1.125 1.125 0 0 1 .38-1.21l1.293-.97c.37-.278.54-.75.417-1.173l-.87-3.478A1.125 1.125 0 0 0 6.136 1.5H4.75A2.25 2.25 0 0 0 2.5 3.75v.75z" />
-                        </svg>
-                    </span>
-                    <span>011 2307519-23</span>
-                </a>
-                <a href="mailto:inquiry@slecic.lk" class="contact-link">
-                    <span class="contact-icon" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="currentColor" class="contact-icon-svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.5a2.25 2.25 0 0 1-2.26 0l-7.5-4.5A2.25 2.25 0 0 1 2.25 6.993V6.75" />
-                        </svg>
-                    </span>
-                    <span>inquiry@slecic.lk</span>
-                </a>
+                <div class="contact-link-group">
+                    <a href="tel:0112307519" class="contact-link">
+                        <span class="contact-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="currentColor" class="contact-icon-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 4.5c0 8.284 6.716 15 15 15h1.5A2.25 2.25 0 0 0 21 17.25v-1.386c0-.52-.355-.966-.852-1.09l-3.478-.87a1.125 1.125 0 0 0-1.173.417l-.97 1.293a1.125 1.125 0 0 1-1.21.38 12.035 12.035 0 0 1-7.143-7.143 1.125 1.125 0 0 1 .38-1.21l1.293-.97c.37-.278.54-.75.417-1.173l-.87-3.478A1.125 1.125 0 0 0 6.136 1.5H4.75A2.25 2.25 0 0 0 2.5 3.75v.75z" />
+                            </svg>
+                        </span>
+                        <span>011 230 7519</span>
+                    </a>
+                    <a href="tel:0112307523" class="contact-link">
+                        <span class="contact-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="currentColor" class="contact-icon-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 4.5c0 8.284 6.716 15 15 15h1.5A2.25 2.25 0 0 0 21 17.25v-1.386c0-.52-.355-.966-.852-1.09l-3.478-.87a1.125 1.125 0 0 0-1.173.417l-.97 1.293a1.125 1.125 0 0 1-1.21.38 12.035 12.035 0 0 1-7.143-7.143 1.125 1.125 0 0 1 .38-1.21l1.293-.97c.37-.278.54-.75.417-1.173l-.87-3.478A1.125 1.125 0 0 0 6.136 1.5H4.75A2.25 2.25 0 0 0 2.5 3.75v.75z" />
+                            </svg>
+                        </span>
+                        <span>011 230 7523</span>
+                    </a>
+                    <a href="mailto:inquiry@slecic.lk" class="contact-link">
+                        <span class="contact-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="currentColor" class="contact-icon-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.5a2.25 2.25 0 0 1-2.26 0l-7.5-4.5A2.25 2.25 0 0 1 2.25 6.993V6.75" />
+                            </svg>
+                        </span>
+                        <span>inquiry@slecic.lk</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -99,7 +109,7 @@
 </section>
 
 <!-- Brochure & E-Flyer Preview Section -->
-<section class="epg-brochure-section">
+<section class="epg-brochure-section"  data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <h2 class="epg-main-title">Brochures & E-Flyer</h2>
         <div class="epg-brochure-grid">

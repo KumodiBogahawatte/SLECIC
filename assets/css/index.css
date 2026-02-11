@@ -36,12 +36,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* Gradient: Solid white on left (40%), fading to transparent on right */
+  /* Simple left-to-right white to transparent gradient for best video visibility */
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.705) 35%,
-    rgba(94, 94, 94, 0.288) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255,255,255,0.85) 0%,
+    rgba(255,255,255,0.0) 100%
   );
   z-index: 1;
   pointer-events: none;
@@ -134,17 +133,16 @@
 
 /* --- Responsive (Mobile) --- */
 @media (max-width: 768px) {
-  .hero-overlay {
-    /* On mobile, make the white background cover more area or go solid */
-    background: rgba(255, 255, 255, 0.9);
-  }
+  /* Remove .hero-overlay override so desktop gradient is used on all screens */
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin: 25px;
   }
 
   .hero-content h1 .highlight {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    margin: 25px;
   }
 }
 

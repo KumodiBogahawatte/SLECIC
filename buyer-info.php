@@ -17,8 +17,7 @@ include 'includes/header.php';
 </section>
 
 <section class="risk-section">
-    <div class="container">
-
+    <div class="container" data-aos="fade-up" data-aos-duration="1200">
         <h2 class="risk-main-title">Buyer Information</h2>
         <div class="title-line"></div>
         <div class="risk-grid">

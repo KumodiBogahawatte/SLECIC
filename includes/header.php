@@ -16,7 +16,7 @@ $current = basename($_SERVER['PHP_SELF']);
 
 <header class="slecic-header">
     <div class="header-branding">
-        <a href="/" class="brand-link">
+        <a href="index" class="brand-link">
             <img src="assets/images/logo/logo_main.png" alt="SLECIC Logo" class="brand-logo">
         </a>
     </div>

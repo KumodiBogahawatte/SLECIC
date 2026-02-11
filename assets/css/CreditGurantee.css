@@ -112,7 +112,7 @@
 
 /* --- Combined Risk Section --- */
 .risk-section {
-  padding: 80px 8%;
+  padding: 40px 8%;
   background-color: #ffffff;
 }
 
@@ -132,7 +132,7 @@
   display: flex;
   gap: 40px;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   /* Space between top text and accordion below */
 }
 
@@ -399,7 +399,7 @@
 
 .solutions-list li strong {
   display: block;
-  color: #003366;
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
