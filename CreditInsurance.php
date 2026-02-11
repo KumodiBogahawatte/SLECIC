@@ -17,7 +17,7 @@ include 'includes/header.php';
 </section>
 
 <section class="risk-section">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
 
         <h2 class="risk-main-title">Credit Insurance (Seller's Risk)</h2>
         <div class="title-line"></div>
@@ -39,7 +39,7 @@ include 'includes/header.php';
             </div>
         </div>
 
-        <div class="risk-accordion-area">
+        <div class="risk-accordion-area" data-aos="fade-up" data-aos-duration="1200">
             <div class="accordion-wrapper">
 
                 <div class="accordion-item">
@@ -252,20 +252,23 @@ include 'includes/header.php';
 
         accordions.forEach(acc => {
             acc.addEventListener("click", function() {
-                // 1. Toggle Active Class for styling
-                this.classList.toggle("active");
+                // Close all panels
+                accordions.forEach(otherAcc => {
+                    if (otherAcc !== this) {
+                        otherAcc.classList.remove("active");
+                        const otherPanel = otherAcc.nextElementSibling;
+                        otherPanel.style.maxHeight = null;
+                        otherPanel.classList.remove("open");
+                    }
+                });
 
-                // 2. Open/Close Panel
+                // Toggle current
+                this.classList.toggle("active");
                 const panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
                     panel.classList.remove("open");
                 } else {
-                    // Optional: Close other panels automatically
-                    // document.querySelectorAll(".accordion-content").forEach(p => p.style.maxHeight = null);
-                    // document.querySelectorAll(".accordion-header").forEach(h => h.classList.remove("active"));
-                    // this.classList.add("active"); // Re-add active to clicked one
-
                     panel.style.maxHeight = panel.scrollHeight + "px";
                     panel.classList.add("open");
                 }

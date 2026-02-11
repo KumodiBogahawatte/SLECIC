@@ -14,7 +14,7 @@
    
    /* Common Section Styling */
    .media-section, .pub-section {
-       padding: 80px 8%;
+       padding: 40px 8%;
        background-color: #f8f9fa;
    }
    
@@ -29,7 +29,7 @@
        align-items: center;
        justify-content: center;
        /* Image path eka hariyatama balanna */
-       background-image: url('../images/pulication.png'); 
+       background-image: url('../images/publicationsSlider.jpg'); 
        background-size: cover;
        background-position: center;
        background-color: #4a0202;
@@ -50,7 +50,7 @@
    }
    
    .page-hero h1 {
-       font-family: 'Roboto Slab', serif;
+       /* font-family: 'Roboto Slab', serif; */
        font-size: 3rem;
        font-weight: 700;
        color: #ffffff;
@@ -87,7 +87,7 @@
        color: #580000;
        font-size: 26px;
        font-weight: 700;
-       font-family: 'Roboto Slab', serif;
+       /* font-family: 'Roboto Slab', serif; */
        margin-bottom: 10px;
    }
    

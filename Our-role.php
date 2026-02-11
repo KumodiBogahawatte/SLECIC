@@ -1,5 +1,5 @@
-<?php 
-    include 'includes/header.php'; 
+<?php
+include 'includes/header.php';
 ?>
 
 <link rel="stylesheet" href="assets/css/ourRole.css">
@@ -102,10 +102,10 @@
             <div class="credit-content" data-aos="fade-left" data-aos-duration="1000">
                 <div class="quote-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                     </svg>
                 </div>
-                <h2>Credit has been described as "the lifeblood of business"</h2>
+                <h2>Credit has been described as "The lifeblood of business"..</h2>
                 <div class="gold-divider"></div>
                 <p>A large proportion of a company's assets are often tied up in credit. Indeed it is estimated that, on average, around <strong>40% of a company's assets</strong> are owed by debtors.</p>
                 <p>The granting of credit to customers is a vital tool for trading companies when competing with others in the market. Competition takes places as much on the basis of credit as it does on price.</p>
@@ -135,96 +135,106 @@
 <!-- Risk Highlight Cards -->
 <section class="risks-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
-        <h2 class="section-title">Understanding Business Risks</h2>
+        <!-- <h4 class="section-subtitle">Why It Matters</h4> -->
+        <h2 class="section-title" style="text-align: center;">Understanding Business Risks</h2>
         <div class="gold-divider center"></div>
-        
-        <div class="risk-tabs">
-            <div class="risk-tab-buttons">
-                <button class="risk-tab-btn active" data-tab="late-payment">
-                    <div class="risk-icon warning">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-                        </svg>
-                    </div>
-                    <span>Late Payment Risk</span>
+        <div class="accordion-wrapper">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Late Payment Risk
+                    <span class="accordion-icon">+</span>
                 </button>
-                <button class="risk-tab-btn" data-tab="insolvency">
-                    <div class="risk-icon danger">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" />
-                        </svg>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p>Late payment is a growing business risk. Not only does it affect the company's finances and balance sheet, it also eats into the time and resources of the company which could have otherwise been allocated for meaningful activities.</p>
+                        <p>When customers delay payments, businesses face cash flow problems, difficulty meeting their own obligations, and increased administrative costs in chasing overdue invoices.</p>
                     </div>
-                    <span>Buyer Insolvency</span>
-                </button>
-                <button class="risk-tab-btn" data-tab="bad-debt">
-                    <div class="risk-icon alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
-                        </svg>
-                    </div>
-                    <span>Bad Debt Impact</span>
-                </button>
+                </div>
             </div>
-            
-            <div class="risk-tab-content">
-                <div class="risk-panel active" id="late-payment">
-                    <h3>Late Payment Risk</h3>
-                    <p>Late payment is a growing business risk. Not only does it affect the company's finances and balance sheet, it also eats into the time and resources of the company which could have otherwise been allocated for meaningful activities.</p>
-                    <p>When customers delay payments, businesses face cash flow problems, difficulty meeting their own obligations, and increased administrative costs in chasing overdue invoices.</p>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Buyer Insolvency
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p>Insolvency of a buyer is even more devastating for companies. In such an event it may be impossible to recover any of the debt or a substantial part of it and the debt will have to be written off.</p>
+                        <p>The ripple effect of a major buyer's insolvency can threaten the financial stability of supplying companies, potentially leading to a chain of business failures.</p>
+                    </div>
                 </div>
-                <div class="risk-panel" id="insolvency">
-                    <h3>Buyer Insolvency</h3>
-                    <p>Insolvency of a buyer is even more devastating for companies. In such an event it may be impossible to recover any of the debt or a substantial part of it and the debt will have to be written off.</p>
-                    <p>The ripple effect of a major buyer's insolvency can threaten the financial stability of supplying companies, potentially leading to a chain of business failures.</p>
-                </div>
-                <div class="risk-panel" id="bad-debt">
-                    <h3>Bad Debt Impact</h3>
-                    <p>The effect of a bad debt can be devastating when it involves a major supplier. The effect can also grow out of all proportion to its size. The problem becomes worse when a company has only a small number of buyers.</p>
-                    <p>Bad debts directly reduce profits and can require significant additional sales just to recover the lost revenue, putting immense pressure on business operations.</p>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Bad Debt Impact
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <p>The effect of a bad debt can be devastating when it involves a major supplier. The effect can also grow out of all proportion to its size. The problem becomes worse when a company has only a small number of buyers.</p>
+                        <p>Bad debts directly reduce profits and can require significant additional sales just to recover the lost revenue, putting immense pressure on business operations.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Accordion JS for risks-section -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const tabBtns = document.querySelectorAll('.risk-tab-btn');
-    const panels = document.querySelectorAll('.risk-panel');
-    
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // Remove active class from all buttons and panels
-            tabBtns.forEach(b => b.classList.remove('active'));
-            panels.forEach(p => p.classList.remove('active'));
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            // Show corresponding panel
-            const tabId = this.getAttribute('data-tab');
-            document.getElementById(tabId).classList.add('active');
+    document.addEventListener("DOMContentLoaded", function() {
+        const accordions = document.querySelectorAll(".accordion-header");
+
+        // Open first accordion by default
+        if (accordions.length > 0) {
+            const firstAccordion = accordions[0];
+            const firstPanel = firstAccordion.nextElementSibling;
+            firstAccordion.classList.add("active");
+            firstPanel.classList.add("open");
+            firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+        }
+
+        accordions.forEach(acc => {
+            acc.addEventListener("click", function() {
+                // Close all panels
+                accordions.forEach(otherAcc => {
+                    if (otherAcc !== this) {
+                        otherAcc.classList.remove("active");
+                        const otherPanel = otherAcc.nextElementSibling;
+                        otherPanel.style.maxHeight = null;
+                        otherPanel.classList.remove("open");
+                    }
+                });
+
+                // Toggle current
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    panel.classList.remove("open");
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    panel.classList.add("open");
+                }
+            });
         });
     });
-});
 </script>
 
 <!-- Myth Buster Section -->
 <section class="myth-section">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="myth-card">
-            <div class="myth-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
-                </svg>
-            </div>
+        <div class="myth-grid">
             <div class="myth-content">
                 <h3>Breaking the Myth</h3>
+                <div class="gold-divider"></div>
                 <p>It is not easy for companies to learn everything about a potential buyer. A Company that appears to be financially healthy according to its accounts and appears to have good management team can nevertheless become insolvent. Companies today are much more adept at hiding problems from suppliers.</p>
                 <div class="myth-highlight">
                     <p><strong>Many companies believe that they will not be affected by insolvencies due to mismanagement as all their trading partners are situated in developed Countries and regions, such as USA and EU.</strong></p>
                     <p class="myth-truth">It is a myth that only those who trade with developing nations face payment defaults.</p>
                 </div>
+            </div>
+            <div class="myth-image">
+                <img src="assets/images/about/myth-buster.jpg" alt="Myth Buster">
             </div>
         </div>
     </div>

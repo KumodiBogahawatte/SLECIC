@@ -5,7 +5,34 @@
     --bg-color-dark: #2D0000;
     --bg-light: #f9f9f9;
 }
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 300px;
+    height: 40vh;
+    background-attachment: scroll;
+    /* Disable parallax on mobile for better performance */
+  }
 
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-hero .breadcrumb {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    min-height: 250px;
+    height: 35vh;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+}
 /* Breadcrumb active */
 .breadcrumb .active {
     color: var(--secondary-color);
@@ -14,7 +41,7 @@
 
 /* Sitemap Section */
 .sitemap-section {
-    padding: 80px 8%;
+    padding: 40px 8%;
     background: var(--bg-light);
 }
 

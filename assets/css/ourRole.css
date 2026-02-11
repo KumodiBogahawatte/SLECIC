@@ -1,5 +1,32 @@
 /* Our Role Page Styles */
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 300px;
+    height: 40vh;
+    background-attachment: scroll;
+    /* Disable parallax on mobile for better performance */
+  }
 
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-hero .breadcrumb {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    min-height: 250px;
+    height: 35vh;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+}
 /* Section Subtitle */
 .section-subtitle {
     color: var(--hero-gold, #c49a18);
@@ -11,7 +38,7 @@
 
 /* Section Title */
 .section-title {
-    color: var(--hero-maroon, #5B0000);
+    color: var(--primary-color);
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -31,14 +58,14 @@
 
 /* Container */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 /* Role Intro Section */
 .role-intro {
-    padding: 80px 8%;
+    padding: 40px 8%;
     background: #fff;
 }
 
@@ -178,7 +205,7 @@
 }
 
 .credit-content h2 {
-    color: var(--hero-maroon, #5B0000);
+    color: var(--primary-color);
     font-size: 2rem;
     font-style: italic;
     margin-bottom: 20px;
@@ -214,6 +241,41 @@
     gap: 60px;
     align-items: center;
 }
+@media (max-width: 992px) {
+    .cashflow-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .cashflow-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cashflow-section {
+        padding: 40px 5%;
+    }
+    .cashflow-grid {
+        gap: 20px;
+    }
+    .cashflow-content p {
+        font-size: 0.97rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cashflow-section {
+        padding: 30px 3%;
+    }
+    .cashflow-content p {
+        font-size: 0.93rem;
+    }
+    .cashflow-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 .cashflow-content p {
     font-size: 1rem;
@@ -228,239 +290,289 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Risks Section */
+/* Risks Section Accordion Styling - Matching CreditInsurance */
 .risks-section {
-    padding: 80px 8%;
-    /* background: #fff; */
+    padding: 40px 8%;
+    /* background: #ffffff; */
 }
 
 .risks-section .container {
     max-width: 100%;
 }
 
-.risks-section .section-title {
-    text-align: center;
-}
-
-.risks-section .gold-divider.center {
-    margin: 0 auto 50px;
-}
-
-/* Risk Tabs */
-.risk-tabs {
-    width: 100%;
-}
-
-.risk-tab-buttons {
-    display: flex;
-    gap: 0;
-    justify-content: center;
-    margin-bottom: 0;
-    background: #f0f0f0;
-    border-radius: 12px 12px 0 0;
+.accordion-wrapper {
+    max-width: 100%;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
     overflow: hidden;
-    border: 2px solid var(--primary-color, #5B0000);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #eee;
+}
+
+.accordion-item:last-child {
     border-bottom: none;
 }
 
-.risk-tab-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    padding: 10px 30px;
-    background: transparent;
+.accordion-header {
+    width: 100%;
+    background: linear-gradient(to right, #f8f9fa 0%, #ffffff 100%);
     border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    padding: 20px 28px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     transition: all 0.3s ease;
-    flex: 1;
+    border-bottom: 1px solid #e8e8e8;
     position: relative;
 }
 
-.risk-tab-btn:last-child {
-    border-right: none;
-}
-
-.risk-tab-btn span {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #555;
-    transition: color 0.3s;
-}
-
-.risk-tab-btn:hover {
-    background: rgba(91, 0, 0, 0.05);
-}
-
-.risk-tab-btn:hover span {
-    color: var(--primary-color, #5B0000);
-}
-
-.risk-tab-btn.active {
-    background: var(--primary-color, #5B0000);
-}
-
-.risk-tab-btn.active::after {
-    content: '';
+.accordion-header::before {
+    content: "";
     position: absolute;
-    bottom: 0;
     left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--hero-gold, #c49a18);
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(to bottom, #c49a18 0%, #d4a81e 100%);
+    transition: width 0.3s ease;
 }
 
-.risk-tab-btn.active span {
+.accordion-header:hover {
+    background: linear-gradient(to right, #f0f0f0 0%, #f8f8f8 100%);
+    color: #580000;
+    padding-left: 32px;
+}
+
+.accordion-header:hover::before {
+    width: 4px;
+}
+
+.accordion-header.active {
+    background: linear-gradient(to right, #580000 0%, #6b0000 100%);
     color: #fff;
+    padding-left: 32px;
 }
 
-.risk-tab-btn .risk-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.accordion-header.active::before {
+    width: 4px;
+    background: linear-gradient(to bottom, #c49a18 0%, #d4a81e 100%);
+}
+
+.accordion-icon {
+    font-size: 24px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    color: #c49a18;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    border-radius: 50%;
+    background: rgba(196, 154, 24, 0.1);
     flex-shrink: 0;
 }
 
-.risk-tab-btn .risk-icon svg {
-    width: 26px;
-    height: 26px;
-}
-
-.risk-tab-btn .risk-icon.warning {
-    background: rgba(240, 173, 78, 0.2);
-    color: #f0ad4e;
-}
-
-.risk-tab-btn .risk-icon.danger {
-    background: rgba(217, 83, 79, 0.2);
-    color: #ff6b6b;
-}
-
-.risk-tab-btn .risk-icon.alert {
+.accordion-header:hover .accordion-icon {
     background: rgba(196, 154, 24, 0.2);
-    color: var(--hero-gold, #c49a18);
-}
-
-.risk-tab-btn.active .risk-icon {
-    background: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
 
-.risk-tab-btn.active .risk-icon.warning,
-.risk-tab-btn.active .risk-icon.danger,
-.risk-tab-btn.active .risk-icon.alert {
-    color: var(--hero-gold, #c49a18);
+.accordion-header.active .accordion-icon {
+    transform: rotate(45deg) scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
-/* Risk Tab Content */
-.risk-tab-content {
-    background: #fff;
-    border: 2px solid var(--primary-color, #5B0000);
-    border-top: none;
-    border-radius: 0 0 12px 12px;
-    padding: 50px 60px;
-    text-align: left;
-    min-height: 200px;
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #fff;
+}
+
+.accordion-content.open {
+    max-height: 5000px;
+}
+
+.content-inner {
+    padding: 35px 30px;
+    color: #444;
+    line-height: 1.8;
+    border-top: 1px solid #f0f0f0;
+    background: linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
     position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.risk-panel {
-    display: none;
-    animation: fadeIn 0.4s ease;
+.content-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #c49a18 0%, #d4a81e 50%, #c49a18 100%);
+    opacity: 0.3;
 }
 
-.risk-panel.active {
-    display: block;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.risk-panel h3 {
-    color: var(--primary-color, #5B0000);
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.risk-panel h3::before {
-    content: '';
-    width: 5px;
-    height: 28px;
-    background: var(--hero-gold, #c49a18);
-    border-radius: 3px;
-}
-
-.risk-panel p {
+.content-inner p {
+    margin-bottom: 18px;
+    text-align: justify;
+    font-size: 15px;
     color: #555;
-    font-size: 1.05rem;
-    line-height: 1.9;
-    margin-bottom: 15px;
-    max-width: 900px;
+    letter-spacing: 0.2px;
 }
 
+.content-inner p:last-child {
+    margin-bottom: 0;
+}
+
+.content-inner h4 {
+    color: var(--primary-color);
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 30px;
+    border-left: 5px solid #c49a18;
+    padding: 12px 0 12px 20px;
+    background: linear-gradient(
+        to right,
+        rgba(196, 154, 24, 0.08) 0%,
+        transparent 100%
+    );
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.content-inner h4:first-of-type {
+    margin-top: 15px;
+}
+
+.content-inner h4:hover {
+    background: linear-gradient(
+        to right,
+        rgba(196, 154, 24, 0.12) 0%,
+        transparent 100%
+    );
+    transform: translateX(3px);
+}
+
+.content-inner strong {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 15.5px;
+    letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .risks-section {
+        padding: 60px 5%;
+    }
+    
+    .accordion-header {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    
+    .accordion-header:hover,
+    .accordion-header.active {
+        padding-left: 24px;
+    }
+    
+    .content-inner {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .risks-section {
+        padding: 50px 3%;
+    }
+    
+    .accordion-header {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .content-inner {
+        padding: 20px 15px;
+    }
+    
+    .content-inner h4 {
+        font-size: 16px;
+        padding: 10px 0 10px 15px;
+    }
+}
 /* Myth Section */
 .myth-section {
-    padding: 80px 8%;
-    background: #ffffff;
+    padding: 30px 8%;
+    background: #fff;
 }
 
 .myth-section .container {
-    max-width: 100%;
+    max-width: 1400px;
 }
 
-.myth-card {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    width: 100%;
-    background: linear-gradient(135deg, #e4a02309, #f9f9f9);
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.192);
-    border-left: 5px solid var(--hero-gold, #c49a18);
+.myth-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 60px;
+    align-items: center;
 }
 
-.myth-icon {
-    flex-shrink: 0;
-    width: 60px;
-    height: 60px;
-    color: var(--hero-gold, #c49a18);
-}
-
-.myth-icon svg {
+.myth-image {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myth-image img {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.myth-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .myth-content h3 {
-    color: var(--hero-maroon, #5B0000);
-    font-size: 1.6rem;
+    color: var(--primary-color, #5B0000);
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 15px;
+    text-transform: none;
+}
+
+.myth-content .gold-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--hero-gold, #c49a18);
+    margin-bottom: 25px;
 }
 
 .myth-content p {
     font-size: 1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 15px;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 20px;
 }
 
 .myth-highlight {
@@ -475,9 +587,25 @@
 }
 
 .myth-truth {
-    color: var(--hero-maroon, #5B0000) !important;
+    color: var(--primary-color, #5B0000) !important;
     font-weight: 600;
     font-size: 1.1rem !important;
+}
+
+@media (max-width: 992px) {
+    .myth-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .myth-image {
+        margin: 0 auto 30px auto;
+    }
+    .myth-content {
+        text-align: center;
+    }
+    .myth-content h3 {
+        font-size: 1.4rem;
+    }
 }
 
 /* Responsive Styles */
@@ -592,3 +720,4 @@
         padding: 15px;
     }
 }
+

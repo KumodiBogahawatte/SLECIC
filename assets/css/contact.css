@@ -11,6 +11,90 @@
     --transition: all 0.2s ease;
 }
 
+/* 1. Page Hero (Smaller than Home Hero) */
+.page-hero {
+  /* 1. The Background Image with a Maroon/Gold Overlay */
+  background:
+    linear-gradient(135deg, rgba(91, 0, 0, 0.336) 0%, rgba(53, 25, 25, 0.514) 50%, rgba(83, 70, 65, 0.5) 100%),
+    url("../images/contactSlider.png");
+
+  /* 2. Image Positioning */
+  background-size: cover; /* Ensures image covers the whole area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+
+  /* 3. Layout & Sizing */
+  height: 60vh; /* Adjust height: 60% of the viewport height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Optional: Style the text inside */
+.page-hero h1 {
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  color: #e0e0e0;
+}
+
+.page-hero .breadcrumb {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.page-hero .breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-hero .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.page-hero .breadcrumb span {
+  margin: 0 6px;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 300px;
+    height: 40vh;
+    background-attachment: scroll;
+    /* Disable parallax on mobile for better performance */
+  }
+
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-hero .breadcrumb {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    min-height: 250px;
+    height: 35vh;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+}
+
 /* Contact Section */
 .contact-section {
     padding: 80px 8%;

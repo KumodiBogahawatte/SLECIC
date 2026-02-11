@@ -29,9 +29,8 @@
 }
 
 /* Container for content */
-/* Container for content */
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -48,7 +47,7 @@
 
 /* Main Title */
 .page-hero h1 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-size: 2.8rem;
   color: #fff;
   margin-bottom: 15px;
@@ -62,7 +61,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   font-size: 14px;
   color: #ffffff;
 }
@@ -116,8 +115,8 @@
 
 /* 1. Top Content Styles */
 .risk-section {
-  padding: 60px 0;
-  min-height: 400px;
+  padding: 40px 8%;
+  width: 100%;
 }
 
 .risk-main-title {

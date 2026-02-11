@@ -50,7 +50,7 @@ h4 {
   /* 1. The Background Image with a Maroon/Gold Overlay */
   background:
     linear-gradient(135deg, rgba(91, 0, 0, 0.336) 0%, rgba(45, 0, 0, 0.342) 50%, rgba(196, 154, 24, 0.3) 100%),
-    url("../images/news/n1.png");
+    url("../images/aboutSlider.png");
 
   /* 2. Image Positioning */
   background-size: cover; /* Ensures image covers the whole area */
