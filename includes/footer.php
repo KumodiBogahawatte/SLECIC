@@ -39,11 +39,11 @@
         <div class="footer-section">
             <h4>Quick Links</h4>
             <ul class="footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="Who-we-are">Who we are</a></li>
+                <li><a href="CreditInsurance">Credit Insurance</a></li>
+                <li><a href="news">News & Events</a></li>
+                <li><a href="contact">Contact Us</a></li>
             </ul>
         </div>
 
