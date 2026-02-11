@@ -95,6 +95,11 @@
     .btn-search {
         width: 100%;
     }
+
+    /* Reduce Search Button Width via Wrapper Padding */
+    .search-bar-wrapper {
+        padding: 20px 60px;
+    }
 }
 
 
@@ -227,6 +232,11 @@
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+    .glossary-list {
+        padding: 0 40px;
+        /* Reduce card width by adding container padding */
+    }
+
     .term-header {
         padding: 15px 20px;
     }

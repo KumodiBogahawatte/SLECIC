@@ -43,7 +43,7 @@
   height: 100%;
   /* Simple left-to-right white to transparent gradient for best video visibility */
   background: linear-gradient(90deg,
-      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.842) 0%,
       rgba(255, 255, 255, 0.0) 100%);
   z-index: 1;
   pointer-events: none;
@@ -615,19 +615,68 @@
     font-size: 24px;
   }
 
+  /* Remove side padding so service cards can use full width */
+  .services-section {
+    /* Leave space for the fixed left sidebar so cards don't get cut */
+    padding-left: calc(35px + 16px);
+    padding-right: 20px;
+  }
+
+  .services-section .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Services: show one card at a time with horizontal swipe */
   .services-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    /* Use flex for a reliable "1 card per swipe" slider */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Slider spacing on mobile */
+    gap: 20px;
+    padding: 0 0 20px 0;
+    margin: 0;
+  }
+
+  .services-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .service-card {
+    scroll-snap-align: start;
+    /* Slightly smaller than news cards (more side "peek") */
+    flex: 0 0 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .service-card {
+    padding: 16px;
+  }
+
+  .service-card img {
+    height: 180px;
+  }
+
+  .service-card h3 {
+    /* Reserve space so all cards align even with different title lengths */
+    min-height: 3.6em;
+  }
+
+  .service-card p {
+    /* Reserve space so button stays aligned */
+    min-height: 8.5em;
   }
 
   .section-title {
     text-align: center;
     font-size: 28px;
-  }
-
-  .service-card {
-    text-align: center;
-    align-items: center;
   }
 
   .feature-section {
@@ -656,9 +705,29 @@
   }
 
   .news-grid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% - 40px);
+    /* Slider width */
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 20px 20px 20px;
+    margin: 0 -20px;
+    max-width: none;
+    /* Override previous max-width */
+  }
+
+  .news-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .news-card {
+    scroll-snap-align: start;
+    width: 100%;
+    margin: 0;
   }
 
   .news-image img {
@@ -802,8 +871,16 @@
   }
 
   .contact-map-wrapper {
-    height: 350px;
-    /* Fixed height for map on mobile */
+    /* Remove desktop min-height so we don't get empty whitespace under the iframe */
+    min-height: 0;
+    height: auto;
+  }
+
+  /* Give the iframe a real height on mobile (prevents % height issues) */
+  .contact-map-wrapper iframe {
+    width: 100%;
+    height: 260px;
+    display: block;
   }
 }
 
@@ -812,5 +889,27 @@
     flex-direction: column;
     /* Stack inputs vertically on small mobile */
     gap: 15px;
+  }
+
+}
+
+/* Tighten spacing between Map and Footer on mobile */
+@media (max-width: 768px) {
+  .contact-section {
+    padding-bottom: 0;
+  }
+
+  .contact-grid {
+    gap: 24px;
+  }
+
+  .contact-map-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-map-wrapper iframe {
+    height: 220px;
   }
 }
