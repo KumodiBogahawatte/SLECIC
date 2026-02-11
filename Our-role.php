@@ -222,9 +222,9 @@ include 'includes/header.php';
 
 <!-- Myth Buster Section -->
 <section class="myth-section">
-    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
         <div class="myth-grid">
-            <div class="myth-content">
+            <div class="myth-content" data-aos="fade-right" data-aos-duration="1000">
                 <h3>Breaking the Myth</h3>
                 <div class="gold-divider"></div>
                 <p>It is not easy for companies to learn everything about a potential buyer. A Company that appears to be financially healthy according to its accounts and appears to have good management team can nevertheless become insolvent. Companies today are much more adept at hiding problems from suppliers.</p>
@@ -233,7 +233,7 @@ include 'includes/header.php';
                     <p class="myth-truth">It is a myth that only those who trade with developing nations face payment defaults.</p>
                 </div>
             </div>
-            <div class="myth-image">
+            <div class="myth-image" data-aos="fade-left" data-aos-duration="1000">
                 <img src="assets/images/about/myth-buster.jpg" alt="Myth Buster">
             </div>
         </div>

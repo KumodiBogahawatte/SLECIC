@@ -1,3 +1,7 @@
+RewriteCond %{THE_REQUEST} \s/index[.]php[\s?] [NC]
+RewriteRule ^index\.php$ /SLECIC/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/index[\s?] [NC]
+RewriteRule ^index$ /SLECIC/ [R=301,L]
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]

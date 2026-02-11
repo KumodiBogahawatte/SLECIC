@@ -19,7 +19,7 @@
 </section>
 
 <section class="pub-section">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="category-block">
             <div class="section-header">
                 <h2 class="section-title">Market Bulletins</h2>

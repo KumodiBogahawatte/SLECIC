@@ -16,7 +16,7 @@ $current = basename($_SERVER['PHP_SELF']);
 
 <header class="slecic-header">
     <div class="header-branding">
-        <a href="index" class="brand-link">
+        <a href="/SLECIC/" class="brand-link">
             <img src="assets/images/logo/logo_main.png" alt="SLECIC Logo" class="brand-logo">
         </a>
     </div>
@@ -33,7 +33,7 @@ $current = basename($_SERVER['PHP_SELF']);
 
     <nav class="header-nav" id="mainNav">
         <ul class="nav-list">
-            <li><a href="index" class="nav-link<?php if ($current == 'index.php') echo ' current'; ?>">Home</a></li>
+            <li><a href="/SLECIC/" class="nav-link<?php if ($current == 'index.php') echo ' current'; ?>">Home</a></li>
             <li class="nav-item-dropdown">
                 <a href="#" class="nav-link dropdown-trigger<?php if (in_array($current, ['Who-we-are.php', 'Our-role.php', 'Leadership.php', 'Customer-testimonials.php', 'career-Opportunities.php'])) echo ' current'; ?>">About Us <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
