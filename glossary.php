@@ -32,9 +32,9 @@
             </form>
         </div>
 
-        <div class="glossary-list" id="glossaryList">
+        <div class="glossary-list" id="glossaryList" >
             
-            <div class="glossary-item active">
+            <div class="glossary-item active" >
                 <div class="term-header">
                     <h3 class="term-title">Associate buyer</h3>
                     <i class="fa-solid fa-plus toggle-icon"></i>
