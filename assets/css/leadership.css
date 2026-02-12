@@ -13,41 +13,43 @@
     --border-radius: 8px;
     --transition: all 0.2s ease;
 }
+
 @media (max-width: 768px) {
-  .page-hero {
-    min-height: 300px;
-    height: 40vh;
-    background-attachment: scroll;
-    /* Disable parallax on mobile for better performance */
-  }
+    .page-hero {
+        min-height: 300px;
+        height: 40vh;
+        background-attachment: scroll;
+        /* Disable parallax on mobile for better performance */
+    }
 
-  .page-hero h1 {
-    font-size: 2.5rem;
-  }
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
 
-  .page-hero .breadcrumb {
-    font-size: 12px;
-    flex-wrap: wrap;
-  }
+    .page-hero .breadcrumb {
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 480px) {
-  .page-hero {
-    min-height: 250px;
-    height: 35vh;
-  }
+    .page-hero {
+        min-height: 250px;
+        height: 35vh;
+    }
 
-  .page-hero h1 {
-    font-size: 2rem;
-  }
+    .page-hero h1 {
+        font-size: 2rem;
+    }
 }
+
 /* Leadership Section */
 .leadership-section {
     padding: 40px 8%;
     position: relative;
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -384,6 +386,7 @@
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -484,7 +487,7 @@
         flex: 0 0 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
-    
+
     .agm-card {
         flex: 0 0 calc(50% - 20px);
         max-width: calc(50% - 20px);
@@ -495,23 +498,23 @@
     .leadership-section {
         padding: 60px 4%;
     }
-    
+
     .section-header h2 {
         font-size: 1.875rem;
     }
-    
+
     .section-header {
         margin-bottom: 40px;
     }
-    
+
     .centered-row {
         margin-bottom: 50px;
     }
-    
+
     .center-leader {
         max-width: 400px;
     }
-    
+
     .center-leader .member-image {
         height: 140px;
         width: 140px;
@@ -522,36 +525,36 @@
     .leadership-section {
         padding: 80px 8%;
     }
-    
+
     .section-header {
         margin-bottom: 35px;
     }
-    
+
     .centered-row {
         margin-bottom: 40px;
     }
-    
+
     .center-leader {
         max-width: 360px;
     }
-    
+
     .center-leader .member-image {
         height: 130px;
         width: 130px;
     }
-    
+
     .director-card,
     .agm-card {
         flex: 0 0 100%;
         max-width: 360px;
         margin: 0 auto;
     }
-    
+
     .modal-profile {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .modal-image {
         margin: 0 auto;
         width: 150px;
@@ -561,23 +564,24 @@
 
 @media (max-width: 576px) {
     .leadership-section {
-        padding: 40px 4%;
+        padding: 40px 15px 40px 55px;
+        /* Added left padding to avoid sidebar overlap */
     }
-    
+
     .section-header h2 {
         font-size: 1.5rem;
     }
-    
+
     .center-leader .member-image {
         height: 120px;
         width: 120px;
     }
-    
+
     .modal-content {
         width: 95%;
         margin: 5vh auto;
     }
-    
+
     .modal-header,
     .modal-body {
         padding: 20px;
