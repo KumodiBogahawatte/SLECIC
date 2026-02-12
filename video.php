@@ -147,14 +147,25 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    const ITEMS_PER_PAGE = 8;
+    let ITEMS_PER_PAGE = window.innerWidth <= 768 ? 3 : 8;
     const grid = document.getElementById('videoGrid');
     const cards = Array.from(grid.querySelectorAll('.video-card'));
     const paginationContainer = document.getElementById('videoPagination');
+    
     if (!grid || cards.length === 0 || !paginationContainer) return;
 
-    const totalPages = Math.ceil(cards.length / ITEMS_PER_PAGE);
+    let totalPages = Math.ceil(cards.length / ITEMS_PER_PAGE);
     let currentPage = 1;
+
+    // Update items per page on resize
+    window.addEventListener('resize', function() {
+        const newItemsPerPage = window.innerWidth <= 768 ? 3 : 8;
+        if (newItemsPerPage !== ITEMS_PER_PAGE) {
+            ITEMS_PER_PAGE = newItemsPerPage;
+            totalPages = Math.ceil(cards.length / ITEMS_PER_PAGE);
+            renderPage(1); // Reset to first page to avoid out of bounds
+        }
+    });
 
     function renderPage(page) {
         if (page < 1) page = 1;
@@ -168,6 +179,12 @@ document.addEventListener('DOMContentLoaded', function () {
             card.style.display = (index >= start && index < end) ? '' : 'none';
         });
 
+        // Scroll to top of grid on page change (mobile mostly)
+        if (window.innerWidth <= 768) {
+            grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        buildPagination(); // Rebuild pagination buttons as total pages might change
         updatePaginationUI();
     }
 
@@ -175,10 +192,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const buttons = paginationContainer.querySelectorAll('.video-page-btn');
         buttons.forEach(btn => {
             const page = parseInt(btn.dataset.page, 10);
-            if (page === currentPage) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
+            if (!isNaN(page)) {
+                 if (page === currentPage) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
             }
         });
 
