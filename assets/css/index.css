@@ -686,11 +686,11 @@
   }
 
   .feature-bg-image {
-    opacity: 0.15;
+    opacity: 0.4;
   }
 
   .feature-overlay {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.6);
   }
 
   .feature-content {
@@ -740,23 +740,24 @@
   .feature-section {
     padding: 60px 15px 60px 55px;
   }
-  .feature-content p{
+
+  .feature-content p {
     margin-left: 20px;
   }
 
-  .contact-form-wrapper{
+  .contact-form-wrapper {
     margin-left: 20px;
   }
 
-  .contact-map-wrapper{
+  .contact-map-wrapper {
     margin-left: 20px;
   }
 
-  .about-card{
+  .about-card {
     margin-left: 20px;
   }
 
-  .hero-description{
+  .hero-description {
     margin-left: 25px;
   }
 }
