@@ -5,6 +5,13 @@
   padding: 40px 8%;
   background-color: #f8f9fa;
   /* font-family: 'Segoe UI', sans-serif; */
+  box-sizing: border-box;
+}
+
+.pub-section > .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container {
@@ -165,6 +172,130 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .pub-section > .container {
+    max-width: 1000px;
+    padding: 0 10px;
+  }
+  .doc-grid {
+    gap: 20px;
+  }
+  .section-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pub-section > .container {
+    max-width: 800px;
+    padding: 0 8px;
+  }
+  .doc-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .card-body {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input-group,
+  .year-select-group,
+  .btn-search {
+    width: 100%;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+  .pub-section > .container {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+  .pub-section {
+    padding: 24px 2%;
+  }
+  .doc-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .doc-card {
+    min-width: 0;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+  .doc-title {
+    font-size: 15px;
+    min-height: 2.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    min-height: 180px;
+    padding-top: 40px;
+  }
+  .page-hero h1 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .breadcrumb {
+    font-size: 11px;
+    gap: 5px;
+  }
+  .pub-section > .container {
+    padding: 0 40px;
+  }
+  .pub-section {
+    padding: 10px 1%;
+  }
+  .section-title {
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
+  .title-line {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 10px;
+  }
+  .doc-title {
+    font-size: 13px;
+    min-height: 1.8em;
+  }
+  .doc-date {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .card-body {
+    padding: 6px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+  .btn-search {
+    min-width: 80px;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  .card-image {
+    height: 120px;
+  }
 }
 
 .doc-card {

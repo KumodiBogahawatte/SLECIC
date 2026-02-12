@@ -39,8 +39,10 @@
     font-size: 1.8rem;
   }
 }
+
+/* Add extra bottom padding to prevent floating quick-access-buttons from hiding content */
 .faq-section {
-    padding: 40px 8%;
+    padding: 40px 8% 100px 8%;
     background: #fff;
 }
 
@@ -195,7 +197,7 @@
 /* Responsive FAQ */
 @media (max-width: 991px) {
     .faq-section {
-        padding: 60px 5%;
+        padding: 60px 5% 100px 5%;
     }
 
     .faq-section .section-header h2 {
@@ -215,7 +217,7 @@
 
 @media (max-width: 600px) {
     .faq-section {
-        padding: 40px 4%;
+        padding: 40px 4% 110px 4%;
     }
 
     .faq-section .section-header h2 {
@@ -234,6 +236,26 @@
     .faq-answer p,
     .faq-answer ul {
         font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 30px 2% 120px 2%;
+    }
+    .faq-section .section-header h2 {
+        font-size: 1.1em;
+    }
+    .faq-question {
+        font-size: 0.9rem;
+        padding: 12px 8px;
+    }
+    .faq-item.active .faq-answer {
+        padding: 12px 8px;
+    }
+    .faq-answer p,
+    .faq-answer ul {
+        font-size: 0.8rem;
     }
 }
 

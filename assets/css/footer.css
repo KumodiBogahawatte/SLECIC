@@ -235,6 +235,10 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+  /* Add extra right margin to main content to prevent overlap with quick-access-buttons on tablets */
+  .container, .faq-section, .download-section, .epg-section, .career-section, .contact-section, .risk-section {
+    margin-right: 40px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -281,6 +285,11 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  /* Add extra right margin to main content to prevent overlap with quick-access-buttons on mobile */
+  .container, .faq-section, .download-section, .epg-section, .career-section, .contact-section, .risk-section {
+    margin-right: 50px;
+  }
 }
 /* Social icons – responsive */
 @media (max-width: 968px) {
@@ -322,7 +331,7 @@ footer {
   background: var(--secondary-color);
   color: #fff;
   border: none;
-  height: 100px;
+  height: 110px;
   width: 35px;
   display: flex;
   align-items: center;
