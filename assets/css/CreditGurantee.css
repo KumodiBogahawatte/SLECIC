@@ -112,7 +112,7 @@
 
 /* --- Combined Risk Section --- */
 .risk-section {
-  padding: 40px 8% 120px 8%; /* extra bottom padding for floating buttons */
+  padding: 40px 8%;
   background-color: #ffffff;
 }
 
@@ -561,24 +561,11 @@
     max-width: 300px;
     margin-bottom: 25px;
   }
-
-  .risk-section {
-    padding: 24px 2% 100px 2%;
-  }
 }
 
 @media (max-width: 600px) {
   .country-list,
   .detail-list {
     grid-template-columns: 1fr;
-  }
-
-  .risk-section {
-    padding: 10px 1% 80px 1%;
-  }
-
-  .solutions-list li {
-    padding: 12px;
-    font-size: 13px;
   }
 }

@@ -169,18 +169,15 @@
 
 /* --- EPG Section General --- */
 /* --- EPG Section General --- */
-
-/* Add extra bottom padding to prevent floating quick-access-buttons from hiding content */
 .epg-section {
-    padding: 60px 0 100px 0;
+    padding: 60px 0;
     background-color: #ffffff;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 /* --- Brochure & E-Flyer Section --- */
-
 .epg-brochure-section {
-    padding: 60px 0 110px 0;
+    padding: 60px 0 80px;
     background-color: #f8f9fb;
 }
 
@@ -497,13 +494,6 @@
     .epg-brochure-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .epg-section {
-        padding: 40px 0 100px 0;
-    }
-    .epg-brochure-section {
-        padding: 40px 0 110px 0;
-    }
 }
 
 @media (max-width: 768px) {
@@ -521,55 +511,5 @@
 
     .epg-brochure-grid {
         grid-template-columns: 1fr;
-    }
-
-    .epg-section {
-        padding: 30px 0 110px 0;
-    }
-    .epg-brochure-section {
-        padding: 30px 0 120px 0;
-    }
-}
-
-@media (max-width: 600px) {
-    .epg-section {
-        padding: 20px 0 120px 0;
-    }
-    .epg-brochure-section {
-        padding: 20px 0 130px 0;
-    }
-    .epg-main-title {
-        font-size: 22px;
-    }
-    .epg-brochure-grid {
-        gap: 12px;
-    }
-    .benefit-card {
-        padding: 18px 8px;
-    }
-    .category-grid {
-        gap: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .epg-section {
-        padding: 10px 0 130px 0;
-    }
-    .epg-brochure-section {
-        padding: 10px 0 140px 0;
-    }
-    .epg-main-title {
-        font-size: 1.1em;
-    }
-    .epg-brochure-grid {
-        gap: 8px;
-    }
-    .benefit-card {
-        padding: 10px 4px;
-        font-size: 0.95em;
-    }
-    .category-grid {
-        gap: 6px;
     }
 }

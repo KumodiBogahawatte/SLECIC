@@ -5,6 +5,13 @@
   padding: 40px 8%;
   background-color: #f8f9fa;
   /* font-family: 'Segoe UI', sans-serif; */
+  box-sizing: border-box;
+}
+
+.pub-section > .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container {
@@ -168,7 +175,7 @@
 }
 
 @media (max-width: 1200px) {
-  .container {
+  .pub-section > .container {
     max-width: 1000px;
     padding: 0 10px;
   }
@@ -181,7 +188,7 @@
 }
 
 @media (max-width: 992px) {
-  .container {
+  .pub-section > .container {
     max-width: 800px;
     padding: 0 8px;
   }
@@ -212,9 +219,9 @@
   .page-hero h1 {
     font-size: 2rem;
   }
-  .container {
+  .pub-section > .container {
     max-width: 100%;
-    padding: 0 4px;
+    padding: 0 40px;
   }
   .pub-section {
     padding: 24px 2%;
@@ -251,11 +258,14 @@
     font-size: 11px;
     gap: 5px;
   }
+  .pub-section > .container {
+    padding: 0 40px;
+  }
   .pub-section {
     padding: 10px 1%;
   }
   .section-title {
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 6px;
   }
   .title-line {
