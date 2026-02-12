@@ -41,7 +41,7 @@ $current = basename($_SERVER['PHP_SELF']);
                     <li><a href="Our-role" class="dropdown-link<?php if ($current == 'Our-role.php') echo ' current'; ?>">Our role</a></li>
                     <li><a href="Leadership" class="dropdown-link<?php if ($current == 'Leadership.php') echo ' current'; ?>">Leadership</a></li>
                     <li><a href="Customer-testimonials" class="dropdown-link<?php if ($current == 'Customer-testimonials.php') echo ' current'; ?>">Customer Testimonials</a></li>
-                    <li><a href="career-Opportunities" class="dropdown-link<?php if ($current == 'career-Opportunities.php') echo ' current'; ?>">Career Opportunities</a></li>
+                    <li><a href="career-opportunities" class="dropdown-link<?php if ($current == 'career-Opportunities.php') echo ' current'; ?>">Career Opportunities</a></li>
                 </ul>
             </li>
             <li class="nav-item-dropdown">

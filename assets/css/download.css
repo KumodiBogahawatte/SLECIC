@@ -37,8 +37,10 @@
     font-size: 2rem;
   }
 }
+
+/* Add extra bottom padding to prevent floating quick-access-buttons from hiding content */
 .download-section {
-    padding: 40px 8%;
+    padding: 40px 8% 100px 8%;
     background: #fff;
     min-height: 400px;
 }
@@ -195,7 +197,7 @@
 
 @media (max-width: 900px) {
     .download-section {
-        padding: 40px 8%;
+        padding: 40px 8% 100px 8%;
     }
     .download-folders {
         gap: 14px;
@@ -221,7 +223,7 @@
 
 @media (max-width: 600px) {
     .download-section {
-        padding: 40px 10%;
+        padding: 40px 5% 110px 5%;
     }
     .folder-title {
         font-size: 1.3em;
@@ -231,5 +233,25 @@
     }
     .download-item {
         padding: 10px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-section {
+        padding: 30px 2% 120px 2%;
+    }
+    .download-folder-item {
+        min-width: 100px;
+        padding: 12px 4px 10px 4px;
+        font-size: 0.95em;
+    }
+    .folder-title {
+        font-size: 1.1em;
+    }
+    .download-list {
+        gap: 8px;
+    }
+    .download-item {
+        padding: 8px 2px;
     }
 }

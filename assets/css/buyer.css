@@ -126,10 +126,10 @@
     margin-top: 0;
   }
   .container {
-    padding: 0 8px;
+    padding: 0 6px;
   }
   .risk-section {
-    padding: 30px 4%;
+    padding: 24px 2%;
   }
 }
 
@@ -144,10 +144,10 @@
   }
 
   .risk-section {
-    padding: 20px 2%;
+    padding: 10px 1%;
   }
   .container {
-    padding: 0 4px;
+    padding: 0 2px;
   }
   .risk-main-title {
     font-size: 22px;
@@ -235,4 +235,45 @@
   margin-bottom: 20px;
   margin-top: 16px;
   text-align: justify;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 15px;
+  }
+  .risk-section {
+    padding: 40px 8%;
+  }
+  .risk-grid {
+    flex-direction: row;
+    gap: 48px;
+    align-items: flex-start;
+  }
+  .risk-image-wrapper {
+    max-width: 400px;
+  }
+  .risk-image-wrapper img {
+    height: 260px;
+  }
+  .risk-main-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 992px) {
+  .risk-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .risk-image-wrapper {
+    flex: 0 0 220px;
+    max-width: 220px;
+  }
+  .risk-image-wrapper img {
+    height: 140px;
+  }
+  .risk-main-title {
+    font-size: 22px;
+  }
 }

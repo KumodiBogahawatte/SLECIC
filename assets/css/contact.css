@@ -97,7 +97,7 @@
 
 /* Contact Section */
 .contact-section {
-    padding: 80px 8%;
+    padding: 80px 8% 120px 8%; /* extra bottom padding for floating buttons */
     background: var(--bg-light);
 }
 
@@ -429,7 +429,7 @@
 /* Responsive Design */
 @media (max-width: 992px) {
     .contact-section {
-        padding: 60px 4%;
+        padding: 60px 4% 100px 4%;
     }
 
     .contact-grid {
@@ -438,58 +438,56 @@
     }
 
     .contact-info {
-        order: 2;
+        order: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact-form-wrapper {
-        order: 1;
+        order: 2;
+    }
+
+    .map-container {
+        order: 3;
+        margin-top: 24px;
     }
 }
 
 @media (max-width: 768px) {
     .contact-section {
-        padding: 50px 4%;
+        padding: 50px 4% 80px 4%;
+    }
+
+    .contact-info {
+        order: 1;
     }
 
     .contact-form-wrapper {
-        padding: 30px;
+        order: 2;
     }
 
-    .contact-form-wrapper h2 {
-        font-size: 1.5rem;
-    }
-
-    .info-card {
-        padding: 25px;
+    .map-container {
+        order: 3;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 576px) {
     .contact-section {
-        padding: 40px 4%;
+        padding: 40px 4% 60px 4%;
+    }
+
+    .contact-info {
+        order: 1;
     }
 
     .contact-form-wrapper {
-        padding: 25px 20px;
+        order: 2;
     }
 
-    .contact-form-wrapper h2 {
-        font-size: 1.35rem;
-    }
-
-    .info-card {
-        padding: 20px;
-    }
-
-    .captcha-display {
-        font-size: 1.1rem;
-        padding: 10px 18px;
-        letter-spacing: 3px;
-    }
-
-    .captcha-reload {
-        width: 40px;
-        height: 40px;
+    .map-container {
+        order: 3;
+        margin-top: 16px;
     }
 }
 

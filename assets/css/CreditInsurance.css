@@ -112,7 +112,7 @@
 
 /* --- Combined Risk Section --- */
 .risk-section {
-  padding: 40px 8%;
+  padding: 40px 8% 120px 8%; /* extra bottom padding for floating buttons */
   background-color: #ffffff;
 }
 
@@ -559,6 +559,10 @@
   .risk-image-wrapper {
     max-width: 300px;
     margin-bottom: 25px;
+  }
+
+  .risk-section {
+    padding: 24px 2% 100px 2%;
   }
 }
 

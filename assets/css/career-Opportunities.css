@@ -11,7 +11,7 @@
 
 /* Careers Section */
 .careers-section {
-    padding: 80px 8%;
+    padding: 80px 8%; /* extra bottom padding for floating buttons */
     background: var(--bg-light);
     min-height: 40vh;
 }
@@ -24,7 +24,9 @@
 /* No Vacancies Message */
 .no-vacancies {
     text-align: center;
-    padding: 60px 40px;
+    padding: 80px 8%;
+    max-width: 1400px;
+    margin: 0 auto;
     background: var(--white);
     border-radius: var(--border-radius);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -79,7 +81,10 @@
 /* Responsive */
 @media (max-width: 768px) {
     .careers-section {
-        padding: 60px 4%;
+        padding: 24px 2%;
+    }
+    .careers-section .container {
+        padding: 0 6px;
     }
 
     .no-vacancies {
@@ -102,7 +107,10 @@
 
 @media (max-width: 576px) {
     .careers-section {
-        padding: 40px 4%;
+        padding: 10px 1%;
+    }
+    .careers-section .container {
+        padding: 0 2px;
     }
 
     .no-vacancies {
@@ -115,5 +123,14 @@
 
     .no-vacancies p {
         font-size: 0.95rem;
+    }
+}
+@media (min-width: 1200px) {
+    .careers-section {
+        padding: 80px 8%;
+    }
+    .careers-section .container {
+        max-width: 1400px;
+        padding: 0 15px;
     }
 }
